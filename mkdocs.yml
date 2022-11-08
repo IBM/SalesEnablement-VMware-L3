@@ -1,0 +1,74 @@
+# Project info
+site_name: IBM Cloud for VMware Solutions
+site_description: IBM Cloud for VMware Solutions Level 3 Demonstration Guide
+site_author: Andrew R. Jones (andrewj@us.ibm.com) & Chris Beinko (cdbienko@us.ibm.com)
+copyright: Copyright &copy; 2022 IBM
+
+# Repository
+repo_name:  IBM/SalesEnablement-VMware-L3
+
+#repo_url: https://github.com/IBM/SalesEnablement-VMware-L3
+#edit_uri: edit/master/docs
+docs_dir: docs
+
+
+nav:
+  - 'Introduction': 'index.md'
+  - 'Overview': 'Overview.md'
+  - 'VMware Solutions Shared - Introduction': 'Shared/Introduction.md'
+  - 'VMware Solutions Shared - Provisioning': 'Shared/Provisioning.md'
+  - 'VMware Solutions Shared - Provisioning': 'Shared/Managing.md'
+  - 'VMware Solutions Shared - Introduction': 'Dedicated/Introduction.md'
+  - 'VMware Solutions Shared - Provisioning': 'Dedicated/Provisioning.md'
+  - 'VMware Solutions Shared - Provisioning': 'Dedicated/Managing.md'
+  - 'Next Steps': 'NextSteps.md'
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - content.code.annotate
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+plugins:
+    - mkdocs-video
+    - macros
+    - search
+
+markdown_extensions:
+  - sane_lists
+  - pymdownx.details
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.keys
+  - attr_list
+
+extra:
+  generator: false
+  gitRepo: "https://github.com/IBM/SalesEnablement-VMware-L3"
+  learningplan:
+    name: "IBM Cloud for VMware Solutions Level 3"
+  level2learningplan:
+    name: "IBM Cloud for VMware Solutions Sales Foundation"
+    YLurl: "https://yourlearning.ibm.com/activity/PLAN-9B285157EA97"
+    BPurl: "https://learn.ibm.com/course/view.php?id=11142"
+  offering:
+    name: "IBM Cloud for VMware Solutions"
+  guide:
+    name: "IBM Cloud for VMware Solutions - Level 3 Demonstration Guide"
+    url: "https://ibm.github.io/SalesEnablement-VMware-L3/"
