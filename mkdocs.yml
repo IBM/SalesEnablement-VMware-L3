@@ -14,7 +14,6 @@ docs_dir: docs
 
 nav:
   - 'Introduction': 'index.md'
-  - 'Overview': 'Overview.md'
   - 'VMware Solutions Shared - Introduction': 'Shared/Introduction.md'
   - 'VMware Solutions Shared - Provisioning': 'Shared/Provisioning.md'
   - 'VMware Solutions Shared - Provisioning': 'Shared/Managing.md'
