@@ -14,12 +14,14 @@ docs_dir: docs
 
 nav:
   - 'Introduction': 'index.md'
-  - 'VMware Solutions Shared - Introduction': 'Shared/Introduction.md'
-  - 'VMware Solutions Shared - Provisioning': 'Shared/Provisioning.md'
-  - 'VMware Solutions Shared - Provisioning': 'Shared/Managing.md'
-  - 'VMware Solutions Shared - Introduction': 'Dedicated/Introduction.md'
-  - 'VMware Solutions Shared - Provisioning': 'Dedicated/Provisioning.md'
-  - 'VMware Solutions Shared - Provisioning': 'Dedicated/Managing.md'
+  - 'VMware Solutions Shared':
+    - 'Introduction': 'Shared/Introduction.md'
+    - 'Provisioning': 'Shared/Provisioning.md'
+    - 'Managing': 'Shared/Managing.md'
+  - 'VMware Solutions Dedicated':
+    - 'Introduction': 'Dedicated/Introduction.md'
+    - 'Provisioning': 'Dedicated/Provisioning.md'
+    - 'Managing': 'Dedicated/Managing.md'
   - 'Next Steps': 'NextSteps.md'
 
 theme:
