@@ -1,3 +1,1 @@
 To be written...
-
-**Click-thru demo:** <a href="https://ibm.github.io/SalesEnablement-VMware-L3/includes/OldCaptivate/index.html" target ="_blank">Very Old VCS Captivate</a>
