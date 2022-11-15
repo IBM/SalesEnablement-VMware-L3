@@ -73,3 +73,10 @@ extra:
   guide:
     name: "IBM Cloud for VMware Solutions - Level 3 Demonstration Guide"
     url: "https://ibm.github.io/SalesEnablement-VMware-L3/"
+  itz:
+    account: "2326338 - ITZ-VMWARE"
+    collection: ""
+    environment: ""
+    resourceGroup: "Enablement-L3"
+    dedicated:
+      instanceName: "vcs-l3"
