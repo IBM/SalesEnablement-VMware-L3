@@ -432,8 +432,8 @@
 <h1 id="pricing-plans">Pricing Plans</h1>
 <div class="admonition tip">
 <p class="admonition-title">On-Demand vs. Reserved</p>
-<p>Two tiers of pricing plan are available for any VMware Solutions Shared virtual data center environment:
-on-demand or reserved.</p>
+<p>Two tiers of pricing plan are available for any VMware Solutions Shared virtual data center environment:</p>
+<p>on-demand or reserved.</p>
 </div>
 <p><strong>On-demand</strong> allocates virtual data center virtual CPU (vCPU) and RAM as needed. The amount of time that the allocation requires will depend upon the global demand (usage) of the virtual data center vCPU and RAM for the region in which it is deployed. Allocations of vCPU and RAM, therefore, are scalable and can be adjusted over time. The price is calculated hourly and it is based on the resource usage in the virtual data center.</p>
 <p><strong>Reserved</strong> pre-allocates the vCPU and RAM virtual data center reservations at deployment time and their availability afterwards is guaranteed; this contrasts sharply with on-demand deployments, where availability is a best-effort guarantee (but not at a certainty — as demand across the infrastructure region in which it is deployed may ebb and flow over time). The price is calculated monthly for the full reservation and it is based on the allocation size of the virtual data center.</p>
@@ -441,8 +441,8 @@ on-demand or reserved.</p>
 <h1 id="deployment-topology">Deployment Topology</h1>
 <div class="admonition tip">
 <p class="admonition-title">Single vs. Multi-zone</p>
-<p>For every deployment of VMware Solutions Shared, there are two Topologies that a client may select from:
-single-zone or multi-zone.</p>
+<p>For every deployment of VMware Solutions Shared, there are two Topologies that a client may select from:</p>
+<p>single-zone or multi-zone.</p>
 </div>
 <p>A <strong>single-zone</strong> VMware virtual data center deployment will provision the environment within a single available center (easier to manage, but potentially vulnerable to a single point of failure).</p>
 <p>A <strong>multi-zone</strong> VMware virtual data center deployment will deploy across two availability zones in an IBM Cloud multi-zone region, providing failover in the event that a single-zone data center failure occurs.</p>
@@ -476,16 +476,26 @@ single-zone or multi-zone.</p>
 </ol>
 <div class="admonition tip">
 <p class="admonition-title">Additional Networking Resources</p>
-<p>Additional resources on defining and managing private networks can be found within IBM Cloud's online documentation:
-- Viewing a private network endpoint for a virtual data center: <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-endpoints" target="_blank">https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-endpoints</a>
-- Modifying a private network endpoint for a virtual data center: <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_modifying-endpoints" target="_blank">https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_modifying-endpoints</a>
-- Deleting a private network endpoint from a virtual data center: <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_deleting-endpoints" target="_blank">https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_deleting-endpoints</a>
-- Creating a private network endpoint: <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_creating-endpoints" target="_blank">https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_creating-endpoints</a></p>
+<p>Additional resources on defining and managing private networks can be found within IBM Cloud's online documentation:</p>
+<ul>
+<li>
+<p>Viewing a private network endpoint for a virtual data center: <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-endpoints" target="_blank">https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-endpoints</a></p>
+</li>
+<li>
+<p>Modifying a private network endpoint for a virtual data center: <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_modifying-endpoints" target="_blank">https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_modifying-endpoints</a></p>
+</li>
+<li>
+<p>Deleting a private network endpoint from a virtual data center: <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_deleting-endpoints" target="_blank">https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_deleting-endpoints</a></p>
+</li>
+<li>
+<p>Creating a private network endpoint: <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_creating-endpoints" target="_blank">https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_creating-endpoints</a></p>
+</li>
+</ul>
 </div>
 <h1 id="_4"></h1>
 <h1 id="virtual-data-center-capacity">Virtual Data Center Capacity</h1>
 <p>These values essentially determine the compute processing capacity that is allocated to your virtual data center. These are measured in vCPU increments. Each vCPU increment represents a single 2.0 GHz core.  Compute memory, or "RAM limit" as it is described on the IBM Cloud portal, is allocated in GB increments. RAM limits identify the maximum random access memory for each virtual data center.</p>
-<p>The limit you place on the maximum vCPU values determines the total number of processing units available for each virtual data center. Similarly, the RAM limit sets the maximum amount of memory available. You can adjust either of these values after you provision the virtual data center — giving customers the ability to scale and grow their virtual date center over time, should they wish.</p>
+<p>The limit you place on the maximum vCPU values determines the total number of processing units available for each virtual data center. Similarly, the RAM limit sets the maximum amount of memory available. You can adjust either of these values after you provision the virtual data center — giving customers the ability to scale and grow their virtual date center over time.</p>
 <p>The least amount of vCPU that can be provisioned for any data center is 1 vCPU; RAM is likewise limited to a minimum of 1 GB. Set both parameters to 1 so that the demonstration environment is as economically-priced as possible. Obviously, in the case of a real-world demonstration environment (or a production environment), you will want to size these appropriately to the anticipated workloads that the virtual server will be subject to.</p>
 <h1 id="_5"></h1>
 <h1 id="storage">Storage</h1>
@@ -510,8 +520,7 @@ single-zone or multi-zone.</p>
 <h1 id="_7"></h1>
 <h1 id="after-placing-an-order">After Placing An Order</h1>
 <p>The deployment of the resources starts automatically and you receive confirmation that the order is being processed. You can check the deployment status, including any issues that might require your attention, by viewing the Virtual Data Center Status.</p>
-<p>When the resources are successfully deployed, the components that are described in Technical specifications for VMware Solutions Shared are installed on your VMware® virtual platform.
-(<a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview#shared_overview-specs" target="_blank">https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview#shared_overview-specs</a>)</p>
+<p>When the resources are successfully deployed, the components that are described within the <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview#shared_overview-specs" target="_blank">technical specifications documentation for VMware Solutions Shared</a> will be installed within your VMware virtual platform environment.</p>
 <p>When the resources are ready to use, the status is changed to <strong>Ready</strong> to use.</p>
 <div class="admonition warning">
 <p class="admonition-title">Work in Progress</p>
