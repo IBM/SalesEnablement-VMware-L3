@@ -3,7 +3,8 @@ The following module will guide business partners and IBM sellers through the pr
 #
 # Pricing Plans
 
-Two tiers of pricing plan are available for any VMware Solutions Shared virtual data center environment: on-demand or reserved.
+!!! tip "On-Demand vs. Reserved"
+    Two tiers of pricing plan are available for any VMware Solutions Shared virtual data center environment: on-demand or reserved.
 
 **On-demand** allocates virtual data center virtual CPU (vCPU) and RAM as needed. The amount of time that the allocation requires will depend upon the global demand (usage) of the virtual data center vCPU and RAM for the region in which it is deployed. Allocations of vCPU and RAM, therefore, are scalable and can be adjusted over time. The price is calculated hourly and it is based on the resource usage in the virtual data center.
 
@@ -13,7 +14,8 @@ Two tiers of pricing plan are available for any VMware Solutions Shared virtual 
 #
 # Deployment Topology
 
-For every deployment of VMware Solutions Shared, there are two Topologies that a client may select from: single-zone or multi-zone.
+!!! tip "Single vs. Multi-zone"
+    For every deployment of VMware Solutions Shared, there are two Topologies that a client may select from: single-zone or multi-zone.
 
 A **single-zone** VMware virtual data center deployment will provision the environment within a single available center (easier to manage, but potentially vulnerable to a single point of failure).
 
@@ -25,7 +27,8 @@ A **multi-zone** VMware virtual data center deployment will deploy across two av
 
 VMware Solutions Shared on IBM Cloud supports two types of networking: "**Public and Private**" or "**Private Only**." To give the environment the widest range of options, select the "Public and Private" option from the configuration panel.
 
-By default, every virtual data center comes configured with one advanced edge gateway, with five public IP addresses and one private service IP address. The advanced edge gateway is configurable by a customer and can be tailored to their specific needs.
+!!! tip "Advanced Edge Gateway"
+    By default, every virtual data center comes configured with one advanced edge gateway, with five public IP addresses and one private service IP address. The advanced edge gateway is configurable by a customer and can be tailored to their specific needs.
 
 The public network endpoints that are provisioned by default are the five public IP addresses that are displayed in the VMware Solutions Shared virtual data center details page. After the demonstration environment has provisioned, you will be able to go and inspect those for yourself.
 
@@ -39,13 +42,13 @@ There are several considerations to be made before creating a private network fo
 
 2. You can order only one private network endpoint per single-zone virtual data centers.
 
-3. For multizone virtual data centers, two private network endpoints must be ordered to correspond with each NSX Edge Service Gateway.
+3. For multi-zone virtual data centers, two private network endpoints must be ordered to correspond with each NSX Edge Service Gateway.
 
 4. If you want to change the device type of your private network endpoint, you must first delete the existing private network endpoint. Then, create a new private network endpoint with the new device type.
 
 5. You can simultaneously make resource updates to your virtual data center while you create or delete a private network endpoint.
 
-Additional resources on defining and managing private networks can be found withinin IBM Cloud's online documentation:
+Additional resources on defining and managing private networks can be found within IBM Cloud's online documentation:
 
 - Viewing a private network endpoint for a virtual data center: <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-endpoints" target="_blank">https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-endpoints</a>
 
@@ -55,8 +58,10 @@ Additional resources on defining and managing private networks can be found with
 
 - Creating a private network endpoint: <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_creating-endpoints" target="_blank">https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_creating-endpoints</a>
 
+
+
 #
-# Virtual Data Center capacity
+# Virtual Data Center Capacity
 
 These values essentially determine the compute processing capacity that is allocated to your virtual data center. These are measured in vCPU increments. Each vCPU increment represents a single 2.0 GHz core.  Compute memory, or "RAM limit" as it is described on the IBM Cloud portal, is allocated in GB increments. RAM limits identify the maximum random access memory for each virtual data center.
 
