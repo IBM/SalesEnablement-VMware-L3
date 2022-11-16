@@ -432,7 +432,8 @@
 <h1 id="pricing-plans">Pricing Plans</h1>
 <div class="admonition tip">
 <p class="admonition-title">On-Demand vs. Reserved</p>
-<p>Two tiers of pricing plan are available for any VMware Solutions Shared virtual data center environment: on-demand or reserved.</p>
+<p>Two tiers of pricing plan are available for any VMware Solutions Shared virtual data center environment:
+on-demand or reserved.</p>
 </div>
 <p><strong>On-demand</strong> allocates virtual data center virtual CPU (vCPU) and RAM as needed. The amount of time that the allocation requires will depend upon the global demand (usage) of the virtual data center vCPU and RAM for the region in which it is deployed. Allocations of vCPU and RAM, therefore, are scalable and can be adjusted over time. The price is calculated hourly and it is based on the resource usage in the virtual data center.</p>
 <p><strong>Reserved</strong> pre-allocates the vCPU and RAM virtual data center reservations at deployment time and their availability afterwards is guaranteed; this contrasts sharply with on-demand deployments, where availability is a best-effort guarantee (but not at a certainty — as demand across the infrastructure region in which it is deployed may ebb and flow over time). The price is calculated monthly for the full reservation and it is based on the allocation size of the virtual data center.</p>
@@ -440,7 +441,8 @@
 <h1 id="deployment-topology">Deployment Topology</h1>
 <div class="admonition tip">
 <p class="admonition-title">Single vs. Multi-zone</p>
-<p>For every deployment of VMware Solutions Shared, there are two Topologies that a client may select from: single-zone or multi-zone.</p>
+<p>For every deployment of VMware Solutions Shared, there are two Topologies that a client may select from:
+single-zone or multi-zone.</p>
 </div>
 <p>A <strong>single-zone</strong> VMware virtual data center deployment will provision the environment within a single available center (easier to manage, but potentially vulnerable to a single point of failure).</p>
 <p>A <strong>multi-zone</strong> VMware virtual data center deployment will deploy across two availability zones in an IBM Cloud multi-zone region, providing failover in the event that a single-zone data center failure occurs.</p>
@@ -472,21 +474,14 @@
 <p>You can simultaneously make resource updates to your virtual data center while you create or delete a private network endpoint.</p>
 </li>
 </ol>
-<p>Additional resources on defining and managing private networks can be found within IBM Cloud's online documentation:</p>
-<ul>
-<li>
-<p>Viewing a private network endpoint for a virtual data center: <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-endpoints" target="_blank">https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-endpoints</a></p>
-</li>
-<li>
-<p>Modifying a private network endpoint for a virtual data center: <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_modifying-endpoints" target="_blank">https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_modifying-endpoints</a></p>
-</li>
-<li>
-<p>Deleting a private network endpoint from a virtual data center: <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_deleting-endpoints" target="_blank">https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_deleting-endpoints</a></p>
-</li>
-<li>
-<p>Creating a private network endpoint: <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_creating-endpoints" target="_blank">https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_creating-endpoints</a></p>
-</li>
-</ul>
+<div class="admonition tip">
+<p class="admonition-title">Additional Networking Resources</p>
+<p>Additional resources on defining and managing private networks can be found within IBM Cloud's online documentation:
+- Viewing a private network endpoint for a virtual data center: <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-endpoints" target="_blank">https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-endpoints</a>
+- Modifying a private network endpoint for a virtual data center: <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_modifying-endpoints" target="_blank">https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_modifying-endpoints</a>
+- Deleting a private network endpoint from a virtual data center: <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_deleting-endpoints" target="_blank">https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_deleting-endpoints</a>
+- Creating a private network endpoint: <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_creating-endpoints" target="_blank">https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_creating-endpoints</a></p>
+</div>
 <h1 id="_4"></h1>
 <h1 id="virtual-data-center-capacity">Virtual Data Center Capacity</h1>
 <p>These values essentially determine the compute processing capacity that is allocated to your virtual data center. These are measured in vCPU increments. Each vCPU increment represents a single 2.0 GHz core.  Compute memory, or "RAM limit" as it is described on the IBM Cloud portal, is allocated in GB increments. RAM limits identify the maximum random access memory for each virtual data center.</p>
@@ -496,10 +491,10 @@
 <h1 id="storage">Storage</h1>
 <p>Storage policy availability can vary by region and deployment topology. To inspect further details on the storage options available for any VMware Solutions Shared configuration, click the "About" tab at the top of the IBM Cloud catalog page.</p>
 <p>When you create or deploy vApps or VMs, you can select either an unencrypted or encrypted storage policy. Each option has six different tiers of storage available, depending on the storage performance required, with each option carrying a maximum throughput of IOPS (input-output operations per second) per gigabyte.</p>
-<p>Encryption-enabled storage policies are available to all virtual data centers. Encryption protects not only the VMs but also VM disks and other files. Administrators can encrypt VMs and disks by associating the VM or disk with a storage policy that has the VM encryption capability. For more information about the VM encryption limitations for VMware Cloud Director 10.3, see Enabling VM encryption on storage policies of an Organization virtual data center (<a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.3/VMware-Cloud-Director-Service-Provider-Admin-Portal-Guide/GUID-80F58C1D-A97E-43FE-8E41-E9242A1D2332.html" target="_blank">https://docs.vmware.com/en/VMware-Cloud-Director/10.3/VMware-Cloud-Director-Service-Provider-Admin-Portal-Guide/GUID-80F58C1D-A97E-43FE-8E41-E9242A1D2332.html</a>)</p>
+<p>Encryption-enabled storage policies are available to all virtual data centers. Encryption protects not only the VMs but also VM disks and other files. Administrators can encrypt VMs and disks by associating the VM or disk with a storage policy that has the VM encryption capability. For more information about the VM encryption limitations for VMware Cloud Director 10.3, see <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.3/VMware-Cloud-Director-Service-Provider-Admin-Portal-Guide/GUID-80F58C1D-A97E-43FE-8E41-E9242A1D2332.html" target="_blank">Enabling VM encryption on storage policies of an Organization virtual data center</a>.</p>
 <h1 id="_6"></h1>
 <h1 id="included-services">Included Services</h1>
-<p>There are three services pre-installed with every deployment of VMware Solutions Shared on IBM Cloud. Note that while they are ready for consumption and use at any time, they are not free to use — if a customer wishes to make use of these services, they must activate a license and incur the costs associated with that add-on service. No additional charges will be leveed against customers who choose to not use the service.</p>
+<p>There are three services pre-installed with every deployment of VMware Solutions Shared on IBM Cloud. While they are ready for consumption and use at any time, they are not free to use — if a customer wishes to make use of these services, they must activate a license and incur the costs associated with that add-on service. No additional charges will be leveed against customers who choose to not use the service.</p>
 <p>The pre-installed services include:</p>
 <ul>
 <li>
