@@ -8,8 +8,8 @@ Next, ensure that your IBM Cloud account is using the **ITZ-VMWARE** account tha
 
 ![](_attachments/shared-provisioning-2.png)
 
-!!! warning "Attention"
-    Warning: if you continue with the following instructions using your _personal_ IBM Cloud account, there is a risk that your account (and credit card associated with that personal account) will be billed for provisioning a VMware Solutions deployment. To avoid any unwanted charges, ensure that your account is switched to **ITZ-VMWARE** before continuing.
+!!! warning "WARNING"
+    If you continue with the following instructions using your _personal_ IBM Cloud account, there is a risk that your account (and credit card associated with that personal account) will be billed for provisioning a VMware Solutions deployment. To avoid any unwanted charges, ensure that your account is switched to **ITZ-VMWARE** before continuing.
 
 With your account properly set, you can proceed with configuration and setup of a VMware Solutions Shared plan. There are four platforms currently provided for VMware on IBM Cloud: VMware Shared, VMware as a Service, VMware vSphere, and VMware vCenter Server. For the purposes of this module, you will be configuring and provisioning a VMware Shared platform. As shown in the screenshot below, (4.) select the VMware Shared tile and click Create to continue to the configuration page.
 
@@ -18,7 +18,7 @@ With your account properly set, you can proceed with configuration and setup of 
 #
 # Pricing Plans
 
-!!! tip "On-Demand vs. Reserved"
+!!! tip "ON-DEMAND vs. RESERVED"
     Two tiers of pricing plan are available for any VMware Solutions Shared virtual data center environment:
 
     on-demand or reserved.
@@ -31,7 +31,7 @@ With your account properly set, you can proceed with configuration and setup of 
 #
 # Deployment Topology
 
-!!! tip "Single vs. Multi-zone"
+!!! tip "SINGLE vs. MULTI-ZONE"
     For every deployment of VMware Solutions Shared, there are two Topologies that a client may select from:
 
     single-zone or multi-zone.
@@ -46,7 +46,7 @@ A **multi-zone** VMware virtual data center deployment will deploy across two av
 
 VMware Solutions Shared on IBM Cloud supports two types of networking: "**Public and Private**" or "**Private Only**." To give the environment the widest range of options, select the "Public and Private" option from the configuration panel.
 
-!!! tip "Advanced Edge Gateway"
+!!! tip "ADVANCED EDGE GATEWAY"
     By default, every virtual data center comes configured with one advanced edge gateway, with five public IP addresses and one private service IP address. The advanced edge gateway is configurable by a customer and can be tailored to their specific needs.
 
 The public network endpoints that are provisioned by default are the five public IP addresses that are displayed in the VMware Solutions Shared virtual data center details page. After the demonstration environment has provisioned, you will be able to go and inspect those for yourself.
