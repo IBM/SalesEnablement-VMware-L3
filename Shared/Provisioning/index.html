@@ -430,18 +430,27 @@
 <p>The following module will guide business partners and IBM sellers through the process of provisioning a VMware Solutions Shared plan via the IBM Cloud. Along the way, you will be provide with additional context around sizing and configuration of the offering, the value of these features to end users, and pointers to additional resources should you wish to go deeper.</p>
 <h1 id="_1"></h1>
 <h1 id="pricing-plans">Pricing Plans</h1>
+<div class="admonition tip">
+<p class="admonition-title">On-Demand vs. Reserved</p>
 <p>Two tiers of pricing plan are available for any VMware Solutions Shared virtual data center environment: on-demand or reserved.</p>
+</div>
 <p><strong>On-demand</strong> allocates virtual data center virtual CPU (vCPU) and RAM as needed. The amount of time that the allocation requires will depend upon the global demand (usage) of the virtual data center vCPU and RAM for the region in which it is deployed. Allocations of vCPU and RAM, therefore, are scalable and can be adjusted over time. The price is calculated hourly and it is based on the resource usage in the virtual data center.</p>
 <p><strong>Reserved</strong> pre-allocates the vCPU and RAM virtual data center reservations at deployment time and their availability afterwards is guaranteed; this contrasts sharply with on-demand deployments, where availability is a best-effort guarantee (but not at a certainty — as demand across the infrastructure region in which it is deployed may ebb and flow over time). The price is calculated monthly for the full reservation and it is based on the allocation size of the virtual data center.</p>
 <h1 id="_2"></h1>
 <h1 id="deployment-topology">Deployment Topology</h1>
+<div class="admonition tip">
+<p class="admonition-title">Single vs. Multi-zone</p>
 <p>For every deployment of VMware Solutions Shared, there are two Topologies that a client may select from: single-zone or multi-zone.</p>
+</div>
 <p>A <strong>single-zone</strong> VMware virtual data center deployment will provision the environment within a single available center (easier to manage, but potentially vulnerable to a single point of failure).</p>
 <p>A <strong>multi-zone</strong> VMware virtual data center deployment will deploy across two availability zones in an IBM Cloud multi-zone region, providing failover in the event that a single-zone data center failure occurs.</p>
 <h1 id="_3"></h1>
 <h1 id="networking-types">Networking Types</h1>
 <p>VMware Solutions Shared on IBM Cloud supports two types of networking: "<strong>Public and Private</strong>" or "<strong>Private Only</strong>." To give the environment the widest range of options, select the "Public and Private" option from the configuration panel.</p>
+<div class="admonition tip">
+<p class="admonition-title">Advanced Edge Gateway</p>
 <p>By default, every virtual data center comes configured with one advanced edge gateway, with five public IP addresses and one private service IP address. The advanced edge gateway is configurable by a customer and can be tailored to their specific needs.</p>
+</div>
 <p>The public network endpoints that are provisioned by default are the five public IP addresses that are displayed in the VMware Solutions Shared virtual data center details page. After the demonstration environment has provisioned, you will be able to go and inspect those for yourself.</p>
 <p>A private network endpoint allows a customer's IBM Cloud account devices or resources to connect to their virtual data centers by using the IBM Cloud private network. The Private network endpoint service is available and ready to use in all virtual data centers provisioned through the IBM Cloud. After the private network has been configured, the service allows IBM Cloud account resources to connect to virtual machines (VMs) in a customer's virtual data center over the IBM Cloud private network.</p>
 <p>Connections to private network endpoints do not require public internet access. A private network endpoint provides a unique IP address that is accessible to customers without the need for a VPN connection. Private network endpoints support one-way traffic from IBM Cloud account resources to the virtual machine's in a customer's virtual data center.</p>
@@ -454,7 +463,7 @@
 <p>You can order only one private network endpoint per single-zone virtual data centers.</p>
 </li>
 <li>
-<p>For multizone virtual data centers, two private network endpoints must be ordered to correspond with each NSX Edge Service Gateway.</p>
+<p>For multi-zone virtual data centers, two private network endpoints must be ordered to correspond with each NSX Edge Service Gateway.</p>
 </li>
 <li>
 <p>If you want to change the device type of your private network endpoint, you must first delete the existing private network endpoint. Then, create a new private network endpoint with the new device type.</p>
@@ -463,7 +472,7 @@
 <p>You can simultaneously make resource updates to your virtual data center while you create or delete a private network endpoint.</p>
 </li>
 </ol>
-<p>Additional resources on defining and managing private networks can be found withinin IBM Cloud's online documentation:</p>
+<p>Additional resources on defining and managing private networks can be found within IBM Cloud's online documentation:</p>
 <ul>
 <li>
 <p>Viewing a private network endpoint for a virtual data center: <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-endpoints" target="_blank">https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-endpoints</a></p>
@@ -479,7 +488,7 @@
 </li>
 </ul>
 <h1 id="_4"></h1>
-<h1 id="virtual-data-center-capacity">Virtual Data Center capacity</h1>
+<h1 id="virtual-data-center-capacity">Virtual Data Center Capacity</h1>
 <p>These values essentially determine the compute processing capacity that is allocated to your virtual data center. These are measured in vCPU increments. Each vCPU increment represents a single 2.0 GHz core.  Compute memory, or "RAM limit" as it is described on the IBM Cloud portal, is allocated in GB increments. RAM limits identify the maximum random access memory for each virtual data center.</p>
 <p>The limit you place on the maximum vCPU values determines the total number of processing units available for each virtual data center. Similarly, the RAM limit sets the maximum amount of memory available. You can adjust either of these values after you provision the virtual data center — giving customers the ability to scale and grow their virtual date center over time, should they wish.</p>
 <p>The least amount of vCPU that can be provisioned for any data center is 1 vCPU; RAM is likewise limited to a minimum of 1 GB. Set both parameters to 1 so that the demonstration environment is as economically-priced as possible. Obviously, in the case of a real-world demonstration environment (or a production environment), you will want to size these appropriately to the anticipated workloads that the virtual server will be subject to.</p>
