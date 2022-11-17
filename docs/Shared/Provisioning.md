@@ -4,12 +4,12 @@ The following module will guide business partners and IBM sellers through the pr
 
 VMWare Solutions, including the "Shared" plan and other tiers, are accessible through the <a href="https://cloud.ibm.com/vmware" target="_blank">VMware portal on IBM Cloud</a>. From the IBM Cloud dashboard, click the (1.) VMware tab from the left-hand navigation menu or (2.) search for "VMware Solutions" in the search bar.
 
-Next, ensure that your IBM Cloud account is using the **ITZ-VMWARE** account that you were invited to as part of the prerequisite setup for this hands-on material. You can switch to the ITZ-VMWARE by (3.) clicking the drop-down in the top-right corner of the IBM Cloud interface, as shown in the screenshot below.
+Next, ensure that your IBM Cloud account is using the ```ITZ-VMWARE``` account that you were invited to as part of the prerequisite setup for this hands-on material. You can switch to the ITZ-VMWARE by (3.) clicking the drop-down in the top-right corner of the IBM Cloud interface, as shown in the screenshot below.
 
 ![](_attachments/shared-provisioning-2.png)
 
 !!! warning "WARNING"
-    If you continue with the following instructions using your _personal_ IBM Cloud account, there is a risk that your account (and credit card associated with that personal account) will be billed for provisioning a VMware Solutions deployment. To avoid any unwanted charges, ensure that your account is switched to **ITZ-VMWARE** before continuing.
+    If you continue with the following instructions using your _personal_ IBM Cloud account, there is a risk that your account (and credit card associated with that personal account) will be billed for provisioning a VMware Solutions deployment. To avoid any unwanted charges, ensure that your account is switched to ```ITZ-VMWARE``` before continuing.
 
 With your account properly set, you can proceed with configuration and setup of a VMware Solutions Shared plan. There are four platforms currently provided for VMware on IBM Cloud: VMware Shared, VMware as a Service, VMware vSphere, and VMware vCenter Server. For the purposes of this module, you will be configuring and provisioning a VMware Shared platform. As shown in the screenshot below, (4.) select the VMware Shared tile and click Create to continue to the configuration page.
 
@@ -19,9 +19,9 @@ With your account properly set, you can proceed with configuration and setup of 
 # Pricing Plans
 
 !!! tip "ON-DEMAND VS. RESERVED"
-    Two tiers of pricing plan are available for any VMware Solutions Shared virtual data center environment:
+    Two tiers of pricing plan are available for any VMware Solutions Shared virtual data center
 
-    on-demand or reserved.
+    environment: ```on-demand``` or ```reserved```.
 
 **On-demand** allocates virtual data center virtual CPU (vCPU) and RAM as needed. The amount of time that the allocation requires will depend upon the global demand (usage) of the virtual data center vCPU and RAM for the region in which it is deployed. Allocations of vCPU and RAM, therefore, are scalable and can be adjusted over time. The price is calculated hourly and it is based on the resource usage in the virtual data center.
 
@@ -32,11 +32,11 @@ With your account properly set, you can proceed with configuration and setup of 
 # Deployment Topology
 
 !!! tip "SINGLE VS. MULTI-ZONE"
-    For every deployment of VMware Solutions Shared, there are two Topologies that a client may select from:
+    For every deployment of VMware Solutions Shared, there are two Topologies that a client may select
 
-    single-zone or multi-zone.
+    from: ```single``` or ```multi-zone```.
 
-A **single-zone** VMware virtual data center deployment will provision the environment within a single available center (easier to manage, but potentially vulnerable to a single point of failure).
+A **single zone** VMware virtual data center deployment will provision the environment within a single available center (easier to manage, but potentially vulnerable to a single point of failure).
 
 A **multi-zone** VMware virtual data center deployment will deploy across two availability zones in an IBM Cloud multi-zone region, providing failover in the event that a single-zone data center failure occurs.
 
