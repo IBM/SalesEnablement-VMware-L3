@@ -18,7 +18,7 @@ With your account properly set, you can proceed with configuration and setup of 
 #
 # Pricing Plans
 
-!!! tip "ON-DEMAND vs. RESERVED"
+!!! tip "ON-DEMAND VS. RESERVED"
     Two tiers of pricing plan are available for any VMware Solutions Shared virtual data center environment:
 
     on-demand or reserved.
@@ -31,7 +31,7 @@ With your account properly set, you can proceed with configuration and setup of 
 #
 # Deployment Topology
 
-!!! tip "SINGLE vs. MULTI-ZONE"
+!!! tip "SINGLE VS. MULTI-ZONE"
     For every deployment of VMware Solutions Shared, there are two Topologies that a client may select from:
 
     single-zone or multi-zone.
@@ -67,8 +67,8 @@ There are several considerations to be made before creating a private network fo
 
 5. You can simultaneously make resource updates to your virtual data center while you create or delete a private network endpoint.
 
-!!! tip "Additional Networking Resources"
-    Additional resources on defining and managing private networks can be found within IBM Cloud's online documentation:
+!!! tip "ADDITIONAL RESOURCES"
+    Dig deeper into how to define and manage private networks within IBM Cloud's online documentation:
 
     - Viewing a private network endpoint for a virtual data center: <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-endpoints" target="_blank">https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_viewing-endpoints</a>
 
@@ -103,7 +103,7 @@ Encryption-enabled storage policies are available to all virtual data centers. E
 
 
 #
-# Included Services
+# Pre-Installed Services
 
 There are three services pre-installed with every deployment of VMware Solutions Shared on IBM Cloud. While they are ready for consumption and use at any time, they are not free to use — if a customer wishes to make use of these services, they must activate a license and incur the costs associated with that add-on service. No additional charges will be leveed against customers who choose to not use the service.
 
