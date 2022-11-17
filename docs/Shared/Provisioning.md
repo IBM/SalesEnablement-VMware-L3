@@ -1,12 +1,12 @@
 The following module will guide business partners and IBM sellers through the process of provisioning a VMware Solutions Shared plan via the IBM Cloud. Along the way, you will be provide with additional context around sizing and configuration of the offering, the value of these features to end users, and pointers to additional resources should you wish to go deeper.
 
-![](_attachments/shared-provisioning-1.png)
-
 VMWare Solutions, including the "Shared" plan and other tiers, are accessible through the <a href="https://cloud.ibm.com/vmware" target="_blank">VMware portal on IBM Cloud</a>.
 
 1. From the IBM Cloud dashboard, VMware tab from the left-hand navigation menu, or alternatively
 
 2. Search for "VMware Solutions" in the search bar.
+
+![](_attachments/shared-provisioning-1.png)
 
 Next, ensure that your IBM Cloud account is using the ```ITZ-VMWARE``` account that you were invited to as part of the prerequisite setup for this hands-on material.
 
