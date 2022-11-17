@@ -52,7 +52,7 @@ A **multi-zone** VMware virtual data center deployment will deploy across two av
 #
 # Networking Types
 
-VMware Solutions Shared on IBM Cloud supports two types of networking: "**Public and Private**" or "**Private Only**." To give the environment the widest range of options, select the "Public and Private" option from the configuration panel.
+VMware Solutions Shared on IBM Cloud supports two types of networking: ```Public and Private``` or ```Private Only```." To give the environment the widest range of options, select the ```Public and Private``` option from the configuration panel.
 
 !!! tip "ADVANCED EDGE GATEWAY"
     By default, every virtual data center comes configured with one advanced edge gateway, with five public IP addresses and one private service IP address. The advanced edge gateway is configurable by a customer and can be tailored to their specific needs.
@@ -65,15 +65,15 @@ Connections to private network endpoints do not require public internet access. 
 
 There are several considerations to be made before creating a private network for VMware Solutions Shared, or any private network connection on IBM Cloud in general. They are:
 
-1. If you have an IBM Cloud Direct Link on your account, you must establish a tunnel between the cross-connect router and the customer edge to have access to the virtual data center.
+- If you have an IBM Cloud Direct Link on your account, you must establish a tunnel between the cross-connect router and the customer edge to have access to the virtual data center.
 
-2. You can order only one private network endpoint per single-zone virtual data centers.
+- You can order only one private network endpoint per single-zone virtual data centers.
 
-3. For multi-zone virtual data centers, two private network endpoints must be ordered to correspond with each NSX Edge Service Gateway.
+- For multi-zone virtual data centers, two private network endpoints must be ordered to correspond with each NSX Edge Service Gateway.
 
-4. If you want to change the device type of your private network endpoint, you must first delete the existing private network endpoint. Then, create a new private network endpoint with the new device type.
+- If you want to change the device type of your private network endpoint, you must first delete the existing private network endpoint. Then, create a new private network endpoint with the new device type.
 
-5. You can simultaneously make resource updates to your virtual data center while you create or delete a private network endpoint.
+- You can simultaneously make resource updates to your virtual data center while you create or delete a private network endpoint.
 
 !!! tip "ADDITIONAL RESOURCES"
     Dig deeper into how to define and manage private networks within IBM Cloud's online documentation:
