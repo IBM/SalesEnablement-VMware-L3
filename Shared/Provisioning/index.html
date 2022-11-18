@@ -504,13 +504,17 @@
 <p><img alt="" src="../_attachments/shared-provisioning-5.png" /></p>
 <h1 id="_3"></h1>
 <h1 id="networking-types">Networking Types</h1>
-<p>VMware Shared on IBM Cloud supports two types of networking: <code>Public and Private</code> or <code>Private Only</code>." To give the environment the widest range of options, select the <code>Public and Private</code> option from the configuration panel.</p>
+<p>VMware Shared on IBM Cloud supports two types of networking: <code>Public and Private</code> or <code>Private Only</code>."</p>
+<ol start="12">
+<li>To give the environment the widest range of options, select the <code>Public and Private</code> option from the configuration panel.</li>
+</ol>
+<p><img alt="" src="../_attachments/shared-provisioning-6.png" /></p>
 <div class="admonition tip">
 <p class="admonition-title">ADVANCED EDGE GATEWAY</p>
 <p>By default, every virtual data center comes configured with one advanced edge gateway, with five public IP addresses and one private service IP address. The advanced edge gateway is configurable by a customer and can be tailored to their specific needs.</p>
 </div>
-<p>The public network endpoints that are provisioned by default are the five public IP addresses that are displayed in the VMware Solutions Shared virtual data center details page. After the demonstration environment has provisioned, you will be able to go and inspect those for yourself.</p>
-<p>A private network endpoint allows a customer's IBM Cloud account devices or resources to connect to their virtual data centers by using the IBM Cloud private network. The Private network endpoint service is available and ready to use in all virtual data centers provisioned through the IBM Cloud. After the private network has been configured, the service allows IBM Cloud account resources to connect to virtual machines (VMs) in a customer's virtual data center over the IBM Cloud private network.</p>
+<p>The <strong>public network</strong> endpoints that are provisioned by default are the five public IP addresses that are displayed in the VMware Solutions Shared virtual data center details page. After the demonstration environment has provisioned, you will be able to go and inspect those for yourself.</p>
+<p>A <strong>private network</strong> endpoint allows a customer's IBM Cloud account devices or resources to connect to their virtual data centers by using the IBM Cloud private network. The Private network endpoint service is available and ready to use in all virtual data centers provisioned through the IBM Cloud. After the private network has been configured, the service allows IBM Cloud account resources to connect to virtual machines (VMs) in a customer's virtual data center over the IBM Cloud private network.</p>
 <p>Connections to private network endpoints do not require public internet access. A private network endpoint provides a unique IP address that is accessible to customers without the need for a VPN connection. Private network endpoints support one-way traffic from IBM Cloud account resources to the virtual machine's in a customer's virtual data center.</p>
 <p>There are several considerations to be made before creating a private network for VMware Solutions Shared, or any private network connection on IBM Cloud in general. They are:</p>
 <ul>
@@ -552,7 +556,16 @@
 <h1 id="virtual-data-center-capacity">Virtual Data Center Capacity</h1>
 <p>These values essentially determine the compute processing capacity that is allocated to your virtual data center. These are measured in vCPU increments. Each vCPU increment represents a single 2.0 GHz core.  Compute memory, or "RAM limit" as it is described on the IBM Cloud portal, is allocated in GB increments. RAM limits identify the maximum random access memory for each virtual data center.</p>
 <p>The limit you place on the maximum vCPU values determines the total number of processing units available for each virtual data center. Similarly, the RAM limit sets the maximum amount of memory available. You can adjust either of these values after you provision the virtual data center — giving customers the ability to scale and grow their virtual date center over time.</p>
-<p>The least amount of vCPU that can be provisioned for any data center is 1 vCPU; RAM is likewise limited to a minimum of 1 GB. Set both parameters to 1 so that the demonstration environment is as economically-priced as possible. Obviously, in the case of a real-world demonstration environment (or a production environment), you will want to size these appropriately to the anticipated workloads that the virtual server will be subject to.</p>
+<ol start="13">
+<li>
+<p>Set the value of vCPU Limit to <code>1</code>.</p>
+</li>
+<li>
+<p>Set the value of RAM Limit to <code>1</code>.</p>
+</li>
+</ol>
+<p><img alt="" src="../_attachments/shared-provisioning-6.png" /></p>
+<p>The <em>least</em> amount of vCPU that can be provisioned for any data center is 1 vCPU; RAM is likewise limited to a minimum of 1 GB. By setting both parameters to 1, the environment for this hands-on material will be as economically-priced as possible. Obviously, in the case of a real-world demonstration environment (or a production environment), you will want to size these appropriately to the anticipated workloads that the virtual server will be subject to.</p>
 <h1 id="_5"></h1>
 <h1 id="storage">Storage</h1>
 <p>Storage policy availability can vary by region and deployment topology. To inspect further details on the storage options available for any VMware Shared configuration, click the "About" tab at the top of the IBM Cloud catalog page.</p>
