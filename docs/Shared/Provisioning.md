@@ -74,14 +74,18 @@ A **multi-zone** VMware virtual data center deployment will deploy across two av
 #
 # Networking Types
 
-VMware Shared on IBM Cloud supports two types of networking: ```Public and Private``` or ```Private Only```." To give the environment the widest range of options, select the ```Public and Private``` option from the configuration panel.
+VMware Shared on IBM Cloud supports two types of networking: ```Public and Private``` or ```Private Only```."
+
+12. To give the environment the widest range of options, select the ```Public and Private``` option from the configuration panel.
+
+![](_attachments/shared-provisioning-6.png)
 
 !!! tip "ADVANCED EDGE GATEWAY"
     By default, every virtual data center comes configured with one advanced edge gateway, with five public IP addresses and one private service IP address. The advanced edge gateway is configurable by a customer and can be tailored to their specific needs.
 
-The public network endpoints that are provisioned by default are the five public IP addresses that are displayed in the VMware Solutions Shared virtual data center details page. After the demonstration environment has provisioned, you will be able to go and inspect those for yourself.
+The **public network** endpoints that are provisioned by default are the five public IP addresses that are displayed in the VMware Solutions Shared virtual data center details page. After the demonstration environment has provisioned, you will be able to go and inspect those for yourself.
 
-A private network endpoint allows a customer's IBM Cloud account devices or resources to connect to their virtual data centers by using the IBM Cloud private network. The Private network endpoint service is available and ready to use in all virtual data centers provisioned through the IBM Cloud. After the private network has been configured, the service allows IBM Cloud account resources to connect to virtual machines (VMs) in a customer's virtual data center over the IBM Cloud private network.
+A **private network** endpoint allows a customer's IBM Cloud account devices or resources to connect to their virtual data centers by using the IBM Cloud private network. The Private network endpoint service is available and ready to use in all virtual data centers provisioned through the IBM Cloud. After the private network has been configured, the service allows IBM Cloud account resources to connect to virtual machines (VMs) in a customer's virtual data center over the IBM Cloud private network.
 
 Connections to private network endpoints do not require public internet access. A private network endpoint provides a unique IP address that is accessible to customers without the need for a VPN connection. Private network endpoints support one-way traffic from IBM Cloud account resources to the virtual machine's in a customer's virtual data center.
 
@@ -117,7 +121,13 @@ These values essentially determine the compute processing capacity that is alloc
 
 The limit you place on the maximum vCPU values determines the total number of processing units available for each virtual data center. Similarly, the RAM limit sets the maximum amount of memory available. You can adjust either of these values after you provision the virtual data center — giving customers the ability to scale and grow their virtual date center over time.
 
-The least amount of vCPU that can be provisioned for any data center is 1 vCPU; RAM is likewise limited to a minimum of 1 GB. Set both parameters to 1 so that the demonstration environment is as economically-priced as possible. Obviously, in the case of a real-world demonstration environment (or a production environment), you will want to size these appropriately to the anticipated workloads that the virtual server will be subject to.
+13. Set the value of vCPU Limit to ```1```.
+
+14. Set the value of RAM Limit to ```1```.
+
+![](_attachments/shared-provisioning-6.png)
+
+The *least* amount of vCPU that can be provisioned for any data center is 1 vCPU; RAM is likewise limited to a minimum of 1 GB. By setting both parameters to 1, the environment for this hands-on material will be as economically-priced as possible. Obviously, in the case of a real-world demonstration environment (or a production environment), you will want to size these appropriately to the anticipated workloads that the virtual server will be subject to.
 
 
 
