@@ -86,7 +86,7 @@ A **private network** endpoint allows a customer's IBM Cloud account devices or 
 
 !!! tip "ADVANCED EDGE GATEWAY"
     By default, every virtual data center comes configured with one advanced edge gateway, with five public IP addresses and one private service IP address. The advanced edge gateway is configurable by a customer and can be tailored to their specific needs.
-    
+
 Connections to private network endpoints do not require public internet access. A private network endpoint provides a unique IP address that is accessible to customers without the need for a VPN connection. Private network endpoints support one-way traffic from IBM Cloud account resources to the virtual machine's in a customer's virtual data center.
 
 There are several considerations to be made before creating a private network for VMware Shared, or any private network connection on IBM Cloud in general. They are:
