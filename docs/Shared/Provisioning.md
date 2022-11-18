@@ -1,10 +1,10 @@
-The following module will guide business partners and IBM sellers through the process of provisioning a VMware Shared plan via the IBM Cloud. Along the way, you will be provide with additional context around sizing and configuration of the offering, the value of these features to end users, and pointers to additional resources should you wish to go deeper.
+The following module will guide business partners and IBM sellers through the process of provisioning a **VMware Shared** plan via the IBM Cloud. Along the way, you will be provide with additional context around sizing and configuration of the offering, the value of these features to end users, and pointers to additional resources should you wish to go deeper.
 
-VMWare Solutions, including the "Shared" plan and other tiers, are accessible through the <a href="https://cloud.ibm.com/vmware" target="_blank">VMware portal on IBM Cloud</a>.
+VMWare Solutions, including the **Shared** plan and other tiers, are accessible through the <a href="https://cloud.ibm.com/vmware" target="_blank">VMware portal on IBM Cloud</a>.
 
-1. From the IBM Cloud dashboard, VMware tab from the left-hand navigation menu, or alternatively
+1. From the IBM Cloud dashboard, click the **VMware** tab from the left-hand navigation menu, or alternatively
 
-2. Search for "VMware Solutions" in the search bar.
+2. Search for ```VMware Solutions``` in the search bar.
 
 ![](_attachments/shared-provisioning-1.png)
 
@@ -80,13 +80,13 @@ VMware Shared on IBM Cloud supports two networking configurations: ```Public and
 
 ![](_attachments/shared-provisioning-6.png)
 
-!!! tip "ADVANCED EDGE GATEWAY"
-    By default, every virtual data center comes configured with one advanced edge gateway, with five public IP addresses and one private service IP address. The advanced edge gateway is configurable by a customer and can be tailored to their specific needs.
-
 The **public network** endpoints that are provisioned by default are the five public IP addresses that are displayed in the VMware Shared virtual data center details page. After the demonstration environment has provisioned, you will be able to go and inspect those for yourself.
 
 A **private network** endpoint allows a customer's IBM Cloud account devices or resources to connect to their virtual data centers by using the IBM Cloud private network. The Private network endpoint service is available and ready to use in all virtual data centers provisioned through the IBM Cloud. After the private network has been configured, the service allows IBM Cloud account resources to connect to virtual machines (VMs) in a customer's virtual data center over the IBM Cloud private network.
 
+!!! tip "ADVANCED EDGE GATEWAY"
+    By default, every virtual data center comes configured with one advanced edge gateway, with five public IP addresses and one private service IP address. The advanced edge gateway is configurable by a customer and can be tailored to their specific needs.
+    
 Connections to private network endpoints do not require public internet access. A private network endpoint provides a unique IP address that is accessible to customers without the need for a VPN connection. Private network endpoints support one-way traffic from IBM Cloud account resources to the virtual machine's in a customer's virtual data center.
 
 There are several considerations to be made before creating a private network for VMware Shared, or any private network connection on IBM Cloud in general. They are:
