@@ -23,6 +23,8 @@ With your account properly set, you can proceed with configuration and setup of 
 
 ![](_attachments/shared-provisioning-3.png)
 
+The web browser will redirect to a new page, where you will be asked to configure in details various elements of the VMware Solutions Shared platform environment that IBM Cloud is to deploy.
+
 #
 # Pricing Plans
 
@@ -35,6 +37,16 @@ With your account properly set, you can proceed with configuration and setup of 
 
 **Reserved** pre-allocates the vCPU and RAM virtual data center reservations at deployment time and their availability afterwards is guaranteed; this contrasts sharply with on-demand deployments, where availability is a best-effort guarantee (but not at a certainty — as demand across the infrastructure region in which it is deployed may ebb and flow over time). The price is calculated monthly for the full reservation and it is based on the allocation size of the virtual data center.
 
+5. Select the **On-Demand** pricing plan.
+
+![](_attachments/shared-provisioning-4.png)
+
+!!! tip "ADJUSTING COSTS"
+    Take note that the **Summary** panel at the far-right side of the IBM Cloud dashboard dynamically updates as you adjust configuration options on this page. Try out various options along the way to preview how these features impact the cost of a VMware Solutions Shared deployment. You can also read more about pricing within the **About** tab.
+
+6. Supply a unique and memorable **Virtual data center name** for your environment.
+
+7. Set the **Resource Group** to ```Enablement-L3```. This determines how resources are organized within your IBM Cloud account. Resource Groups cannot be changed for a service instance once it has been deployed.
 
 #
 # Deployment Topology
