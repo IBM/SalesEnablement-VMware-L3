@@ -1,4 +1,4 @@
-The following module will guide business partners and IBM sellers through the process of provisioning a VMware Solutions Shared plan via the IBM Cloud. Along the way, you will be provide with additional context around sizing and configuration of the offering, the value of these features to end users, and pointers to additional resources should you wish to go deeper.
+The following module will guide business partners and IBM sellers through the process of provisioning a VMware Shared plan via the IBM Cloud. Along the way, you will be provide with additional context around sizing and configuration of the offering, the value of these features to end users, and pointers to additional resources should you wish to go deeper.
 
 VMWare Solutions, including the "Shared" plan and other tiers, are accessible through the <a href="https://cloud.ibm.com/vmware" target="_blank">VMware portal on IBM Cloud</a>.
 
@@ -17,9 +17,9 @@ Next, ensure that your IBM Cloud account is using the ```ITZ-VMWARE``` account t
 !!! warning "WARNING"
     If you continue with the following instructions using your _personal_ IBM Cloud account, there is a risk that your account (and credit card associated with that personal account) will be billed for provisioning a VMware Solutions deployment. To avoid any unwanted charges, ensure that your account is switched to ```ITZ-VMWARE``` before continuing.
 
-With your account properly set, you can proceed with configuration and setup of a VMware Solutions Shared plan. There are four platforms currently provided for VMware on IBM Cloud: VMware Shared, VMware as a Service, VMware vSphere, and VMware vCenter Server. For the purposes of this module, you will be configuring and provisioning a VMware Shared platform.
+With your account properly set, you can proceed with configuration and setup of a VMware Shared plan. There are four platforms currently provided for VMware on IBM Cloud: VMware Shared, VMware as a Service, VMware vSphere, and VMware vCenter Server. For the purposes of this module, you will be configuring and provisioning a VMware Shared platform.
 
-4. As shown in the screenshot below, select the VMware Shared tile and click **Create** to continue to the configuration page.
+4. As shown in the screenshot below, select the **VMware Shared** tile and click **Create** to continue to the configuration page.
 
 ![](_attachments/shared-provisioning-3.png)
 
@@ -29,7 +29,7 @@ The web browser will redirect to a new page, where you will be asked to configur
 # Pricing Plans
 
 !!! tip "ON-DEMAND VS. RESERVED"
-    Two tiers of pricing plan are available for any VMware Solutions Shared virtual data center
+    Two tiers of pricing plan are available for any VMware Shared virtual data center
 
     environment: ```on-demand``` or ```reserved```.
 
@@ -41,18 +41,19 @@ The web browser will redirect to a new page, where you will be asked to configur
 
 ![](_attachments/shared-provisioning-4.png)
 
-!!! tip "ADJUSTING COSTS"
-    Take note that the **Summary** panel at the far-right side of the IBM Cloud dashboard dynamically updates as you adjust configuration options on this page. Try out various options along the way to preview how these features impact the cost of a VMware Solutions Shared deployment. You can also read more about pricing within the **About** tab.
+!!! warning "ADJUSTING COSTS"
+    Take note that the **Summary** panel at the far-right side of the IBM Cloud dashboard dynamically updates as you adjust configuration options on this page. Try out various options along the way to preview how these features impact the cost of a VMware Shared deployment. You can also read more about pricing within the **About** tab.
 
 6. Supply a unique and memorable **Virtual data center name** for your environment.
 
 7. Set the **Resource Group** to ```Enablement-L3```. This determines how resources are organized within your IBM Cloud account. Resource Groups cannot be changed for a service instance once it has been deployed.
 
+
 #
 # Deployment Topology
 
 !!! tip "SINGLE VS. MULTI-ZONE"
-    For every deployment of VMware Solutions Shared, there are two Topologies that a client may select
+    For every deployment of VMware Shared, there are two Topologies that a client may select
 
     from: ```single``` or ```multi-zone```.
 
@@ -60,11 +61,20 @@ A **single zone** VMware virtual data center deployment will provision the envir
 
 A **multi-zone** VMware virtual data center deployment will deploy across two availability zones in an IBM Cloud multi-zone region, providing failover in the event that a single-zone data center failure occurs.
 
+8. Select the ```Single-zone VMware virtual data center``` topology.
+
+9. **Geography** should be set to the region located closest to your local area.
+
+10. Use the default value selected for **Site**.
+
+11. Use the default value selected for **Location**.
+
+![](_attachments/shared-provisioning-5.png)
 
 #
 # Networking Types
 
-VMware Solutions Shared on IBM Cloud supports two types of networking: ```Public and Private``` or ```Private Only```." To give the environment the widest range of options, select the ```Public and Private``` option from the configuration panel.
+VMware Shared on IBM Cloud supports two types of networking: ```Public and Private``` or ```Private Only```." To give the environment the widest range of options, select the ```Public and Private``` option from the configuration panel.
 
 !!! tip "ADVANCED EDGE GATEWAY"
     By default, every virtual data center comes configured with one advanced edge gateway, with five public IP addresses and one private service IP address. The advanced edge gateway is configurable by a customer and can be tailored to their specific needs.
@@ -114,7 +124,7 @@ The least amount of vCPU that can be provisioned for any data center is 1 vCPU; 
 #
 # Storage
 
-Storage policy availability can vary by region and deployment topology. To inspect further details on the storage options available for any VMware Solutions Shared configuration, click the "About" tab at the top of the IBM Cloud catalog page.
+Storage policy availability can vary by region and deployment topology. To inspect further details on the storage options available for any VMware Shared configuration, click the "About" tab at the top of the IBM Cloud catalog page.
 
 When you create or deploy vApps or VMs, you can select either an unencrypted or encrypted storage policy. Each option has six different tiers of storage available, depending on the storage performance required, with each option carrying a maximum throughput of IOPS (input-output operations per second) per gigabyte.
 
@@ -125,7 +135,7 @@ Encryption-enabled storage policies are available to all virtual data centers. E
 #
 # Pre-Installed Services
 
-There are three services pre-installed with every deployment of VMware Solutions Shared on IBM Cloud. While they are ready for consumption and use at any time, they are not free to use — if a customer wishes to make use of these services, they must activate a license and incur the costs associated with that add-on service. No additional charges will be leveed against customers who choose to not use the service.
+There are three services pre-installed with every deployment of VMware Shared on IBM Cloud. While they are ready for consumption and use at any time, they are not free to use — if a customer wishes to make use of these services, they must activate a license and incur the costs associated with that add-on service. No additional charges will be leveed against customers who choose to not use the service.
 
 The pre-installed services include:
 
