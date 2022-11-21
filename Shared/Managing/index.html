@@ -67,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -281,6 +286,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Managing
@@ -405,6 +412,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -418,8 +427,6 @@
                 
 
 
-  <h1>Managing</h1>
-
 <div class="admonition warning">
 <p class="admonition-title">WORK IN PROGRESS</p>
 <p>Additional text and images to be added.</p>
@@ -430,6 +437,8 @@
 <p class="admonition-title">WARNING</p>
 <p>If you continue with the following instructions using your <em>personal</em> IBM Cloud account, there is a risk that your account (and credit card associated with that personal account) will be billed for provisioning a VMware Solutions deployment. To avoid any unwanted charges, ensure that your account is switched to <code>ITZ-VMWARE</code> before continuing.</p>
 </div>
+<h1 id="_1"></h1>
+<h1 id="accessing-the-vcloud-director-console">Accessing the vCloud Director console</h1>
 <ol>
 <li>
 <p>Ensure that your IBM Cloud account is using the <code>ITZ-VMWARE</code> account that you were invited to as part of the prerequisite setup for this hands-on material. From the IBM Cloud dashboard, click the <strong>VMware</strong> tab from the left-hand navigation menu, or alternatively search for <code>VMware Solutions</code> in the search bar.</p>
@@ -447,9 +456,21 @@
 <li>An instance of VMware Shared should already be set up, having completed the <a href="https://ibm.github.io/SalesEnablement-VMware-L3/Shared/Provisioning/" target="_blank">Provisioning</a> section earlier. Locate the instance— <code>Dallas Director 01</code> in the example screenshot below, although the naming of your instance may differ —and click the <strong>name</strong> of the instance to pull open a Summary page.</li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-3.png" /></p>
+<ol start="5">
+<li>The browser will load a Summary panel for the VMware Shared instance, supplying details on access controls for your platform, virtual data centers associated with the deployment, and additional services that can be used in conjunction with the platform. Before you can connect to the VMware Shared instance, you need to set an administrative password for the <strong>vCloud Director console</strong>. Do so by clicking the <strong>Reset site admin password</strong> button as shown.</li>
+</ol>
 <p><img alt="" src="../_attachments/shared-managing-4.png" /></p>
+<ol start="6">
+<li>A dialogue window will open, asking you to confirm an administrative password reset for the instance. Confirm the selection and wait for the reset to complete. The <strong>User name</strong> will always be set to <code>admin</code> by default. The <strong>Password</strong> will be uniquely generated each time a reset is conducted. Click the "eyeball" icon to view the password and the box icon to copy the password to your machine's clipboard. <strong>Record</strong> both of these values to a notepad — you will need to reference these later for connecting to the vCloud Director Console. Click the <strong>Close</strong> button to continue.</li>
+</ol>
 <p><img alt="" src="../_attachments/shared-managing-5.png" /></p>
+<ol start="7">
+<li>Back on the Summary page, locate the <strong>vCloud Director console</strong> button near the top-right of the screen. Before resetting the admin password, this button would have been greyed out and inaccessible. With the password reset complete, the button is now active — click it to continue to the console login page.</li>
+</ol>
 <p><img alt="" src="../_attachments/shared-managing-6.png" /></p>
+<ol start="8">
+<li>A new tab or window will open, prompting you to log in to the vCloud Director console. Use the <code>admin</code> and <code>password</code> fields recorded in <strong>Step 6</strong> to log in to the console.</li>
+</ol>
 <p><img alt="" src="../_attachments/shared-managing-7.png" /></p>
 <p><img alt="" src="../_attachments/shared-managing-8.png" /></p>
 <p><img alt="" src="../_attachments/shared-managing-9.png" /></p>
