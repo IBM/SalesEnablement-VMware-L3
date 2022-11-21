@@ -1,6 +1,3 @@
-!!! warning "WORK IN PROGRESS"
-    Additional text and images to be added.
-
 The following module guides business partners and IBM sellers through the myriad of features and management tools available from within the VMware Shared platform dashboard on IBM Cloud. You will explore various elements of the management panels and tooling, including: data centers, applications, virtual machines, networking, libraries, platform administration, and system monitoring.
 
 VMWare Solutions, including the **Shared** plan and other tiers, are accessible through the <a href="https://cloud.ibm.com/vmware" target="_blank">VMware portal on IBM Cloud</a>.
@@ -43,6 +40,9 @@ VMWare Solutions, including the **Shared** plan and other tiers, are accessible 
 
 ![](_attachments/shared-managing-8.png)
 
+#
+# Managing Applications and Virtual Machines
+
 ![](_attachments/shared-managing-9.png)
 
 ![](_attachments/shared-managing-10.png)
@@ -52,6 +52,9 @@ VMWare Solutions, including the **Shared** plan and other tiers, are accessible 
 ![](_attachments/shared-managing-12.png)
 
 ![](_attachments/shared-managing-13.png)
+
+#
+# Creating vApps from a Template
 
 ![](_attachments/shared-managing-14.png)
 
@@ -70,6 +73,9 @@ VMWare Solutions, including the **Shared** plan and other tiers, are accessible 
 ![](_attachments/shared-managing-21.png)
 
 ![](_attachments/shared-managing-22.png)
+
+#
+# Managing Networking
 
 ![](_attachments/shared-managing-23.png)
 
@@ -91,10 +97,18 @@ VMWare Solutions, including the **Shared** plan and other tiers, are accessible 
 
 ![](_attachments/shared-managing-32.png)
 
+#
+# Managing Libraries
+
 ![](_attachments/shared-managing-33.png)
+
+#
+# Administration and User Definitions
 
 ![](_attachments/shared-managing-34.png)
 
 ![](_attachments/shared-managing-35.png)
+
+# System Monitoring
 
 ![](_attachments/shared-managing-36.png)
