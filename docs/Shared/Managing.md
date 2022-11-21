@@ -8,6 +8,9 @@ VMWare Solutions, including the **Shared** plan and other tiers, are accessible 
 !!! warning "WARNING"
     If you continue with the following instructions using your _personal_ IBM Cloud account, there is a risk that your account (and credit card associated with that personal account) will be billed for provisioning a VMware Solutions deployment. To avoid any unwanted charges, ensure that your account is switched to ```ITZ-VMWARE``` before continuing.
 
+#
+# Accessing the vCloud Director console
+
 1. Ensure that your IBM Cloud account is using the ```ITZ-VMWARE``` account that you were invited to as part of the prerequisite setup for this hands-on material. From the IBM Cloud dashboard, click the **VMware** tab from the left-hand navigation menu, or alternatively search for ```VMware Solutions``` in the search bar.
 
 2. Drill down into the **Resources** tab within the left-hand navigation menu.
@@ -22,11 +25,19 @@ VMWare Solutions, including the **Shared** plan and other tiers, are accessible 
 
 ![](_attachments/shared-managing-3.png)
 
+5. The browser will load a Summary panel for the VMware Shared instance, supplying details on access controls for your platform, virtual data centers associated with the deployment, and additional services that can be used in conjunction with the platform. Before you can connect to the VMware Shared instance, you need to set an administrative password for the **vCloud Director console**. Do so by clicking the **Reset site admin password** button as shown.
+
 ![](_attachments/shared-managing-4.png)
+
+6. A dialogue window will open, asking you to confirm an administrative password reset for the instance. Confirm the selection and wait for the reset to complete. The **User name** will always be set to ```admin``` by default. The **Password** will be uniquely generated each time a reset is conducted. Click the "eyeball" icon to view the password and the box icon to copy the password to your machine's clipboard. **Record** both of these values to a notepad — you will need to reference these later for connecting to the vCloud Director Console. Click the **Close** button to continue.
 
 ![](_attachments/shared-managing-5.png)
 
+7. Back on the Summary page, locate the **vCloud Director console** button near the top-right of the screen. Before resetting the admin password, this button would have been greyed out and inaccessible. With the password reset complete, the button is now active — click it to continue to the console login page.
+
 ![](_attachments/shared-managing-6.png)
+
+8. A new tab or window will open, prompting you to log in to the vCloud Director console. Use the ```admin``` and ```password``` fields recorded in **Step 6** to log in to the console.
 
 ![](_attachments/shared-managing-7.png)
 
