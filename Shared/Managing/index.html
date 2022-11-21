@@ -429,19 +429,17 @@
 
 <p>The following module guides business partners and IBM sellers through the myriad of features and management tools available from within the VMware Shared platform dashboard on IBM Cloud. You will explore various elements of the management panels and tooling, including: data centers, applications, virtual machines, networking, libraries, platform administration, and system monitoring.</p>
 <p>VMWare Solutions, including the <strong>Shared</strong> plan and other tiers, are accessible through the <a href="https://cloud.ibm.com/vmware" target="_blank">VMware portal on IBM Cloud</a>.</p>
+<h1 id="_1"></h1>
+<h1 id="accessing-the-vcloud-director-console">Accessing the vCloud Director console</h1>
+<ol>
+<li>Ensure that your IBM Cloud account is using the <code>ITZ-VMWARE</code> account that you were invited to as part of the prerequisite setup for this hands-on material. From the IBM Cloud dashboard, click the <strong>VMware</strong> tab from the left-hand navigation menu, or alternatively search for <code>VMware Solutions</code> in the search bar.</li>
+</ol>
 <div class="admonition warning">
 <p class="admonition-title">WARNING</p>
 <p>If you continue with the following instructions using your <em>personal</em> IBM Cloud account, there is a risk that your account (and credit card associated with that personal account) will be billed for provisioning a VMware Solutions deployment. To avoid any unwanted charges, ensure that your account is switched to <code>ITZ-VMWARE</code> before continuing.</p>
 </div>
-<h1 id="_1"></h1>
-<h1 id="accessing-the-vcloud-director-console">Accessing the vCloud Director console</h1>
-<ol>
-<li>
-<p>Ensure that your IBM Cloud account is using the <code>ITZ-VMWARE</code> account that you were invited to as part of the prerequisite setup for this hands-on material. From the IBM Cloud dashboard, click the <strong>VMware</strong> tab from the left-hand navigation menu, or alternatively search for <code>VMware Solutions</code> in the search bar.</p>
-</li>
-<li>
-<p>Drill down into the <strong>Resources</strong> tab within the left-hand navigation menu.</p>
-</li>
+<ol start="2">
+<li>Drill down into the <strong>Resources</strong> tab within the left-hand navigation menu.</li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-1.png" /></p>
 <ol start="3">
@@ -478,10 +476,55 @@
 <p><img alt="" src="../_attachments/shared-managing-8.png" /></p>
 <h1 id="_2"></h1>
 <h1 id="managing-applications-and-virtual-machines">Managing Applications and Virtual Machines</h1>
+<p>The console's <strong>Applications</strong> dashboard allows for the centralized management and deployment of all applications— which are categorized as either <em>virtual machines</em> or <em>virtual applications</em> —within the VMware Shared environment. A virtualized application, or <em>vApp</em>, consists of one or more virtual machines (VMs) that communicate over the Shared plan's network, makes use of the Shared plan's resources, or invokes services that the Shared plan supports. A single vApp can consist of one, or multiple, VMs as part of its backbone.</p>
+<ol start="10">
+<li>Let's try drafting a new virtualized application from scratch. Do so by clicking the <strong>New vApp</strong> button from the menu at the bottom of the page.</li>
+</ol>
 <p><img alt="" src="../_attachments/shared-managing-9.png" /></p>
+<ol start="11">
+<li>
+<p>The first order of business is selecting which Virtual Data Center that the virtual application will be assigned to. By default, you should see the VDC environment that was created earlier (<code>bienko-vdc</code> in the example screenshot below).</p>
+</li>
+<li>
+<p>Click <strong>Next</strong> to continue.</p>
+</li>
+</ol>
 <p><img alt="" src="../_attachments/shared-managing-10.png" /></p>
+<ol start="13">
+<li>
+<p>The new vApp will require a <strong>Name</strong> (<code>vAppSample</code>) and a <strong>Description</strong> (<code>Demonstration purposes only.</code>). The <strong>Power On</strong> toggle can be left <em>off</em> for now, as we will not be deploying this example vApp to a live state.</p>
+</li>
+<li>
+<p>No virtual machines currently exist within the VMware Shared VDC environment, but if they did they would be listed within the table presented on this page. Instead, you will need to craft your own. Click the <strong>Add Virtual Machine</strong> button below the table to define a new VM.</p>
+</li>
+</ol>
 <p><img alt="" src="../_attachments/shared-managing-11.png" /></p>
+<ol start="15">
+<li>
+<p>A new configuration window will open. Provide a <strong>Name</strong> (<code>BienkoVM</code>) and <strong>Computer Name</strong> (<code>BienkoVM</code>), as well as an optional <strong>Description</strong>, for the new VM.</p>
+</li>
+<li>
+<p>The VM can either be crafted from scratch (<code>New</code>) or from a pre-designed template (<code>From Template</code>). One of the advantages of the VMware Shared plan on IBM Cloud is the wealth of templates available out of the box with the offering. Select the <strong>From Template</strong> option and then scroll through the template repository.</p>
+</li>
+<li>
+<p>We recommend selecting the <code>vm-redhat8</code> template, which corresponds to the Red Hat 8 official template (RHEL8), for the purposes of this demonstration — although you are free to choose any of your liking. Scroll down the page to reveal more configuration options.</p>
+</li>
+</ol>
 <p><img alt="" src="../_attachments/shared-managing-12.png" /></p>
+<ol start="18">
+<li>
+<p><strong>Storage</strong> for the VM is the next consideration. As described earlier in the Provisioning module, there are a variety of storage options available for virtual machines and virtual applications deployed within the VMware Shared environment. Each storage tier conveys different levels of throughput (IOPs) and levels of isolation (multi-tenant versus single-tenant), with differing levels of billable rates and charges associated with each tier. For our purposes, we recommend the <code>Standard (VDC Default)</code> tier of <strong>Storage Policy</strong>.</p>
+</li>
+<li>
+<p><strong>Compute</strong> is dictated by the VDC sizing configuration that was set during the Provisioning module. The resources available to the VM we are defining here are restricted by the hardware configurations assigned to the VDC (<code>bienko-vdc</code>) when it was deployed earlier.</p>
+</li>
+<li>
+<p><strong>NICs</strong>, or Network Interface Cards, provides the network interface needed by the virtual machine for communication with the public internet, IBM Cloud, and on-premises resources. The <em>Primary NIC</em> will have been configured by default and no adjustments are required at this time.</p>
+</li>
+<li>
+<p>When satisfied, click the <strong>OK</strong> button at the bottom of the panel to return to the vApp definition page.</p>
+</li>
+</ol>
 <p><img alt="" src="../_attachments/shared-managing-13.png" /></p>
 <h1 id="_3"></h1>
 <h1 id="creating-vapps-from-a-template">Creating vApps from a Template</h1>
