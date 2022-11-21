@@ -73,7 +73,7 @@ The console's **Applications** dashboard allows for the centralized management a
 
 15. A new configuration window will open. Provide a **Name** (```BienkoVM```) and **Computer Name** (```BienkoVM```), as well as an optional **Description**, for the new VM.
 
-16. The VM can either be crafted from scratch (```New```) or from a pre-designed template (```From Template```). One of the advantages of the VMware Shared plan on IBM Cloud is the wealth of templates available out of the box with the offering. Select the **From Template** option and then scroll through the template repository.
+16. The VM can either be crafted from scratch (**New**) or from a pre-designed template (**From Template**). One of the advantages of the VMware Shared plan on IBM Cloud is the wealth of templates available out of the box with the offering. Select the **From Template** option and then scroll through the template repository.
 
 17. We recommend selecting the ```vm-redhat8``` template, which corresponds to the Red Hat 8 official template (RHEL8), for the purposes of this demonstration — although you are free to choose any of your liking. Scroll down the page to reveal more configuration options.
 
@@ -83,9 +83,9 @@ The console's **Applications** dashboard allows for the centralized management a
 
 19. **Compute** is dictated by the VDC sizing configuration that was set during the Provisioning module. The resources available to the VM we are defining here are restricted by the hardware configurations assigned to the VDC (```bienko-vdc```) when it was deployed earlier.
 
-20. **NICs**, or Network Interface Cards, provides the network interface needed by the virtual machine for communication with the public internet, IBM Cloud, and on-premises resources. The *Primary NIC* will have been configured by default and no adjustments are required at this time.
+20. **NICs**, or Network Interface Cards, provides the network interface needed by the virtual machine for communication with the public internet, IBM Cloud, and on-premises resources. The *Primary NIC* will have been configured by default and no other adjustments are required.
 
-21. When satisfied, click the **OK** button at the bottom of the panel to return to the vApp definition page.
+21. When satisfied, click the **OK** button at the bottom of the panel to return to the vApp definition.
 
 ![](_attachments/shared-managing-13.png)
 
