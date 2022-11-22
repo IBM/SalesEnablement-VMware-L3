@@ -163,38 +163,135 @@ The web browser will automatically be redirected back to the **Applications** ta
 #
 # Managing Networks
 
+41. From the dashboard of the vCloud Director console, switch to the **Networking** tab using the navigation bar along the top of the page.
+
+From this management screen, you can access information on the VMware Shared plan's available Networks, Edge Gateways, Data Center Groups, and Security Tags. By default, the Networks associated with the deployment will be displayed first — at this time, your environment should contain no defined networks.
+
+42. Click the **New** button, as shown in the screenshot below, to create a new network configuration.
+
 ![](_attachments/shared-managing-23.png)
+
+A new page will load to guide you through the process of defining an organization-wide virtual data center (VDC) network. The first element to be defined is the overall **Scope** of the network.
+
+43. The **Scope** of the network can be constrained to either an *organization-wide VDC* (providing connectivity only across the virtual machines belonging to that particular VDC), or across a *data center group* (connectivity across all VDCs belonging to that group, inclusive of all VMs belonging to those VDCs). Select the **Organization Virtual Data Center** option to keep networking connectivity restricted to only one VDC.
+
+44. Given the selection made in **Step 43**, you will need to specify the organization VDC to which these constraints will apply. Select the VDC defined earlier (```bienko-vdc``` in this example).
+
+45. When satisfied, click **Next** to continue.
 
 ![](_attachments/shared-managing-24.png)
 
+You must now decide the **Network Type** appropriate for this deployment. There are two options available:
+
+- *Routed*: A network type that utilizes an edge gateway to enable controlled access to networks and machines external to (outside of) the VDC.
+
+- *Isolated*: A network type that is only accessible by the VDC (or associated VDC Groups) specified in **Step 44**, thereby providing a fully isolated environment.
+
+46. Select the **Routed** Network Type.
+
+47. When satisfied, click **Next** to continue.
+
 ![](_attachments/shared-managing-25.png)
+
+48. Given our selected of a Routed network type in **Step 46**, which makes use of an edge gateway for regulated access to the network, we must now define an **Edge Connection** for the organization VDC. The configuration tool will automatically designate an edge connection (```edge-dal10-67c6f68e``` for the Dallas Director 01 data center) with ```2``` External Networks and ```0``` Org VDC Networks.
+
+Next, you must choose the type of Edge Connection to be applied. There are three options available:
+
+- *Internal*: For connecting to one of the edge gateway's internal interfaces. The maximum number of supported network connections is 9.
+
+- *Distributed*: For connecting via fast and efficient *East-West* routing. The network will be connected to an internal interface of a distributed router that is exclusively associated with this gateway. The maximum number of supported network connections is 400.
+
+- *Subinterface*: For connecting to the edge gateway's internal trunk interface. The maximum number of supported network connections is 200.
+
+49. Select the **Internal** Edge Connection type.
+
+50. When satisfied, click **Next** to continue.
 
 ![](_attachments/shared-managing-26.png)
 
+51. Time for some bookkeeping. Provide a unique **Name** for the organization VDC network (```BienkoNetwork```) and optionally a basic **Description** to its purpose.
+
+A **Gateway CIDR** must be assigned, which includes the IP address of the gateway. This value cannot be changed once assigned. In our example, the CIDR of ```192.168.100.14/24``` represents the gateway address of ```192.168.100.14``` and its associated routing prefix of ```192.168.100.0```; or equivalently, its subnet mask of ```255.255.255.0```.
+
+52. Assign a CIDR of ```192.168.100.14/24``` and leave the **Dual-Stack Mode** option disabled.
+
+53. For our purposes, the network is not to be **Shared** and as such this option should remain disabled.
+
+54. When satisfied, click **Next** to continue.
+
 ![](_attachments/shared-managing-27.png)
+
+55. **Static IP Pools** must now be assigned to the Gateway CIDR assigned earlier in **Step 52**. Verify that the CIDR displayed on this panel matches the one that you designated previously.
+
+56. You may enable whichever range of IP addresses you wish; however, for the sake of example, let's assign a range of 7 IP addresses by entering ```192.168.100.14 - 192.168.100.20``` into the form as shown. Portable IP addresses are available to all resources on a VLAN, whereas static IP addresses are available to the resource identified as their routing endpoint.
+
+57. Click the **Add** button after entering the IP address ranges to add them to the Static IP Pool.
+
+58. When satisfied, click **Next** to continue.
 
 ![](_attachments/shared-managing-28.png)
 
+**DNS**, or the Domain Name System, provides the mapping between IP addresses (such as the ones specified earlier) and the "name" addreses that you typically enter into a web browser. A DNS relay can be enabled for the edge gateway we have configured thus far; however, it must be configured before deployment and cannot be modified after the fact.
+
+59. **Enable** the **Use Edge DNS** slider. The remaining fields below can remain blank.
+
+60. When satisfied, click **Next** to continue.
+
 ![](_attachments/shared-managing-29.png)
+
+The **Ready to Complete** panel provides a full summary of your organization VDC network configurations. Here you can review the details of the network before choosing to commit to a deployment, or discard the network configuration completely.
+
+61. Click the **Finish** button to create the network.
 
 ![](_attachments/shared-managing-30.png)
 
+Your browser will automatically redirect to the **Networking** tab of the vCloud Director console.
+
+62. From the list of subdirectories along the top of the screen, drill down into the **Edge Gateways** panel as shown.
+
+63. The panel will summarize all of the Edge Gateways currently deployed on the VMware Shared platform, including the one we just created (```edge-dal10-67c6f68e```). Click the **Name** of that Edge Gateway (your name may differ from the example shown) to expand additional details on it.
+
 ![](_attachments/shared-managing-31.png)
+
+Generalized information about the Edge Gateway are displayed on the details page.
+
+64. Explore each of the subdirectories— *Services*, *Redeploy*, *Enable Distributed Routing*, *Sync Syslog*, and *Open in VDC Context* —to glimpse more of the administrative options available for your newly-created Edge Gateway and organization VDC network.
+
+65. Information and configuration options related to **External Networks** are available from the navigation menu on the left side of the panel.
 
 ![](_attachments/shared-managing-32.png)
 
 #
-# Managing Libraries
+# Additional Capabilities and Tooling
+
+For the purposes of this hands-on demonstration, we won't go too deeply into detail on other areas of the VMware Solutions Shared plan environment. Until live applications, virtualized machines, and a workforce of users are actively engaged with the platform, these other areas of the vCloud Director console will remain relatively quiet. However, we have included pointers below to relevant areas that may spark interest and conversations with clients. Feel free to peruse these areas and explore topics that may be pertinent to your customer engagements.
+
+66. Using the navigation tabs along the top of the console, explore the **Libraries** tab. Here you can investigate more details on the vApp templates that were leveraged earlier in this hands-on material. Users can expand the templates available within their own environment by importing them directly from VMware's vCenter.
 
 ![](_attachments/shared-managing-33.png)
 
-#
-# Administration and User Definitions
+67. From the **Administration** tab, a myriad of options for user management and access control are available.
+
+68. Here, VMware Shared users with administrative privileges can create new users, groups for those users, and roles for users to be assigned to. Identity providers, policies, certificates, and other security settings can also be implemented from this page.
 
 ![](_attachments/shared-managing-34.png)
 
+69. As an example, the screenshot below emulates the **Create User** panel. A user ```vAppAuthor``` is defined and an authentication password is assigned.
+
+70. The **Roles** field determines the level of privileged access and capabilities granted to the user. An administrator responsible for creating the user will be able to select from a variety of Roles (pre-built or admin-defined), such as ```vApp Author```, that enable a user to complete their expected job responsibilities without compromising the security of the VMware Shared platform as a whole.
+
+71. **Quotas** can be applied to the user, limiting how many VMs (running or paused) that said user can manage within the platform.
+
+72. Save or discard changes to users using the interface at the bottom of the panel.
+
 ![](_attachments/shared-managing-35.png)
 
-# System Monitoring
+73. Lastly, from the **Monitoring** tab it is possible for administrative users to inspect running *Tasks* and *Events* across the platform.
+
+74. Click on any of the Task or Event names to drill down into more granular details surrounding that item.
+
+75. When you have completed your tour of the vCloud Director console, click the username dropdown in the top-right corner of the dashboard and **Log Out** to end your session.
 
 ![](_attachments/shared-managing-36.png)
+
+At this point in time, you have successfully explored the myriad of features and management tools available from within the VMware Shared platform dashboard on IBM Cloud. You now have a greater familiarity and expertise surrounding the various elements of the management panels and tooling, including: how to manage data centers, building application and virtual machines through the guided web interface, establishing networking rules, and the wealth of tooling available for managing the environment once in production.
