@@ -92,21 +92,61 @@ The console's **Applications** dashboard allows for the centralized management a
 #
 # Creating vApps from a Template
 
+22. An alternative to defining a vApp from scratch is to select from the pre-built catalog of vApps that are packaged with every VMware Shared deployment on IBM Cloud. To inspect the resources available, click the **Add vApp from Catalog** button at the bottom of the page.
+
 ![](_attachments/shared-managing-14.png)
+
+23. A configuration window will open to configure a cataloged virtual application. First, select from the list of pre-built templates. For our demonstration purposes, we recommend selecting the ```CentOS-7-Template-Official```, but do take the time to browse the available options for yourself before continuing.
+
+24. When satisfied with your selection, click **Next**.
 
 ![](_attachments/shared-managing-15.png)
 
+25. The vAPP will require a **Name** (```BienkoVAppTemplate```) and optional **Description**.
+
+26. The **Runtime lease** field determines the length of time that the vApp can run within the VDC before its access to system resources is paused. The **Storage lease** field sets the time that the vApp remains available, from the moment it is stopped (when the *Runtime lease* expires); after the *Storage lease* has expired, clean-up of the vApp resources and associated data will begin automatically. For our demonstration purposes, both fields can be set to ```Never Expires```.
+
+27. When satisfied, click **Next** to continue.
+
 ![](_attachments/shared-managing-16.png)
+
+28. The resources that the vApp will have permission to access are configured on the following page. As described in **Step 18**, there are a variety of **Storage Policies** available — with differing metering and pricing metrics associated with each tier. For the purposes of our demonstration, configure the ```vm-centos07``` vApp to utilize the ```Standard``` Storage Tier.
+
+29. **Per-Disk Storage Policies** are configured in the second table of this panel. You must **Select a VM**, which should be automatically populated to ```vm-centos07``` (or the VM naming that you specified earlier). The *Storage Policy* will inherit by the default the type of storage specified in **Step 28** (```Standard```).
+
+30. When satisfied, click **Next** to continue.
 
 ![](_attachments/shared-managing-17.png)
 
+31. The vApp's **Compute Policies** are configured next. The total number of vCPUs that the vApp can access are determined by the **Virtual CPUs** field (```2```) and the constraints on **Cores per Socket** that can be accessed per vCPU are determined by the second field (```1```). The **Number of Sockets** is fixed at ```2``` for our example.
+
+32. The maximum amount of RAM available to the vApp is determined by the **Memory** field (```8 GB```).
+
+33. When satisfied, click **Next** to continue.
+
 ![](_attachments/shared-managing-18.png)
+
+34. The **Customize Hardware** panel will allow you to configure the hardware— storage, in our case —available to the virtual machines running as a part of this vApp. Recall that a vApp can be comprised of one, or many, virtual machines. The **Hard Disks** associated with the vApp have been configured automatically to a size of ```64 GB```.
+
+35. When satisfied, click **Next** to continue.
 
 ![](_attachments/shared-managing-19.png)
 
+36. Via the **Configure Networking** panel, you can specify and constrain the virtual networks that VMs running within the vApp will be able to connect to. These variables can also be adjusted after the vApp has been configured and launched. The vApp (```vm-centos07```) to which these networking configurations will be applied has been selected automatically. You must specify the **Network** field for this vApp: select the ```vAppNet-vro-template-network``` from the list of pre-configured networking templates.
+
+37. When satisfied, click **Next** to continue.
+
 ![](_attachments/shared-managing-20.png)
 
+38. Additional properties can be configured via the **Custom Properties** tab. Should you wish, you can assign a custom hostname for guests via the ```guest.hostname``` property for this vApp. Leave this field blank.
+
+39. When satisfied, click **Next** to continue.
+
 ![](_attachments/shared-managing-21.png)
+
+40. The **Ready to Complete** panel provides a full summary of your vApp (from Template) configurations. Here you can review the vApp before choosing to commit to a deployment, or discard the vApp configuration completely. **For our demonstration purposes, it is NOT necessary to deploy the vApp — as this will incur costs to the IBM Cloud account.** Click the **Cancel** button to avoid any billing charges.
+
+Your browser will redirect back to the **Applications** tab of the vCloud Director console.
 
 ![](_attachments/shared-managing-22.png)
 
