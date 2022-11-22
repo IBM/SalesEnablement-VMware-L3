@@ -152,13 +152,13 @@ Via the **Configure Networking** panel, you can specify and constrain the virtua
 
 The **Ready to Complete** panel provides a full summary of your vApp (from Template) configurations. Here you can review the vApp before choosing to commit to a deployment, or discard the vApp configuration completely.
 !!! warning "CAUTION"
-    For our demonstration purposes, it is **NOT** necessary to deploy the vApp — as this will incur costs to the IBM Cloud account.**
+    For our purposes, it is **NOT** necessary to deploy the vApp — this will incur costs to the IBM Cloud account.
 
 40. Click the **Cancel** button to avoid any billing charges.
 
-Your browser will redirect back to the **Applications** tab of the vCloud Director console.
-
 ![](_attachments/shared-managing-22.png)
+
+The web browser will automatically be redirected back to the **Applications** tab of the vCloud Director console.
 
 #
 # Managing Networks
