@@ -619,25 +619,179 @@
 <p>The web browser will automatically be redirected back to the <strong>Applications</strong> tab of the vCloud Director console.</p>
 <h1 id="_4"></h1>
 <h1 id="managing-networks">Managing Networks</h1>
+<ol start="41">
+<li>From the dashboard of the vCloud Director console, switch to the <strong>Networking</strong> tab using the navigation bar along the top of the page.</li>
+</ol>
+<p>From this management screen, you can access information on the VMware Shared plan's available Networks, Edge Gateways, Data Center Groups, and Security Tags. By default, the Networks associated with the deployment will be displayed first — at this time, your environment should contain no defined networks.</p>
+<ol start="42">
+<li>Click the <strong>New</strong> button, as shown in the screenshot below, to create a new network configuration.</li>
+</ol>
 <p><img alt="" src="../_attachments/shared-managing-23.png" /></p>
+<p>A new page will load to guide you through the process of defining an organization-wide virtual data center (VDC) network. The first element to be defined is the overall <strong>Scope</strong> of the network.</p>
+<ol start="43">
+<li>
+<p>The <strong>Scope</strong> of the network can be constrained to either an <em>organization-wide VDC</em> (providing connectivity only across the virtual machines belonging to that particular VDC), or across a <em>data center group</em> (connectivity across all VDCs belonging to that group, inclusive of all VMs belonging to those VDCs). Select the <strong>Organization Virtual Data Center</strong> option to keep networking connectivity restricted to only one VDC.</p>
+</li>
+<li>
+<p>Given the selection made in <strong>Step 43</strong>, you will need to specify the organization VDC to which these constraints will apply. Select the VDC defined earlier (<code>bienko-vdc</code> in this example).</p>
+</li>
+<li>
+<p>When satisfied, click <strong>Next</strong> to continue.</p>
+</li>
+</ol>
 <p><img alt="" src="../_attachments/shared-managing-24.png" /></p>
+<p>You must now decide the <strong>Network Type</strong> appropriate for this deployment. There are two options available:</p>
+<ul>
+<li>
+<p><em>Routed</em>: A network type that utilizes an edge gateway to enable controlled access to networks and machines external to (outside of) the VDC.</p>
+</li>
+<li>
+<p><em>Isolated</em>: A network type that is only accessible by the VDC (or associated VDC Groups) specified in <strong>Step 44</strong>, thereby providing a fully isolated environment.</p>
+</li>
+</ul>
+<ol start="46">
+<li>
+<p>Select the <strong>Routed</strong> Network Type.</p>
+</li>
+<li>
+<p>When satisfied, click <strong>Next</strong> to continue.</p>
+</li>
+</ol>
 <p><img alt="" src="../_attachments/shared-managing-25.png" /></p>
+<ol start="48">
+<li>Given our selected of a Routed network type in <strong>Step 46</strong>, which makes use of an edge gateway for regulated access to the network, we must now define an <strong>Edge Connection</strong> for the organization VDC. The configuration tool will automatically designate an edge connection (<code>edge-dal10-67c6f68e</code> for the Dallas Director 01 data center) with <code>2</code> External Networks and <code>0</code> Org VDC Networks.</li>
+</ol>
+<p>Next, you must choose the type of Edge Connection to be applied. There are three options available:</p>
+<ul>
+<li>
+<p><em>Internal</em>: For connecting to one of the edge gateway's internal interfaces. The maximum number of supported network connections is 9.</p>
+</li>
+<li>
+<p><em>Distributed</em>: For connecting via fast and efficient <em>East-West</em> routing. The network will be connected to an internal interface of a distributed router that is exclusively associated with this gateway. The maximum number of supported network connections is 400.</p>
+</li>
+<li>
+<p><em>Subinterface</em>: For connecting to the edge gateway's internal trunk interface. The maximum number of supported network connections is 200.</p>
+</li>
+</ul>
+<ol start="49">
+<li>
+<p>Select the <strong>Internal</strong> Edge Connection type.</p>
+</li>
+<li>
+<p>When satisfied, click <strong>Next</strong> to continue.</p>
+</li>
+</ol>
 <p><img alt="" src="../_attachments/shared-managing-26.png" /></p>
+<ol start="51">
+<li>Time for some bookkeeping. Provide a unique <strong>Name</strong> for the organization VDC network (<code>BienkoNetwork</code>) and optionally a basic <strong>Description</strong> to its purpose.</li>
+</ol>
+<p>A <strong>Gateway CIDR</strong> must be assigned, which includes the IP address of the gateway. This value cannot be changed once assigned. In our example, the CIDR of <code>192.168.100.14/24</code> represents the gateway address of <code>192.168.100.14</code> and its associated routing prefix of <code>192.168.100.0</code>; or equivalently, its subnet mask of <code>255.255.255.0</code>.</p>
+<ol start="52">
+<li>
+<p>Assign a CIDR of <code>192.168.100.14/24</code> and leave the <strong>Dual-Stack Mode</strong> option disabled.</p>
+</li>
+<li>
+<p>For our purposes, the network is not to be <strong>Shared</strong> and as such this option should remain disabled.</p>
+</li>
+<li>
+<p>When satisfied, click <strong>Next</strong> to continue.</p>
+</li>
+</ol>
 <p><img alt="" src="../_attachments/shared-managing-27.png" /></p>
+<ol start="55">
+<li>
+<p><strong>Static IP Pools</strong> must now be assigned to the Gateway CIDR assigned earlier in <strong>Step 52</strong>. Verify that the CIDR displayed on this panel matches the one that you designated previously.</p>
+</li>
+<li>
+<p>You may enable whichever range of IP addresses you wish; however, for the sake of example, let's assign a range of 7 IP addresses by entering <code>192.168.100.14 - 192.168.100.20</code> into the form as shown. Portable IP addresses are available to all resources on a VLAN, whereas static IP addresses are available to the resource identified as their routing endpoint.</p>
+</li>
+<li>
+<p>Click the <strong>Add</strong> button after entering the IP address ranges to add them to the Static IP Pool.</p>
+</li>
+<li>
+<p>When satisfied, click <strong>Next</strong> to continue.</p>
+</li>
+</ol>
 <p><img alt="" src="../_attachments/shared-managing-28.png" /></p>
+<p><strong>DNS</strong>, or the Domain Name System, provides the mapping between IP addresses (such as the ones specified earlier) and the "name" addreses that you typically enter into a web browser. A DNS relay can be enabled for the edge gateway we have configured thus far; however, it must be configured before deployment and cannot be modified after the fact.</p>
+<ol start="59">
+<li>
+<p><strong>Enable</strong> the <strong>Use Edge DNS</strong> slider. The remaining fields below can remain blank.</p>
+</li>
+<li>
+<p>When satisfied, click <strong>Next</strong> to continue.</p>
+</li>
+</ol>
 <p><img alt="" src="../_attachments/shared-managing-29.png" /></p>
+<p>The <strong>Ready to Complete</strong> panel provides a full summary of your organization VDC network configurations. Here you can review the details of the network before choosing to commit to a deployment, or discard the network configuration completely.</p>
+<ol start="61">
+<li>Click the <strong>Finish</strong> button to create the network.</li>
+</ol>
 <p><img alt="" src="../_attachments/shared-managing-30.png" /></p>
+<p>Your browser will automatically redirect to the <strong>Networking</strong> tab of the vCloud Director console.</p>
+<ol start="62">
+<li>
+<p>From the list of subdirectories along the top of the screen, drill down into the <strong>Edge Gateways</strong> panel as shown.</p>
+</li>
+<li>
+<p>The panel will summarize all of the Edge Gateways currently deployed on the VMware Shared platform, including the one we just created (<code>edge-dal10-67c6f68e</code>). Click the <strong>Name</strong> of that Edge Gateway (your name may differ from the example shown) to expand additional details on it.</p>
+</li>
+</ol>
 <p><img alt="" src="../_attachments/shared-managing-31.png" /></p>
+<p>Generalized information about the Edge Gateway are displayed on the details page.</p>
+<ol start="64">
+<li>
+<p>Explore each of the subdirectories— <em>Services</em>, <em>Redeploy</em>, <em>Enable Distributed Routing</em>, <em>Sync Syslog</em>, and <em>Open in VDC Context</em> —to glimpse more of the administrative options available for your newly-created Edge Gateway and organization VDC network.</p>
+</li>
+<li>
+<p>Information and configuration options related to <strong>External Networks</strong> are available from the navigation menu on the left side of the panel.</p>
+</li>
+</ol>
 <p><img alt="" src="../_attachments/shared-managing-32.png" /></p>
 <h1 id="_5"></h1>
-<h1 id="managing-libraries">Managing Libraries</h1>
+<h1 id="additional-capabilities-and-tooling">Additional Capabilities and Tooling</h1>
+<p>For the purposes of this hands-on demonstration, we won't go too deeply into detail on other areas of the VMware Solutions Shared plan environment. Until live applications, virtualized machines, and a workforce of users are actively engaged with the platform, these other areas of the vCloud Director console will remain relatively quiet. However, we have included pointers below to relevant areas that may spark interest and conversations with clients. Feel free to peruse these areas and explore topics that may be pertinent to your customer engagements.</p>
+<ol start="66">
+<li>Using the navigation tabs along the top of the console, explore the <strong>Libraries</strong> tab. Here you can investigate more details on the vApp templates that were leveraged earlier in this hands-on material. Users can expand the templates available within their own environment by importing them directly from VMware's vCenter.</li>
+</ol>
 <p><img alt="" src="../_attachments/shared-managing-33.png" /></p>
-<h1 id="_6"></h1>
-<h1 id="administration-and-user-definitions">Administration and User Definitions</h1>
+<ol start="67">
+<li>
+<p>From the <strong>Administration</strong> tab, a myriad of options for user management and access control are available.</p>
+</li>
+<li>
+<p>Here, VMware Shared users with administrative privileges can create new users, groups for those users, and roles for users to be assigned to. Identity providers, policies, certificates, and other security settings can also be implemented from this page.</p>
+</li>
+</ol>
 <p><img alt="" src="../_attachments/shared-managing-34.png" /></p>
+<ol start="69">
+<li>
+<p>As an example, the screenshot below emulates the <strong>Create User</strong> panel. A user <code>vAppAuthor</code> is defined and an authentication password is assigned.</p>
+</li>
+<li>
+<p>The <strong>Roles</strong> field determines the level of privileged access and capabilities granted to the user. An administrator responsible for creating the user will be able to select from a variety of Roles (pre-built or admin-defined), such as <code>vApp Author</code>, that enable a user to complete their expected job responsibilities without compromising the security of the VMware Shared platform as a whole.</p>
+</li>
+<li>
+<p><strong>Quotas</strong> can be applied to the user, limiting how many VMs (running or paused) that said user can manage within the platform.</p>
+</li>
+<li>
+<p>Save or discard changes to users using the interface at the bottom of the panel.</p>
+</li>
+</ol>
 <p><img alt="" src="../_attachments/shared-managing-35.png" /></p>
-<h1 id="system-monitoring">System Monitoring</h1>
+<ol start="73">
+<li>
+<p>Lastly, from the <strong>Monitoring</strong> tab it is possible for administrative users to inspect running <em>Tasks</em> and <em>Events</em> across the platform.</p>
+</li>
+<li>
+<p>Click on any of the Task or Event names to drill down into more granular details surrounding that item.</p>
+</li>
+<li>
+<p>When you have completed your tour of the vCloud Director console, click the username dropdown in the top-right corner of the dashboard and <strong>Log Out</strong> to end your session.</p>
+</li>
+</ol>
 <p><img alt="" src="../_attachments/shared-managing-36.png" /></p>
+<p>At this point in time, you have successfully explored the myriad of features and management tools available from within the VMware Shared platform dashboard on IBM Cloud. You now have a greater familiarity and expertise surrounding the various elements of the management panels and tooling, including: how to manage data centers, building application and virtual machines through the guided web interface, establishing networking rules, and the wealth of tooling available for managing the environment once in production.</p>
 
 
 
