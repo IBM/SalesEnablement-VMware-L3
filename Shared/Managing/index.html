@@ -542,20 +542,22 @@
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-15.png" /></p>
 <ol start="25">
+<li>The vAPP will require a <strong>Name</strong> (<code>BienkoVAppTemplate</code>) and optional <strong>Description</strong>.</li>
+</ol>
+<p>The <strong>Runtime lease</strong> field determines the length of time that the vApp can run within the VDC before its access to system resources is paused. The <strong>Storage lease</strong> field sets the time that the vApp remains available, from the moment it is stopped (when the <em>Runtime lease</em> expires); after the <em>Storage lease</em> has expired, clean-up of the vApp resources and associated data will begin automatically.</p>
+<ol start="26">
 <li>
-<p>The vAPP will require a <strong>Name</strong> (<code>BienkoVAppTemplate</code>) and optional <strong>Description</strong>.</p>
-</li>
-<li>
-<p>The <strong>Runtime lease</strong> field determines the length of time that the vApp can run within the VDC before its access to system resources is paused. The <strong>Storage lease</strong> field sets the time that the vApp remains available, from the moment it is stopped (when the <em>Runtime lease</em> expires); after the <em>Storage lease</em> has expired, clean-up of the vApp resources and associated data will begin automatically. For our demonstration purposes, both fields can be set to <code>Never Expires</code>.</p>
+<p>For our demonstration purposes, both fields can be set to <code>Never Expires</code>.</p>
 </li>
 <li>
 <p>When satisfied, click <strong>Next</strong> to continue.</p>
 </li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-16.png" /></p>
+<p>The resources that the vApp will have permission to access are configured on the following page. As described in <strong>Step 18</strong>, there are a variety of <strong>Storage Policies</strong> available — with differing metering and pricing metrics associated with each tier.</p>
 <ol start="28">
 <li>
-<p>The resources that the vApp will have permission to access are configured on the following page. As described in <strong>Step 18</strong>, there are a variety of <strong>Storage Policies</strong> available — with differing metering and pricing metrics associated with each tier. For the purposes of our demonstration, configure the <code>vm-centos07</code> vApp to utilize the <code>Standard</code> Storage Tier.</p>
+<p>For the purposes of our demonstration, configure the <code>vm-centos07</code> vApp to utilize the <code>Standard</code> Storage Tier.</p>
 </li>
 <li>
 <p><strong>Per-Disk Storage Policies</strong> are configured in the second table of this panel. You must <strong>Select a VM</strong>, which should be automatically populated to <code>vm-centos07</code> (or the VM naming that you specified earlier). The <em>Storage Policy</em> will inherit by the default the type of storage specified in <strong>Step 28</strong> (<code>Standard</code>).</p>
@@ -586,9 +588,10 @@
 </li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-19.png" /></p>
+<p>Via the <strong>Configure Networking</strong> panel, you can specify and constrain the virtual networks that VMs running within the vApp will be able to connect to. These variables can also be adjusted after the vApp has been configured and launched. The vApp (<code>vm-centos07</code>) to which these networking configurations will be applied has been selected automatically.</p>
 <ol start="36">
 <li>
-<p>Via the <strong>Configure Networking</strong> panel, you can specify and constrain the virtual networks that VMs running within the vApp will be able to connect to. These variables can also be adjusted after the vApp has been configured and launched. The vApp (<code>vm-centos07</code>) to which these networking configurations will be applied has been selected automatically. You must specify the <strong>Network</strong> field for this vApp: select the <code>vAppNet-vro-template-network</code> from the list of pre-configured networking templates.</p>
+<p>You must specify the <strong>Network</strong> field for this vApp: select the <code>vAppNet-vro-template-network</code> from the list of pre-configured networking templates.</p>
 </li>
 <li>
 <p>When satisfied, click <strong>Next</strong> to continue.</p>
@@ -604,8 +607,13 @@
 </li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-21.png" /></p>
+<p>The <strong>Ready to Complete</strong> panel provides a full summary of your vApp (from Template) configurations. Here you can review the vApp before choosing to commit to a deployment, or discard the vApp configuration completely.</p>
+<div class="admonition warning">
+<p class="admonition-title">CAUTION</p>
+<p>For our demonstration purposes, it is <strong>NOT</strong> necessary to deploy the vApp — as this will incur costs to the IBM Cloud account.**</p>
+</div>
 <ol start="40">
-<li>The <strong>Ready to Complete</strong> panel provides a full summary of your vApp (from Template) configurations. Here you can review the vApp before choosing to commit to a deployment, or discard the vApp configuration completely. <strong>For our demonstration purposes, it is NOT necessary to deploy the vApp — as this will incur costs to the IBM Cloud account.</strong> Click the <strong>Cancel</strong> button to avoid any billing charges.</li>
+<li>Click the <strong>Cancel</strong> button to avoid any billing charges.</li>
 </ol>
 <p>Your browser will redirect back to the <strong>Applications</strong> tab of the vCloud Director console.</p>
 <p><img alt="" src="../_attachments/shared-managing-22.png" /></p>
