@@ -9,9 +9,11 @@
 
 3. **Disaster recovery**: a suite of pre-installed services— Veeam Availability Suite, Veeam Cloud Connect, and Zerto —together provide options for disaster recover of critical workloads, achieving recovery point objectives (RPOs) within seconds, and maintaining application consistency.
 
-The offering is ideal for enterprise clients that are currently operating VMware workloads on-premises, but need to adopt cloud as part of their digital transformation and modernization strategy. The automation and added support that is made available through an IBM Cloud deployment speeds the time to delivery and lowers the risks that would otherwise be present if the client attempted to "roll their own" cloud deployment. Furthermore, the infrastructure supported by IBM Cloud is competitively priced and IBM managed — ensuring that capital expenditures stay low. The scalability of cloud supports a pathway to further growth and investment, as well: Shared plan customers needing additional capacity or dedicated infrastructure have the flexibility to license **IBM Cloud for VMware Solutions Dedicated** offerings on the same cloud, should they need it.
+The offering is ideal for enterprise clients that are currently operating VMware workloads on-premises, but need to adopt cloud as part of their digital transformation and modernization strategy. The automation and added support that is made available through an IBM Cloud deployment speeds the time to delivery and lowers the risks that would otherwise be present if the client attempted to "roll their own" cloud deployment.
 
 ![](_attachments/shared-introduction-1.png)
+
+Furthermore, the infrastructure supported by IBM Cloud is competitively priced and IBM managed — ensuring that capital expenditures stay low. The scalability of cloud supports a pathway to further growth and investment, as well: Shared plan customers needing additional capacity or dedicated infrastructure have the flexibility to license **IBM Cloud for VMware Solutions Dedicated** offerings on the same cloud, should they need it.
 
 In the following modules, you will:
 
