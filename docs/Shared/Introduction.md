@@ -15,6 +15,9 @@ The offering is ideal for enterprise clients that are currently operating VMware
 
 Furthermore, the infrastructure supported by IBM Cloud is competitively priced and managed by IBM — ensuring that capital expenditures stay low. The scalability of cloud supports a pathway to further growth and investment, as well: **Shared** plan customers needing additional capacity or dedicated infrastructure have the flexibility to license **IBM Cloud for VMware Solutions Dedicated** offerings on the same cloud, should they need it.
 
+#
+## Steps Ahead
+
 In the following modules, you will:
 
 - Explore the process of provisioning a **VMware Shared** plan via the IBM Cloud.
