@@ -187,4 +187,4 @@ Once you click **Confirm**, the deployment of the resources starts automatically
 
 Once the resources have been successfully deployed, the components that are described within the <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview#shared_overview-specs" target="_blank">technical specifications documentation for VMware Shared</a> will be installed within your VMware virtual platform environment.
 
-When the resources are ready to use, the status will be changed to **Ready**. When ready, proceed to the Managing module of this hands-on documentation.
+When the resources are ready to use, the status will be changed to **Ready**. When ready, proceed to the <a href="https://ibm.github.io/SalesEnablement-VMware-L3/Shared/Managing/" target="_blank">Managing</a> module of this hands-on documentation.
