@@ -25,7 +25,7 @@ The Level 3 demonstration guide is organized into two chapters, covering ```VMwa
 Throughout the guide, images are used as examples of the IBM Cloud Portal and vCloud Director web-based console.
 
 !!! warning "WARNING"
-    The IBM Cloud Portal and IBM Cloud for VMware Solutions changes on a regular basis and may differ from the images captured in this guide.
+    The agile nature of cloud means that the interface and layout of the IBM Cloud Portal, as well as the IBM Cloud for VMware Solutions offering, will change on a regular basis. Screenshots and videos captured within this documentation may not always reflect the latest versions available from IBM Cloud — although we strive to the best of our abilities to update these assets with changes as they roll out.
 
 In some images, the following styles of highlighting are utilized:
 
