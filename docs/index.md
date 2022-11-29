@@ -45,7 +45,7 @@ In some images, the following styles of highlighting are utilized:
 #
 # Acronyms
 
-The following acronyms and short-form terminology are used throughout the demonstration guide:
+The following acronyms and short-form terminology are used throughout the guide:
 ```
 Application programming interfaces (APIs)
 Classless inter-domain routing (CIDR)
