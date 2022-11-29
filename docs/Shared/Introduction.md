@@ -1,13 +1,20 @@
-VMware Solutions Shared provides customizable deployment choices of VMware Virtual Data Center environments, all deployed through automation via the IBM Cloud for standardized, reliable, enterprise-ready deployments - every time. With VMware Solutions Shared Virtual Data Center instances, you can quickly and seamlessly migrate or deploy VMware workloads to the cloud — on top of IBM-hosted VMware infrastructure. The service is HIPAA enabled, provides IAM out of the box, and is validated for financial services.
+**IBM Cloud for VMware Solutions Shared** provides customizable deployment choices of VMware Virtual Data Center environments, all deployed through automation via the IBM Cloud for standardized, reliable, enterprise-ready deployments - every time. With VMware Solutions Shared Virtual Data Center instances, you can quickly and seamlessly migrate or deploy VMware workloads to the cloud — on top of IBM-hosted VMware infrastructure. The service is HIPAA-enabled, provides IAM out of the box, and is validated for financial services use cases.
 
 #
-#VMware Solutions Shared is built around three key pillars:
+#IBM Cloud for VMware Solutions Shared is built around three key pillars:
 
-1. **Cost-effective scalability**: customers pay for what they use, with the option to grow should they require additional resources over time (or need to contract to fewer resource commitments as their services find greater effiencies). As a result, customers can minimize their unused capacity and save money. Instead of buying fixed-size virtual machines, clients can instead purchase compute capacity (as needed) and provision any number of virtual machines (of different sizes) within the capacity limit they set.
+1. **Cost-effective scalability**: customers pay for what they use, with the option to grow should they require additional resources over time (or need to contract to fewer resource commitments as their services find greater efficiencies). As a result, customers can minimize their unused capacity and save money. Instead of buying fixed-size virtual machines, clients can instead purchase compute capacity (as needed) and provision any number of virtual machines (of different sizes) within the capacity limit they set.
 
 2. **Temporary migration, co-location, and burst**: multi-site data centers can be consolidated within a single location by migrating workloads from different sources.
 
-3. **Disaster recovery**: a suite of pre-installed services— Veeam Availability Suite, Veeam Cloud Connect, and Zerto —together provide options for disaster recover of critical workloads, achieving recovery point objectives (RPOs) within seconds, and maintaing application consistency.
+3. **Disaster recovery**: a suite of pre-installed services— Veeam Availability Suite, Veeam Cloud Connect, and Zerto —together provide options for disaster recover of critical workloads, achieving recovery point objectives (RPOs) within seconds, and maintaining application consistency.
 
-!!! warning "Work in Progress"
-    More to be written.
+The offering is ideal for enterprise clients that are currently operating VMware workloads on-premises, but need to adopt cloud as part of their digital transformation and modernization strategy. The automation and added support that is made available through an IBM Cloud deployment speeds the time to delivery and lowers the risks that would otherwise be present if the client attempted to "roll their own" cloud deployment. Furthermore, the infrastructure supported by IBM Cloud is competitively priced and IBM managed — ensuring that capital expenditures stay low. The scalability of cloud supports a pathway to further growth and investment, as well: Shared plan customers needing additional capacity or dedicated infrastructure have the flexibility to license **IBM Cloud for VMware Solutions Dedicated** offerings on the same cloud, should they need it.
+
+![](_attachments/shared-introduction-1.png)
+
+In the following modules, you will:
+
+- Explore the process of provisioning a **VMware Shared** plan via the IBM Cloud.
+
+- Delve deeper into various elements of the offering's management console, including: data centers, applications, virtual machines, networking, libraries, platform administration, and system monitoring.
