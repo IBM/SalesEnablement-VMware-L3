@@ -1,7 +1,7 @@
 # Project info
 site_name: IBM Cloud for VMware Solutions
 site_description: IBM Cloud for VMware Solutions Level 3 Demonstration Guide
-site_author: Andrew R. Jones (andrewj@us.ibm.com) & Chris Beinko (cdbienko@us.ibm.com)
+site_author: Andrew R. Jones (andrewj@us.ibm.com) & Chris Bienko (cdbienko@us.ibm.com)
 copyright: Copyright &copy; 2022 IBM
 
 # Repository
@@ -13,7 +13,7 @@ docs_dir: docs
 
 
 nav:
-  - 'Introduction': 'index.md'
+  - 'Welcome': 'index.md'
   - 'VMware Solutions Shared':
     - 'Introduction': 'Shared/Introduction.md'
     - 'Provisioning': 'Shared/Provisioning.md'
