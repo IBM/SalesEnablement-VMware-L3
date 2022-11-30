@@ -458,25 +458,25 @@
 <p><img alt="" src="../_attachments/shared-managing-4.png" /></p>
 <p>A dialogue window will open, asking you to confirm an administrative password reset for the instance. Confirm the selection and wait for the reset to complete. The <strong>User name</strong> will always be set to <code>admin</code> by default. The <strong>Password</strong> will be uniquely generated each time a reset is conducted.</p>
 <ol start="6">
-<li>Click the "eyeball" icon to view the password and the "box" icon to copy the password to your machine's clipboard. <strong>Record</strong> both of these values to a notepad — you will need to reference these later for connecting to the vCloud Director Console. Click the <strong>Close</strong> button to continue.</li>
+<li>Click the "eyeball" icon to view the password and the "box" icon to copy the password to your machine's clipboard. <strong>Record</strong> both of these values to a notepad — you will need to reference these later for connecting to the vCloud Director console. Click the <strong>Close</strong> button to continue.</li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-5.png" /></p>
 <ol start="7">
-<li>Back on the Summary page, locate the <strong>vCloud Director console</strong> button near the top-right of the screen. Before resetting the admin password, this button would have been greyed out and inaccessible. With the password reset complete, the button is now active — click it to continue to the console login page.</li>
+<li>Back on the Summary page, locate the <strong>vCloud Director console</strong> button near the top-right of the screen. Before resetting the admin password, this button would have been greyed out and inaccessible. With the password reset complete, the button is now active (blue) — click it to continue to the console login page.</li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-6.png" /></p>
 <ol start="8">
-<li>A new tab or window will open, prompting you to log in to the vCloud Director console. Use the <code>admin</code> and <code>password</code> fields recorded in <strong>Step 6</strong> to log in to the console.</li>
+<li>A new tab or window will open, prompting you to log in to the vCloud Director console. If one does not appear, check to make sure a pop-up blocker is not active. Use the <code>admin</code> and <code>password</code> fields recorded in <strong>Step 6</strong> to log in to the console.</li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-7.png" /></p>
-<p>Having been successfully authenticated, your browser will redirect and open to the <strong>vCloud Director console</strong>. From this page, you will be able to access many of the administrative functions for your VMware Shared platform (restricted from full administrative purposes for the purposes of this hands-on, shared environment). By default, the console will load to the <strong>Data Centers</strong> tab. Here you can inspect details on the virtual data center supporting your environment, which in the case of the example screenshot below is the <code>bienko-vdc</code> environment which was set up during the <a href="https://ibm.github.io/SalesEnablement-VMware-L3/Shared/Provisioning/" target="_blank">Provisioning</a> section earlier. A summary of the VDC's CPU, memory, and storage utilization is provided at the bottom of the page.</p>
+<p>Having been successfully authenticated, your browser will redirect and open to the <strong>vCloud Director console</strong>. From this page, you will be able to access many of the administrative functions for your VMware Shared platform (restricted from full administrative purposes for the purposes of this shared hands-on environment). By default, the console will load to the <strong>Data Centers</strong> tab. Here you can inspect details on the virtual data center supporting your environment, which in the case of the example screenshot below is the <code>bienko-vdc</code> environment which was set up during the <a href="https://ibm.github.io/SalesEnablement-VMware-L3/Shared/Provisioning/" target="_blank">Provisioning</a> section earlier. A summary of the VDC's CPU, memory, and storage utilization is provided at the bottom of the page.</p>
 <ol start="9">
 <li>Let's explore other elements of the vCloud Director console. From the navigation menu along the top of the console dashboard, click the <strong>Applications</strong> tab.</li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-8.png" /></p>
 <h1 id="_2"></h1>
 <h1 id="managing-applications-and-virtual-machines">Managing Applications and Virtual Machines</h1>
-<p>The console's <strong>Applications</strong> dashboard allows for the centralized management and deployment of all applications— which are categorized as either <em>virtual machines</em> or <em>virtual applications</em> —within the VMware Shared environment. A virtualized application, or <em>vApp</em>, consists of one or more virtual machines (VMs) that communicate over the Shared plan's network, makes use of the Shared plan's resources, or invokes services that the Shared plan supports. A single vApp can consist of one, or multiple, VMs as part of its backbone.</p>
+<p>The console's <strong>Applications</strong> dashboard allows for the centralized management and deployment of all applications— which are categorized as either <em>virtual machines</em> or <em>virtual applications</em> —within the VMware Shared environment. A virtualized application, or <em>vApp</em>, consists of one or more virtual machines (VMs) that communicate over the Shared plan's network, making use of the Shared plan's resources, or invoking services that the Shared plan supports. A single vApp can consist of one, or multiple, VMs as part of its backbone.</p>
 <ol start="10">
 <li>Let's try drafting a new virtualized application from scratch. Do so by clicking the <strong>New vApp</strong> button from the menu at the bottom of the page.</li>
 </ol>
@@ -492,7 +492,7 @@
 <p><img alt="" src="../_attachments/shared-managing-10.png" /></p>
 <ol start="13">
 <li>
-<p>The new vApp will require a <strong>Name</strong> (<code>vAppSample</code>) and a <strong>Description</strong> (<code>Demonstration purposes only.</code>). The <strong>Power On</strong> toggle can be left <em>off</em> for now, as we will not be deploying this example vApp to a live state.</p>
+<p>The new vApp will require a <strong>Name</strong> (<code>vAppSample</code>) and a <strong>Description</strong> (<code>Demonstration purposes only</code>). The <strong>Power On</strong> toggle can be left <code>OFF</code> for now, as we will not be deploying this example vApp to a live state.</p>
 </li>
 <li>
 <p>No virtual machines currently exist within the VMware Shared VDC environment, but if they did they would be listed within the table presented on this page. Instead, you will need to craft your own. Click the <strong>Add Virtual Machine</strong> button below the table to define a new VM.</p>
@@ -507,19 +507,19 @@
 <p>The VM can either be crafted from scratch (<strong>New</strong>) or from a pre-designed template (<strong>From Template</strong>). One of the advantages of the VMware Shared plan on IBM Cloud is the wealth of templates available out of the box with the offering. Select the <strong>From Template</strong> option and then scroll through the template repository.</p>
 </li>
 <li>
-<p>We recommend selecting the <code>vm-redhat8</code> template, which corresponds to the Red Hat 8 official template (RHEL8), for the purposes of this demonstration — although you are free to choose any of your liking. Scroll down the page to reveal more configuration options.</p>
+<p>We recommend selecting the <code>vm-redhat8</code> template, which corresponds to the Red Hat 8 official release (RHEL8), for the purposes of this demonstration — although you are free to choose any of your liking. Continue scrolling down the page to reveal more configuration options.</p>
 </li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-12.png" /></p>
 <ol start="18">
 <li>
-<p><strong>Storage</strong> for the VM is the next consideration. As described earlier in the Provisioning module, there are a variety of storage options available for virtual machines and virtual applications deployed within the VMware Shared environment. Each storage tier conveys different levels of throughput (IOPs) and levels of isolation (multi-tenant versus single-tenant), with differing levels of billable rates and charges associated with each tier. For our purposes, we recommend the <code>Standard (VDC Default)</code> tier of <strong>Storage Policy</strong>.</p>
+<p><strong>Storage</strong> for the VM is our next consideration. As described earlier in the Provisioning module, there are a variety of storage options available for virtual machines and virtual applications deployed within the VMware Shared environment. Each storage tier provides different levels of throughput (IOPs) and levels of isolation (multi-tenant versus single-tenant), with differing levels of billable rates and charges associated with each tier. For our purposes, we recommend the <code>Standard (VDC Default)</code> tier of <strong>Storage Policy</strong>.</p>
 </li>
 <li>
 <p><strong>Compute</strong> is dictated by the VDC sizing configuration that was set during the Provisioning module. The resources available to the VM we are defining here are restricted by the hardware configurations assigned to the VDC (<code>bienko-vdc</code>) when it was deployed earlier.</p>
 </li>
 <li>
-<p><strong>NICs</strong>, or Network Interface Cards, provides the network interface needed by the virtual machine for communication with the public internet, IBM Cloud, and on-premises resources. The <em>Primary NIC</em> will have been configured by default and no other adjustments are required.</p>
+<p><strong>NICs</strong>, or Network Interface Cards, provide the network interface needed by the virtual machine for communication with the public internet, IBM Cloud, and on-premises resources. The <em>Primary NIC</em> will have been configured by default and no other adjustments are required.</p>
 </li>
 <li>
 <p>When satisfied, click the <strong>OK</strong> button at the bottom of the panel to return to the vApp definition.</p>
@@ -542,25 +542,25 @@
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-15.png" /></p>
 <ol start="25">
-<li>The vAPP will require a <strong>Name</strong> (<code>BienkoVAppTemplate</code>) and optional <strong>Description</strong>.</li>
+<li>The vApp will require a <strong>Name</strong> (<code>BienkoVAppTemplate</code>) and optional <strong>Description</strong>.</li>
 </ol>
-<p>The <strong>Runtime lease</strong> field determines the length of time that the vApp can run within the VDC before its access to system resources is paused. The <strong>Storage lease</strong> field sets the time that the vApp remains available, from the moment it is stopped (when the <em>Runtime lease</em> expires); after the <em>Storage lease</em> has expired, clean-up of the vApp resources and associated data will begin automatically.</p>
+<p>The <strong>Runtime lease</strong> field determines the length of time that the vApp can run within the VDC before its access to system resources is paused. The <strong>Storage lease</strong> field sets the time that the vApp remains available, from the moment it is stopped (when the <em>Runtime lease</em> expires). After the <em>Storage lease</em> has expired, clean-up of the vApp resources and associated data will begin automatically.</p>
 <ol start="26">
 <li>
-<p>For our demonstration purposes, both fields can be set to <code>Never Expires</code>.</p>
+<p>For our demonstration purposes, both the <strong>Runtime lease</strong> and <strong>Storage lease</strong> fields can be set to <code>Never Expires</code>.</p>
 </li>
 <li>
 <p>When satisfied, click <strong>Next</strong> to continue.</p>
 </li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-16.png" /></p>
-<p>The resources that the vApp will have permission to access are configured on the following page. As described in <strong>Step 18</strong>, there are a variety of <strong>Storage Policies</strong> available — with differing metering and pricing metrics associated with each tier.</p>
+<p>The resources to which the vApp has permitted access to are configured on the following page. As described in <strong>Step 18</strong>, there are a variety of <strong>Storage Policies</strong> available — with differing metering and pricing metrics associated with each tier.</p>
 <ol start="28">
 <li>
-<p>For the purposes of our demonstration, configure the <code>vm-centos07</code> vApp to utilize the <code>Standard</code> Storage Tier.</p>
+<p>For the purposes of our demonstration, configure the <code>vm-centos07</code> vApp to utilize the <code>Standard</code> <strong>Storage Tier</strong>.</p>
 </li>
 <li>
-<p><strong>Per-Disk Storage Policies</strong> are configured in the second table of this panel. You must <strong>Select a VM</strong>, which should be automatically populated to <code>vm-centos07</code> (or the VM naming that you specified earlier). The <em>Storage Policy</em> will inherit by the default the type of storage specified in <strong>Step 28</strong> (<code>Standard</code>).</p>
+<p><strong>Per-Disk Storage Policies</strong> are configured in the second table of this panel. You must <strong>Select a VM</strong>, which should be automatically populated to <code>vm-centos07</code> (or the VM naming that you specified earlier). By default, the <em>Storage Policy</em> will inherit the type of storage specified in <strong>Step 28</strong> (<code>Standard</code>).</p>
 </li>
 <li>
 <p>When satisfied, click <strong>Next</strong> to continue.</p>
@@ -581,7 +581,7 @@
 <p><img alt="" src="../_attachments/shared-managing-18.png" /></p>
 <ol start="34">
 <li>
-<p>The <strong>Customize Hardware</strong> panel will allow you to configure the hardware— storage, in our case —available to the virtual machines running as a part of this vApp. Recall that a vApp can be comprised of one, or many, virtual machines. The <strong>Hard Disks</strong> associated with the vApp have been configured automatically to a size of <code>64 GB</code>.</p>
+<p>The <strong>Customize Hardware</strong> panel will allow you to configure the hardware— storage, in our case —available to the virtual machines running as a part of this vApp. Recall that a vApp can be comprised of one, or many, virtual machines. The <strong>Hard Disks</strong> associated with the vApp have been configured automatically to a size of <code>64GB</code>.</p>
 </li>
 <li>
 <p>When satisfied, click <strong>Next</strong> to continue.</p>
@@ -622,7 +622,7 @@
 <ol start="41">
 <li>From the dashboard of the vCloud Director console, switch to the <strong>Networking</strong> tab using the navigation bar along the top of the page.</li>
 </ol>
-<p>From this management screen, you can access information on the VMware Shared plan's available Networks, Edge Gateways, Data Center Groups, and Security Tags. By default, the Networks associated with the deployment will be displayed first — at this time, your environment should contain no defined networks.</p>
+<p>From this management screen, you can access information on the VMware Shared plan's available <code>Networks</code>, <code>Edge Gateways</code>, <code>Data Center Groups</code>, and <code>Security Tags</code>. By default, the <code>Networks</code> associated with the deployment will be displayed first — at this time, your environment should contain no defined networks.</p>
 <ol start="42">
 <li>Click the <strong>New</strong> button, as shown in the screenshot below, to create a new network configuration.</li>
 </ol>
@@ -640,7 +640,7 @@
 </li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-24.png" /></p>
-<p>You must now decide the <strong>Network Type</strong> appropriate for this deployment. There are two options available:</p>
+<p>You must now decide the <strong>Network Type</strong> appropriate for this deployment. There are two options:</p>
 <ul>
 <li>
 <p><em>Routed</em>: A network type that utilizes an edge gateway to enable controlled access to networks and machines external to (outside of) the VDC.</p>
@@ -659,18 +659,18 @@
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-25.png" /></p>
 <ol start="48">
-<li>Given our selected of a Routed network type in <strong>Step 46</strong>, which makes use of an edge gateway for regulated access to the network, we must now define an <strong>Edge Connection</strong> for the organization VDC. The configuration tool will automatically designate an edge connection (<code>edge-dal10-67c6f68e</code> for the Dallas Director 01 data center) with <code>2</code> External Networks and <code>0</code> Org VDC Networks.</li>
+<li>Having selected the <strong>Routed</strong> network type in <strong>Step 46</strong>, which makes use of an edge gateway for regulated access to the network, we must now define an <strong>Edge Connection</strong> for the organization VDC. The configuration tool will automatically designate an edge connection (<code>edge-dal10-67c6f68e</code> for the <code>Dallas Director 01</code> data center) with <code>2</code> External Networks and <code>0</code> Org VDC Networks.</li>
 </ol>
-<p>Next, you must choose the type of Edge Connection to be applied. There are three options available:</p>
+<p>Next, you must choose the type of Edge Connection to be applied. There are three options:</p>
 <ul>
 <li>
-<p><em>Internal</em>: For connecting to one of the edge gateway's internal interfaces. The maximum number of supported network connections is 9.</p>
+<p><em>Internal</em>: For connecting to one of the edge gateway's internal interfaces. The maximum number of supported network connections is <code>9</code>.</p>
 </li>
 <li>
-<p><em>Distributed</em>: For connecting via fast and efficient <em>East-West</em> routing. The network will be connected to an internal interface of a distributed router that is exclusively associated with this gateway. The maximum number of supported network connections is 400.</p>
+<p><em>Distributed</em>: For connecting via fast and efficient <em>East-West</em> routing. The network will be connected to an internal interface of a distributed router that is exclusively associated with this gateway. The maximum number of supported network connections is <code>400</code>.</p>
 </li>
 <li>
-<p><em>Subinterface</em>: For connecting to the edge gateway's internal trunk interface. The maximum number of supported network connections is 200.</p>
+<p><em>Subinterface</em>: For connecting to the edge gateway's internal trunk interface. The maximum number of supported network connections is <code>200</code>.</p>
 </li>
 </ul>
 <ol start="49">
@@ -683,7 +683,7 @@
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-26.png" /></p>
 <ol start="51">
-<li>Time for some bookkeeping. Provide a unique <strong>Name</strong> for the organization VDC network (<code>BienkoNetwork</code>) and optionally a basic <strong>Description</strong> to its purpose.</li>
+<li>Provide a unique <strong>Name</strong> for the organization VDC network (<code>BienkoNetwork</code>) and optionally a basic <strong>Description</strong> to its purpose.</li>
 </ol>
 <p>A <strong>Gateway CIDR</strong> must be assigned, which includes the IP address of the gateway. This value cannot be changed once assigned. In our example, the CIDR of <code>192.168.100.14/24</code> represents the gateway address of <code>192.168.100.14</code> and its associated routing prefix of <code>192.168.100.0</code>; or equivalently, its subnet mask of <code>255.255.255.0</code>.</p>
 <ol start="52">
@@ -691,7 +691,7 @@
 <p>Assign a CIDR of <code>192.168.100.14/24</code> and leave the <strong>Dual-Stack Mode</strong> option disabled.</p>
 </li>
 <li>
-<p>For our purposes, the network is not to be <strong>Shared</strong> and as such this option should remain disabled.</p>
+<p>For our purposes, the network is not to be <strong>Shared</strong>: therefore, leave this option disabled.</p>
 </li>
 <li>
 <p>When satisfied, click <strong>Next</strong> to continue.</p>
