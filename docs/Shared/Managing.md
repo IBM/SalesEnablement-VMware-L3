@@ -296,4 +296,4 @@ For the purposes of this hands-on demonstration, we won't go too deeply into det
 
 At this point in time, you have successfully explored the myriad of features and management tools available from within the **VMware Shared** dashboard on IBM Cloud. You should now have greater familiarity and fluency with the various elements of the management panels and tooling, including: how to manage data centers, building applications and virtual machines through the guided web interface, establishing networking rules, and the wealth of tooling available for managing the environment once in production.
 
-In the following chapter, you will investigate the **IBM Cloud for VMware Solutions Dedicated** offering.
+In the following chapter, you will investigate **IBM Cloud for VMware Solutions Dedicated**.
