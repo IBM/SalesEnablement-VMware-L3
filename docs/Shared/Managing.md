@@ -231,7 +231,7 @@ A **Gateway CIDR** must be assigned, which includes the IP address of the gatewa
 
 ![](_attachments/shared-managing-28.png)
 
-**DNS**, or the Domain Name System, provides the mapping between IP addresses (such as the ones specified earlier) and the "name" addreses that you typically enter into a web browser. A DNS relay can be enabled for the edge gateway we have configured thus far; however, it must be configured before deployment and cannot be modified after the fact.
+**DNS**, or the Domain Name System, provides the mapping between IP addresses (such as the ones specified earlier) and the "name" address that you typically enter into a web browser (```www.google.com```, for example). A DNS relay can be enabled for the edge gateway previously configured; however, the DNS relay must be set before deployment and cannot be modified after the fact.
 
 59. **Enable** the **Use Edge DNS** slider. The remaining fields below can remain blank.
 
@@ -249,7 +249,7 @@ Your browser will automatically redirect to the **Networking** tab of the vCloud
 
 62. From the list of subdirectories along the top of the screen, drill down into the **Edge Gateways** panel as shown.
 
-63. The panel will summarize all of the Edge Gateways currently deployed on the VMware Shared platform, including the one we just created (```edge-dal10-67c6f68e```). Click the **Name** of that Edge Gateway (your name may differ from the example shown) to expand additional details on it.
+63. The panel will summarize all of the Edge Gateways currently deployed on the VMware Shared platform, including the one we just created (```edge-dal10-67c6f68e```). Click the **Name** of that Edge Gateway (your name may differ from the example shown) to expand additional details about it.
 
 ![](_attachments/shared-managing-31.png)
 
@@ -266,7 +266,7 @@ Generalized information about the Edge Gateway are displayed on the details page
 
 For the purposes of this hands-on demonstration, we won't go too deeply into detail on other areas of the VMware Solutions Shared plan environment. Until live applications, virtualized machines, and a workforce of users are actively engaged with the platform, these other areas of the vCloud Director console will remain relatively quiet. However, we have included pointers below to relevant areas that may spark interest and conversations with clients. Feel free to peruse these areas and explore topics that may be pertinent to your customer engagements.
 
-66. Using the navigation tabs along the top of the console, explore the **Libraries** tab. Here you can investigate more details on the vApp templates that were leveraged earlier in this hands-on material. Users can expand the templates available within their own environment by importing them directly from VMware's vCenter.
+66. Using the navigation tabs along the top of the console, explore the **Libraries** tab. Here you can investigate more details on the vApp templates that were touched on earlier in this hands-on material. Users can expand the number of templates available within their own environment by importing them directly from VMware's vCenter.
 
 ![](_attachments/shared-managing-33.png)
 
@@ -278,7 +278,7 @@ For the purposes of this hands-on demonstration, we won't go too deeply into det
 
 69. As an example, the screenshot below emulates the **Create User** panel. A user ```vAppAuthor``` is defined and an authentication password is assigned.
 
-70. The **Roles** field determines the level of privileged access and capabilities granted to the user. An administrator responsible for creating the user will be able to select from a variety of Roles (pre-built or admin-defined), such as ```vApp Author```, that enable a user to complete their expected job responsibilities without compromising the security of the VMware Shared platform as a whole.
+70. The **Roles** field determines the level of privileged access and capabilities granted to the user. An administrator responsible for creating the user will be able to select from a variety of Roles (pre-built or admin-defined), such as ```vApp Author```, that enable a user to carry out their expected job responsibilities without compromising the security of the VMware Shared platform as a whole.
 
 71. **Quotas** can be applied to the user, limiting how many VMs (running or paused) that said user can manage within the platform.
 
@@ -288,10 +288,12 @@ For the purposes of this hands-on demonstration, we won't go too deeply into det
 
 73. Lastly, from the **Monitoring** tab it is possible for administrative users to inspect running *Tasks* and *Events* across the platform.
 
-74. Click on any of the Task or Event names to drill down into more granular details surrounding that item.
+74. Click on any of the task or event names to drill down into more granular details surrounding that item.
 
 75. When you have completed your tour of the vCloud Director console, click the username dropdown in the top-right corner of the dashboard and **Log Out** to end your session.
 
 ![](_attachments/shared-managing-36.png)
 
-At this point in time, you have successfully explored the myriad of features and management tools available from within the VMware Shared platform dashboard on IBM Cloud. You now have a greater familiarity and expertise surrounding the various elements of the management panels and tooling, including: how to manage data centers, building application and virtual machines through the guided web interface, establishing networking rules, and the wealth of tooling available for managing the environment once in production.
+At this point in time, you have successfully explored the myriad of features and management tools available from within the **VMware Shared** dashboard on IBM Cloud. You should now have greater familiarity and fluency with the various elements of the management panels and tooling, including: how to manage data centers, building applications and virtual machines through the guided web interface, establishing networking rules, and the wealth of tooling available for managing the environment once in production.
+
+In the following chapter, you will investigate the **IBM Cloud for VMware Solutions Dedicated** offering.
