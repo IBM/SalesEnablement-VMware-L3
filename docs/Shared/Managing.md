@@ -44,7 +44,7 @@ A dialogue window will open, asking you to confirm an administrative password re
 
 ![](_attachments/shared-managing-7.png)
 
-Having been successfully authenticated, your browser will redirect and open to the **vCloud Director console**. From this page, you will be able to access many of the administrative functions for your VMware Shared platform (restricted from full administrative purposes for the purposes of this shared hands-on environment). By default, the console will load to the **Data Centers** tab. Here you can inspect details on the virtual data center supporting your environment, which in the case of the example screenshot below is the ```bienko-vdc``` environment which was set up during the <a href="https://ibm.github.io/SalesEnablement-VMware-L3/Shared/Provisioning/" target="_blank">Provisioning</a> section earlier. A summary of the VDC's CPU, memory, and storage utilization is provided at the bottom of the page.
+After successfully authenticating, your browser will redirect to the **vCloud Director console**. From this page, you will be able to access many of the administrative functions for the VMware Shared environment (with some restrictions in place to ensure the safety and stability of the deployment). By default, the console will load to the **Data Centers** tab. Here you can inspect details on the virtual data center supporting your environment, which in the case of the example screenshot below is the ```bienko-vdc``` environment which was set up during the <a href="https://ibm.github.io/SalesEnablement-VMware-L3/Shared/Provisioning/" target="_blank">Provisioning</a> section earlier. A summary of the VDC's vCPU, memory, and storage utilization is provided at the bottom of the page.
 
 9. Let's explore other elements of the vCloud Director console. From the navigation menu along the top of the console dashboard, click the **Applications** tab.
 
@@ -89,10 +89,14 @@ The console's **Applications** dashboard allows for the centralized management a
 
 ![](_attachments/shared-managing-13.png)
 
+22. *(A):* A summary panel will now display outlining the full configuration of the vApp. To avoid incurring any unnecessary charges, click the **Cancel** button to return to the **Applications** tab.
+
+![](_attachments/shared-managing-37.png)
+
 #
 # Creating vApps from a Template
 
-22. An alternative to defining a vApp from scratch is to select from the pre-built catalog of vApps that are packaged with every VMware Shared deployment on IBM Cloud. To inspect the resources available, click the **Add vApp from Catalog** button at the bottom of the page.
+22. *(B):* An alternative to defining a vApp from scratch is to select from the pre-built catalog of vApps that are packaged with every VMware Shared deployment on IBM Cloud. To inspect the resources available, click the **Add vApp from Catalog** button at the bottom of the page.
 
 ![](_attachments/shared-managing-14.png)
 
@@ -247,6 +251,8 @@ The **Ready to Complete** panel provides a full summary of your organization VDC
 
 Your browser will automatically redirect to the **Networking** tab of the vCloud Director console.
 
+![](_attachments/shared-managing-38.png)
+
 62. From the list of subdirectories along the top of the screen, drill down into the **Edge Gateways** panel as shown.
 
 63. The panel will summarize all of the Edge Gateways currently deployed on the VMware Shared platform, including the one we just created (```edge-dal10-67c6f68e```). Click the **Name** of that Edge Gateway (your name may differ from the example shown) to expand additional details about it.
@@ -282,7 +288,7 @@ For the purposes of this hands-on demonstration, we won't go too deeply into det
 
 71. **Quotas** can be applied to the user, limiting how many VMs (running or paused) that said user can manage within the platform.
 
-72. Save or discard changes to users using the interface at the bottom of the panel.
+72. Discard any changes made to the user and group definitions.
 
 ![](_attachments/shared-managing-35.png)
 

@@ -81,7 +81,7 @@ A **multi-zone** VMware virtual data center deployment will deploy across two av
 
 The **public network** endpoints that are provisioned by default are the five public IP addresses that are displayed in the VMware Shared virtual data center details page. After the demonstration environment has provisioned, you will be able to go and inspect those for yourself.
 
-A **private network** endpoint allows a customer's IBM Cloud account devices or resources to connect to their virtual data centers by using the IBM Cloud private network. The private network endpoint service is available and ready to use in all virtual data centers provisioned through the IBM Cloud. After the private network has been configured, the service allows IBM Cloud account resources to connect to virtual machines (VMs) in a customer's virtual data center over the IBM Cloud private network.
+A **private network** endpoint allows a customer's IBM Cloud account devices or resources to connect to their virtual data centers by using the IBM Cloud private network. The private network endpoint service is available and ready to use in all virtual data centers provisioned through the IBM Cloud.
 
 12. To give the environment the widest range of options, select the ```Public and Private``` **Networking** option from the configuration panel.
 
