@@ -227,7 +227,7 @@ A **Gateway CIDR** must be assigned, which includes the IP address of the gatewa
 
 55. **Static IP Pools** must now be assigned to the Gateway CIDR assigned earlier in **Step 52**. Verify that the CIDR displayed on this panel matches the one that you designated previously.
 
-56. You may enable whichever range of IP addresses you wish; however, for the sake of example, let's assign a range of 7 IP addresses by entering ```192.168.100.14 - 192.168.100.20``` into the form as shown. Portable IP addresses are available to all resources on a VLAN, whereas static IP addresses are available to the resource identified as their routing endpoint.
+56. You may enable whichever range of IP addresses you wish; however, for the sake of example, let's assign a range of 7 IP addresses by entering ```192.168.100.15 - 192.168.100.20``` into the form as shown. Portable IP addresses are available to all resources on a VLAN, whereas static IP addresses are available to the resource identified as their routing endpoint.
 
 57. Click the **Add** button after entering the IP address ranges to add them to the Static IP Pool.
 
