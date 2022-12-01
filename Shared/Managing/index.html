@@ -469,7 +469,7 @@
 <li>A new tab or window will open, prompting you to log in to the vCloud Director console. If one does not appear, check to make sure a pop-up blocker is not active. Use the <code>admin</code> and <code>password</code> fields recorded in <strong>Step 6</strong> to log in to the console.</li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-7.png" /></p>
-<p>Having been successfully authenticated, your browser will redirect and open to the <strong>vCloud Director console</strong>. From this page, you will be able to access many of the administrative functions for your VMware Shared platform (restricted from full administrative purposes for the purposes of this shared hands-on environment). By default, the console will load to the <strong>Data Centers</strong> tab. Here you can inspect details on the virtual data center supporting your environment, which in the case of the example screenshot below is the <code>bienko-vdc</code> environment which was set up during the <a href="https://ibm.github.io/SalesEnablement-VMware-L3/Shared/Provisioning/" target="_blank">Provisioning</a> section earlier. A summary of the VDC's CPU, memory, and storage utilization is provided at the bottom of the page.</p>
+<p>After successfully authenticating, your browser will redirect to the <strong>vCloud Director console</strong>. From this page, you will be able to access many of the administrative functions for the VMware Shared environment (with some restrictions in place to ensure the safety and stability of the deployment). By default, the console will load to the <strong>Data Centers</strong> tab. Here you can inspect details on the virtual data center supporting your environment, which in the case of the example screenshot below is the <code>bienko-vdc</code> environment which was set up during the <a href="https://ibm.github.io/SalesEnablement-VMware-L3/Shared/Provisioning/" target="_blank">Provisioning</a> section earlier. A summary of the VDC's vCPU, memory, and storage utilization is provided at the bottom of the page.</p>
 <ol start="9">
 <li>Let's explore other elements of the vCloud Director console. From the navigation menu along the top of the console dashboard, click the <strong>Applications</strong> tab.</li>
 </ol>
@@ -526,10 +526,14 @@
 </li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-13.png" /></p>
+<ol start="22">
+<li><em>(A):</em> A summary panel will now display outlining the full configuration of the vApp. To avoid incurring any unnecessary charges, click the <strong>Cancel</strong> button to return to the <strong>Applications</strong> tab.</li>
+</ol>
+<p><img alt="" src="../_attachments/shared-managing-37.png" /></p>
 <h1 id="_3"></h1>
 <h1 id="creating-vapps-from-a-template">Creating vApps from a Template</h1>
 <ol start="22">
-<li>An alternative to defining a vApp from scratch is to select from the pre-built catalog of vApps that are packaged with every VMware Shared deployment on IBM Cloud. To inspect the resources available, click the <strong>Add vApp from Catalog</strong> button at the bottom of the page.</li>
+<li><em>(B):</em> An alternative to defining a vApp from scratch is to select from the pre-built catalog of vApps that are packaged with every VMware Shared deployment on IBM Cloud. To inspect the resources available, click the <strong>Add vApp from Catalog</strong> button at the bottom of the page.</li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-14.png" /></p>
 <ol start="23">
@@ -729,6 +733,7 @@
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-30.png" /></p>
 <p>Your browser will automatically redirect to the <strong>Networking</strong> tab of the vCloud Director console.</p>
+<p><img alt="" src="../_attachments/shared-managing-38.png" /></p>
 <ol start="62">
 <li>
 <p>From the list of subdirectories along the top of the screen, drill down into the <strong>Edge Gateways</strong> panel as shown.</p>
@@ -775,7 +780,7 @@
 <p><strong>Quotas</strong> can be applied to the user, limiting how many VMs (running or paused) that said user can manage within the platform.</p>
 </li>
 <li>
-<p>Save or discard changes to users using the interface at the bottom of the panel.</p>
+<p>Discard any changes made to the user and group definitions.</p>
 </li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-35.png" /></p>
