@@ -1,3 +1,7 @@
+![type:video](./_videos/VMware L3 Shared Introduction.mp4)
+!!! tip "WAYS TO WATCH"
+    In addition to the embedded video, IBMers and Business Partners can also <a href="https://ibm.seismic.com/Link/Content/DCFGW2RT6jVGm82VTDMJ6TdDJC4V" target="_blank">download the recording from Seismic</a>.
+
 **IBM Cloud for VMware Solutions Shared** provides customizable deployment choices of VMware Virtual Data Center environments, all provisioned through automation via the IBM Cloud for standardized, reliable, enterprise-ready deployments. VMware Shared virtual data center instances can quickly and seamlessly migrate or deploy VMware workloads to the cloud — on top of IBM-hosted and VMware-certified infrastructure. The service is HIPAA-enabled, provides IAM out of the box, and is validated for financial services use cases.
 
 #
