@@ -1,3 +1,7 @@
+![type:video](./_videos/VMware L3 Welcome.mp4)
+!!! tip "WAYS TO WATCH"
+    In addition to the embedded video, IBMers and Business Partners can also <a href="https://ibm.seismic.com/Link/Content/DCFGW2RT6jVGm82VTDMJ6TdDJC4V" target="_blank">download the recording from Seismic</a>.
+
 Welcome to the **IBM Cloud for VMware Solutions - Level 3** course and demonstration guide! The goal is to provide IBM and Business Partner Sales and Technical Sales with the knowledge and tools to perform hands-on demonstrations of **VMware Shared** and **VMware Dedicated** plans via the IBM Cloud.
 
 !!! warning "WARNING"

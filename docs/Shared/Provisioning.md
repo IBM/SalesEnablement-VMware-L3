@@ -1,3 +1,7 @@
+![type:video](./_videos/VMware L3 Shared Provisioning.mp4)
+!!! tip "WAYS TO WATCH"
+    In addition to the embedded video, IBMers and Business Partners can also <a href="https://ibm.seismic.com/Link/Content/DCFGW2RT6jVGm82VTDMJ6TdDJC4V" target="_blank">download the recording from Seismic</a>.
+
 The following module will guide business partners and IBM sellers through the process of provisioning a **VMware Shared** plan via the IBM Cloud. Along the way, additional context around sizing and configuration of the offering will be provided, illustrating the value of these features to end-users, and pointers supplied to additional resources for those looking to dig deeper.
 
 VMWare Solutions, including the **Shared** plan and other tiers, are accessible through the <a href="https://cloud.ibm.com/vmware" target="_blank">VMware portal on IBM Cloud</a>.
