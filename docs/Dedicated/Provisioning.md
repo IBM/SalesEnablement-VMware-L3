@@ -136,4 +136,6 @@ Now, fast forward 11 hours.
 
 44. Click anywhere on the screen.
 
-Notice 11 hours has elapsed and the VCS instance is now ready to use. Proceed to the next chapter of this demonstration script to learn how to manage a VCS instance.
+Notice 11 hours has elapsed and the VCS instance is now ready to use.
+
+Proceed to the next module of this demonstration script to learn how to manage a VCS instance.
