@@ -456,9 +456,8 @@
 </ol>
 <p><img alt="" src="../_attachments/shared-provisioning-1.png" /></p>
 <ol start="3">
-<li>Switch to your personal IBM Cloud account, or an account that you have permission to charge billable expenses to, by clicking the drop-down selector in the top-right corner of the IBM Cloud interface, as shown in the screenshot below.</li>
+<li>Switch to your personal IBM Cloud account, or an account that you have permission to charge billable expenses to, by clicking the drop-down selector in the top-right corner of the IBM Cloud interface.</li>
 </ol>
-<p><img alt="" src="../_attachments/shared-provisioning-2.png" /></p>
 <p>With your account properly set, you can proceed with configuration and setup of a VMware Shared plan. There are four platforms currently provided for VMware on IBM Cloud: <code>VMware Shared</code>, <code>VMware as a Service</code>, <code>VMware vSphere</code>, and <code>VMware vCenter Server</code>. For the purposes of this module, you will be configuring and provisioning a <code>VMware Shared</code> platform.</p>
 <ol start="4">
 <li>As shown in the screenshot below, select the <strong>VMware Shared</strong> tile and click <strong>Create</strong> to continue to the configuration page.</li>
@@ -467,6 +466,7 @@
 <p>The web browser will redirect to a new page, where you will be asked to provide detailed configuration options for various elements of the VMware Shared platform environment that IBM Cloud is to deploy.</p>
 <h1 id="_3"></h1>
 <h1 id="pricing-plans">Pricing Plans</h1>
+<hr />
 <div class="admonition tip">
 <p class="admonition-title">ON-DEMAND VS. RESERVED</p>
 <p>Two tiers of pricing plan are available for any VMware Shared virtual data center</p>
@@ -492,6 +492,7 @@
 </ol>
 <h1 id="_4"></h1>
 <h1 id="deployment-topology">Deployment Topology</h1>
+<hr />
 <div class="admonition tip">
 <p class="admonition-title">SINGLE VS. MULTI-ZONE</p>
 <p>For every deployment of VMware Shared, there are two Topologies that a client may select</p>
@@ -516,6 +517,7 @@
 <p><img alt="" src="../_attachments/shared-provisioning-5.png" /></p>
 <h1 id="_5"></h1>
 <h1 id="networking-types">Networking Types</h1>
+<hr />
 <div class="admonition tip">
 <p class="admonition-title">NETWORK CONFIGURATIONS</p>
 <p>VMware Shared on IBM Cloud supports two networking</p>
@@ -570,6 +572,7 @@
 </div>
 <h1 id="_6"></h1>
 <h1 id="virtual-data-center-capacity">Virtual Data Center Capacity</h1>
+<hr />
 <p>These values essentially determine the compute processing capacity that is allocated to your virtual data center. It is measured in vCPU increments. Each vCPU increment represents a single 2.0 GHz core.  Compute memory, or "RAM limit" as it is described on the IBM Cloud portal, is allocated in one gigabyte (GB) increments. RAM limits identify the maximum amount of random access memory available to each virtual data center.</p>
 <p>The limit placed on the maximum vCPU values determines the total number of processing units available for each virtual data center. Similarly, the RAM limit sets the maximum amount of memory available. You can adjust either of these values after you provision the virtual data center — giving customers the ability to scale and grow (or scale down) their virtual date center over time.</p>
 <ol start="13">
@@ -584,6 +587,7 @@
 <p>The <em>least</em> amount of vCPU that can be provisioned for any data center is 1 vCPU; RAM is likewise limited to a minimum of 1 GB. By setting both parameters to 1, the environment for this hands-on material will be as economically-priced as possible. Obviously, in the case of a real-world demonstration environment (or a production environment), you will want to size these appropriately to the anticipated workloads that the virtual server will be subject to.</p>
 <h1 id="_7"></h1>
 <h1 id="storage">Storage</h1>
+<hr />
 <p>When creating or deploying vApps / VMs, customers can select either an unencrypted or encrypted storage policy. Each option has six different tiers of storage available, depending on the storage performance required, with each option carrying a maximum throughput of IOPS (input-output operations per second) per gigabyte.</p>
 <ol start="15">
 <li>How you are billed for storage, and the types of storage policies used, only come into effect after you have started deploying vApps or VMs within your VMware Shared plan. As we are not deploying code as part of this hands-on material, it is not necessary for us to worry about storage configurations at this time.</li>
@@ -596,6 +600,7 @@
 <p>Encryption-enabled storage policies are available to all virtual data centers. Encryption protects not only the VMs but also VM disks and other files. Administrators can encrypt VMs and disks by associating the VM or disk with a storage policy that has enabled VM-encryption capabilities. For more information about the VM encryption limitations for VMware Cloud Director 10.3, see <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.3/VMware-Cloud-Director-Service-Provider-Admin-Portal-Guide/GUID-80F58C1D-A97E-43FE-8E41-E9242A1D2332.html" target="_blank">Enabling VM encryption on storage policies of an Organization virtual data center</a>.</p>
 <h1 id="_8"></h1>
 <h1 id="pre-installed-services">Pre-Installed Services</h1>
+<hr />
 <p>There are three services pre-installed with every deployment of VMware Shared on IBM Cloud. While they are ready for activation at any time, they are not free to use — if a customer wishes to make use of these services, they must agree to the terms of use license and incur the costs associated with that add-on service. If the pre-installed service is never activated or used, no additional charges will be leveed against the VMware Shared customer.</p>
 <ol start="16">
 <li>These services, as described, are pre-installed with every VMware Shared deployment on IBM Cloud. We will not be making use of these services for the purposes of this hands-on lab and as such they can be ignored for now.</li>
@@ -615,6 +620,7 @@
 </ul>
 <h1 id="_9"></h1>
 <h1 id="after-placing-an-order">After Placing An Order</h1>
+<hr />
 <p>When satisfied with the configuration options, inspect the far-right side of the IBM Cloud interface to confirm your costs and agree to the terms of service. As mentioned before, <strong>be aware that provisioning a VMware Shared plan on IBM Cloud will result in billing to your personal account</strong> (and associated credit card personal credit card).</p>
 <ol start="17">
 <li>
