@@ -31,13 +31,13 @@ VMWare Solutions, including the **Shared** plan and other tiers, are accessible 
 
 ![](_attachments/shared-provisioning-2.png)
 
-With your account properly set, you can proceed with configuration and setup of a VMware Shared plan. There are four platforms currently provided for VMware on IBM Cloud: ```VMware Shared```, ```VMware as a Service```, ```VMware vSphere```, and ```VMware vCenter Server```. For the purposes of this module, you will be configuring and provisioning a ```VMware Shared``` platform.
+With your account properly set, you can proceed with configuration and setup of a VMware Shared plan. There are four flavors currently provided for VMware on IBM Cloud: ```VMware Shared```, ```VMware as a Service```, ```VMware vSphere```, and ```VMware vCenter Server```. For the purposes of this module, you will be configuring and provisioning a ```VMware Shared``` instance.
 
 4. As shown in the screenshot below, select the **VMware Shared** tile and click **Create** to continue to the configuration page.
 
 ![](_attachments/shared-provisioning-3.png)
 
-The web browser will redirect to a new page, where you will be asked to provide detailed configuration options for various elements of the VMware Shared platform environment that IBM Cloud is to deploy.
+The web browser will redirect to a new page, where you will be asked to provide detailed configuration options for various elements of the VMware Shared instance that IBM Cloud is to deploy.
 
 #
 # Pricing Plans
@@ -205,6 +205,6 @@ Once you click **Confirm**, the deployment of the resources starts automatically
 
 ![](_attachments/shared-provisioning-11.png)
 
-Once the resources have been successfully deployed, the components that are described within the <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview#shared_overview-specs" target="_blank">technical specifications documentation for VMware Shared</a> will be installed within your VMware virtual platform environment.
+Once the resources have been successfully deployed, the components that are described within the <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview#shared_overview-specs" target="_blank">technical specifications documentation for VMware Shared</a> will be installed within your VMware virtual instance.
 
 When the resources are ready to use, the status will be changed to **Ready**. When ready, proceed to the <a href="https://ibm.github.io/SalesEnablement-VMware-L3/Shared/Managing/" target="_blank">Managing</a> module of this hands-on documentation.

@@ -26,4 +26,4 @@ In the following modules, you will:
 
 - Explore the process of provisioning a **VMware Shared** instance via the IBM Cloud.
 
-- Delve deeper into various elements of the offering's management console, including: data centers, applications, virtual machines, networking, libraries, platform administration, and system monitoring.
+- Delve deeper into various elements of the offering's management console, including: data centers, applications, virtual machines, networking, libraries, administration, and system monitoring.
