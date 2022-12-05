@@ -432,19 +432,29 @@
 <p class="admonition-title">WAYS TO WATCH</p>
 <p>In addition to the embedded video, IBMers and Business Partners can also <a href="https://ibm.seismic.com/Link/Content/DCFGW2RT6jVGm82VTDMJ6TdDJC4V" target="_blank">download the recording from Seismic</a>.</p>
 </div>
-<p>The following module guides business partners and IBM sellers through the myriad of features and management tools available from within the VMware Shared platform dashboard on IBM Cloud. You will explore various elements of the management panels and tooling, including: data centers, applications, virtual machines, networking, libraries, platform administration, and system monitoring.</p>
-<p>VMWare Solutions, including the <strong>Shared</strong> plan and other tiers, are accessible through the <a href="https://cloud.ibm.com/vmware" target="_blank">VMware portal on IBM Cloud</a>.</p>
+<p>The following module guides business partners and IBM sellers through the myriad of features and management tools available from within the VMware Shared instance dashboard on IBM Cloud. You will explore various elements of the management panels and tooling, including: data centers, applications, virtual machines, networking, libraries, administration, and system monitoring.</p>
 <h1 id="_1"></h1>
-<h1 id="accessing-the-vcloud-director-console">Accessing the vCloud Director console</h1>
-<ol>
-<li>Ensure that your IBM Cloud account is using the <code>ITZ-VMWARE</code> account that you were invited to as part of the prerequisite setup for this hands-on material. From the IBM Cloud dashboard, click the <strong>VMware</strong> tab from the left-hand navigation menu, or alternatively search for <code>VMware Solutions</code> in the search bar.</li>
-</ol>
-<div class="admonition warning">
-<p class="admonition-title">WARNING</p>
-<p>If you continue with the following instructions using your <em>personal</em> IBM Cloud account, there is a risk that your account (and credit card associated with that personal account) will be billed for provisioning a VMware Solutions deployment. To avoid any unwanted charges, ensure that your account is switched to <code>ITZ-VMWARE</code> before continuing.</p>
+<h1 id="click-thru-demonstration">Click-Thru Demonstration</h1>
+<hr />
+<p><strong>——————— UPDATE THE TEXT BELOW</strong></p>
+<p><strong>Click-thru demo:</strong> <a href="https://ibm.github.io/SalesEnablement-VMware-L3/includes/Shared-Provisioning/index.html" target ="_blank">Managing an instance of IBM Cloud VMware Solutions Shared</a>.</p>
+<p>Use the click-thru demonstration linked above to practice managing an instance of VMware Shared. The fields that require a text entry (e.g. service name) are pre-populated in the click-thru demonstration. Open the link and then click the play button <img alt="" src="../_attachments/ClickThruPlayButton.png" /> to begin the demonstration.</p>
+<div class="admonition note">
+<p class="admonition-title">NAVIGATION</p>
+<p>Not sure where to click or what to do next? Simply click anywhere on the screen within the click-thru demo page and the spot to interact with next will be highlighted. Step-by-step instructions on how to navigate the demo, and repeat the demonstration again in front of clients, are provided in the write-up below.</p>
 </div>
-<ol start="2">
-<li>Drill down into the <strong>Resources</strong> tab within the left-hand navigation menu.</li>
+<p><strong>——————— UPDATE THE TEXT ABOVE</strong></p>
+<h1 id="_2"></h1>
+<h1 id="step-by-step-instructions">Step-By-Step Instructions</h1>
+<hr />
+<p>VMWare Solutions, including the <strong>Shared</strong> plan and other tiers, are accessible through the <a href="https://cloud.ibm.com/vmware" target="_blank">VMware portal on IBM Cloud</a>. Be aware that if you provision a live VMware Shared instance using your <em>personal</em> IBM Cloud account, then your account (and credit card associated with that personal account) will be billed for the deployment.</p>
+<ol>
+<li>
+<p>From the IBM Cloud dashboard, click the <strong>VMware</strong> tab from the left-hand navigation menu, or alternatively search for <code>VMware Solutions</code> in the search bar.</p>
+</li>
+<li>
+<p>Drill down into the <strong>Resources</strong> tab within the left-hand navigation menu.</p>
+</li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-1.png" /></p>
 <ol start="3">
@@ -456,7 +466,7 @@
 <li>Locate the instance— <code>Dallas Director 01</code> in the example screenshot below, although the naming of your instance may differ —and click the <strong>name</strong> of the instance to pull open a Summary page.</li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-3.png" /></p>
-<p>The browser will load a Summary panel for the VMware Shared instance, supplying details on access controls for your platform, virtual data centers associated with the deployment, and additional services that can be used in conjunction with the platform.</p>
+<p>The browser will load a Summary panel for the VMware Shared instance, supplying details on access controls for your instance, virtual data centers associated with the deployment, and additional services that can be used in conjunction with the instance.</p>
 <ol start="5">
 <li>Before you can connect to the VMware Shared instance, you need to set an administrative password for the <strong>vCloud Director console</strong>. Do so by clicking the <strong>Reset site admin password</strong> button as shown.</li>
 </ol>
@@ -479,8 +489,9 @@
 <li>Let's explore other elements of the vCloud Director console. From the navigation menu along the top of the console dashboard, click the <strong>Applications</strong> tab.</li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-8.png" /></p>
-<h1 id="_2"></h1>
+<h1 id="_3"></h1>
 <h1 id="managing-applications-and-virtual-machines">Managing Applications and Virtual Machines</h1>
+<hr />
 <p>The console's <strong>Applications</strong> dashboard allows for the centralized management and deployment of all applications— which are categorized as either <em>virtual machines</em> or <em>virtual applications</em> —within the VMware Shared environment. A virtualized application, or <em>vApp</em>, consists of one or more virtual machines (VMs) that communicate over the Shared plan's network, making use of the Shared plan's resources, or invoking services that the Shared plan supports. A single vApp can consist of one, or multiple, VMs as part of its backbone.</p>
 <ol start="10">
 <li>Let's try drafting a new virtualized application from scratch. Do so by clicking the <strong>New vApp</strong> button from the menu at the bottom of the page.</li>
@@ -535,8 +546,9 @@
 <li><em>(A):</em> A summary panel will now display outlining the full configuration of the vApp. To avoid incurring any unnecessary charges, click the <strong>Cancel</strong> button to return to the <strong>Applications</strong> tab.</li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-37.png" /></p>
-<h1 id="_3"></h1>
+<h1 id="_4"></h1>
 <h1 id="creating-vapps-from-a-template">Creating vApps from a Template</h1>
+<hr />
 <ol start="22">
 <li><em>(B):</em> An alternative to defining a vApp from scratch is to select from the pre-built catalog of vApps that are packaged with every VMware Shared deployment on IBM Cloud. To inspect the resources available, click the <strong>Add vApp from Catalog</strong> button at the bottom of the page.</li>
 </ol>
@@ -617,17 +629,14 @@
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-21.png" /></p>
 <p>The <strong>Ready to Complete</strong> panel provides a full summary of your vApp (from Template) configurations. Here you can review the vApp before choosing to commit to a deployment, or discard the vApp configuration completely.</p>
-<div class="admonition warning">
-<p class="admonition-title">CAUTION</p>
-<p>For our purposes, it is <strong>NOT</strong> necessary to deploy the vApp — this will incur costs to the IBM Cloud account.</p>
-</div>
 <ol start="40">
 <li>Click the <strong>Cancel</strong> button to avoid any billing charges.</li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-22.png" /></p>
 <p>The web browser will automatically be redirected back to the <strong>Applications</strong> tab of the vCloud Director console.</p>
-<h1 id="_4"></h1>
+<h1 id="_5"></h1>
 <h1 id="managing-networks">Managing Networks</h1>
+<hr />
 <ol start="41">
 <li>From the dashboard of the vCloud Director console, switch to the <strong>Networking</strong> tab using the navigation bar along the top of the page.</li>
 </ol>
@@ -744,7 +753,7 @@
 <p>From the list of subdirectories along the top of the screen, drill down into the <strong>Edge Gateways</strong> panel as shown.</p>
 </li>
 <li>
-<p>The panel will summarize all of the Edge Gateways currently deployed on the VMware Shared platform, including the one we just created (<code>edge-dal10-67c6f68e</code>). Click the <strong>Name</strong> of that Edge Gateway (your name may differ from the example shown) to expand additional details about it.</p>
+<p>The panel will summarize all of the Edge Gateways currently deployed on the VMware Shared instance, including the one we just created (<code>edge-dal10-67c6f68e</code>). Click the <strong>Name</strong> of that Edge Gateway (your name may differ from the example shown) to expand additional details about it.</p>
 </li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-31.png" /></p>
@@ -758,9 +767,10 @@
 </li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-32.png" /></p>
-<h1 id="_5"></h1>
+<h1 id="_6"></h1>
 <h1 id="additional-capabilities-and-tooling">Additional Capabilities and Tooling</h1>
-<p>For the purposes of this hands-on demonstration, we won't go too deeply into detail on other areas of the VMware Solutions Shared plan environment. Until live applications, virtualized machines, and a workforce of users are actively engaged with the platform, these other areas of the vCloud Director console will remain relatively quiet. However, we have included pointers below to relevant areas that may spark interest and conversations with clients. Feel free to peruse these areas and explore topics that may be pertinent to your customer engagements.</p>
+<hr />
+<p>For the purposes of this hands-on demonstration, we won't go too deeply into detail on other areas of the VMware Solutions Shared plan environment. Until live applications, virtualized machines, and a workforce of users are actively engaged with the instance, these other areas of the vCloud Director console will remain relatively quiet. However, we have included pointers below to relevant areas that may spark interest and conversations with clients. Feel free to peruse these areas and explore topics that may be pertinent to your customer engagements.</p>
 <ol start="66">
 <li>Using the navigation tabs along the top of the console, explore the <strong>Libraries</strong> tab. Here you can investigate more details on the vApp templates that were touched on earlier in this hands-on material. Users can expand the number of templates available within their own environment by importing them directly from VMware's vCenter.</li>
 </ol>
@@ -779,10 +789,10 @@
 <p>As an example, the screenshot below emulates the <strong>Create User</strong> panel. A user <code>vAppAuthor</code> is defined and an authentication password is assigned.</p>
 </li>
 <li>
-<p>The <strong>Roles</strong> field determines the level of privileged access and capabilities granted to the user. An administrator responsible for creating the user will be able to select from a variety of Roles (pre-built or admin-defined), such as <code>vApp Author</code>, that enable a user to carry out their expected job responsibilities without compromising the security of the VMware Shared platform as a whole.</p>
+<p>The <strong>Roles</strong> field determines the level of privileged access and capabilities granted to the user. An administrator responsible for creating the user will be able to select from a variety of Roles (pre-built or admin-defined), such as <code>vApp Author</code>, that enable a user to carry out their expected job responsibilities without compromising the security of the VMware Shared instance as a whole.</p>
 </li>
 <li>
-<p><strong>Quotas</strong> can be applied to the user, limiting how many VMs (running or paused) that said user can manage within the platform.</p>
+<p><strong>Quotas</strong> can be applied to the user, limiting how many VMs (running or paused) that said user can manage within the instance.</p>
 </li>
 <li>
 <p>Discard any changes made to the user and group definitions.</p>
@@ -791,7 +801,7 @@
 <p><img alt="" src="../_attachments/shared-managing-35.png" /></p>
 <ol start="73">
 <li>
-<p>Lastly, from the <strong>Monitoring</strong> tab it is possible for administrative users to inspect running <em>Tasks</em> and <em>Events</em> across the platform.</p>
+<p>Lastly, from the <strong>Monitoring</strong> tab it is possible for administrative users to inspect running <em>Tasks</em> and <em>Events</em> across the instance.</p>
 </li>
 <li>
 <p>Click on any of the task or event names to drill down into more granular details surrounding that item.</p>
