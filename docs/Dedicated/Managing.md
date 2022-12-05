@@ -80,44 +80,81 @@ Notice that all the services that were not initially deployed at provisioning ar
 
 This screen image was created shortly after the provisioning completed for the instance. Notice only 10 of the 37 entries are displayed. For a complete list, expand the section below.
 
-??? Full listing of events in chronological order
+??? "Full listing of events in chronological order"
     11/14/22 10:50	Start creating instance user and required services
+
     11/14/22 10:51	Ordering additional private VLAN
+
     11/14/22 10:51	Ordering license of vCenter Server
+
     11/14/22 10:51	Ordering vCenter Server upcharges
+
     11/14/22 10:51	Ordering 1 NFS Storage(s) for cluster vcs-dv-consolidated
+
     11/14/22 10:51	Start ordering management share
+
     11/14/22 10:51	Ordering 2 socket NSX license or licenses of vCenter Server
+
     11/14/22 10:51	Creating instance user and required services completed
+
     11/14/22 10:52	Start ordering 3 bare metal ESXi servers
+
     11/14/22 10:52	Verifying bare metal ESXi servers order
+
     11/14/22 10:52	Start ordering Windows VSI for Active Directory/DNS
+
     11/14/22 10:52	Start ordering subnets
+
     11/14/22 10:52	Additional private VLAN is provisioned
+
     11/14/22 10:53	Granting access to NFS storages to new subnet
+
     11/14/22 10:53	Subnet is ready
+
     11/14/22 11:20	Windows VSI for Active Directory/DNS is ready
+
     11/14/22 14:41	Bare metal ESXi server(s) with Private IP address(es) 10.87.32.138, 10.87.32.161, 10.87.32.175 are ready for cluster
+
     11/14/22 14:42	Start ordering IBM CloudBuilder VSI
+
     11/14/22 15:05	IBM CloudBuilder VSI is ready
+
     11/14/22 15:09	Successfully trunked the additional private VLAN to bare metal servers
+
     11/14/22 15:17	IBM CloudBuilder is ready for service
+
     11/14/22 16:48	Start vCenter Server installation and configuration
+
     11/14/22 17:06	vCenter Server installation and configuration completed
+
     11/14/22 19:07	Start management services setup
+
     11/14/22 19:12	IBM operational services are running
+
     11/14/22 19:13	Ordering new VSI for Clouddriver
+
     11/14/22 19:13	Preparing Clouddriver
+
     11/14/22 19:26	Clouddriver VSI (10.87.32.142) is provisioned
+
     11/14/22 19:42	Dismissing IBM CloudBuilder VSI
+
     11/14/22 19:54	Start ordering service infrastructure
+
     11/14/22 19:55	Service infrastructure Veeam endurance iSCSI storage is ready
+
     11/14/22 19:56	Start requesting service creation to IBM CloudDriver
+
     11/14/22 19:56	Start obtaining service infrastructure
+
     11/14/22 21:52	Service Veeam has been installed successfully.
+
     11/14/22 21:55	Release Clouddriver (10.87.32.142)
+
     11/14/22 21:56	vCenter Server instance is ready to use
+
     11/14/22 23:55	Cancel Clouddriver VSI (10.87.32.142)
+
 
 35. Click the **Summary** option in the left-hand menu.
 
@@ -148,3 +185,5 @@ Recall when this VCS instance was created, only 1 data store was added. However,
 40. Click the **VMs** tab.
 
 All the VMs that are currently deployed are associated with the VMware management components, edge services, and Veeam. At this point, clients could begin to deploy their own workloads.
+
+That concludes the **managing** portion of the demonstration.
