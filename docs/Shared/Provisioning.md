@@ -2,24 +2,24 @@
 !!! tip "WAYS TO WATCH"
     In addition to the embedded video, IBMers and Business Partners can also <a href="https://ibm.seismic.com/Link/Content/DCFGW2RT6jVGm82VTDMJ6TdDJC4V" target="_blank">download the recording from Seismic</a>.
 
-
------------------------------
-Now it is time to provision a VMware vCenter Server (VCS) instance. Use the click-thru demonstration below to practice provisioning a VCS instance.
-
-Note, fields that require a text entry (e.g. service name) are pre-populated in the click-thru demonstration.
-
-!!! tip
-    Not sure where to click or what to do next? Simply click anywhere on the screen and the spot to click next will be highlighted.
-
-1. Open the link below and then click the play button ![](_attachments/ClickThruPlayButton.png) to begin the demonstration.
-
-**Click-thru demo:** <a href="https://ibm.github.io/SalesEnablement-VMware-L3/includes/Shared-Provisioning/index.html" target ="_blank">Provision an instance of IBM Cloud VMware Solutions **Shared**</a>
-
-----------------------
-
 The following module will guide business partners and IBM sellers through the process of provisioning a **VMware Shared** plan via the IBM Cloud. Along the way, additional context around sizing and configuration of the offering will be provided, illustrating the value of these features to end-users, and pointers supplied to additional resources for those looking to dig deeper.
 
-VMWare Solutions, including the **Shared** plan and other tiers, are accessible through the <a href="https://cloud.ibm.com/vmware" target="_blank">VMware portal on IBM Cloud</a>.
+#
+# Click-Thru Demonstration
+-----------------------------
+
+**Click-thru demo:** <a href="https://ibm.github.io/SalesEnablement-VMware-L3/includes/Shared-Provisioning/index.html" target ="_blank">Provision an instance of IBM Cloud VMware Solutions Shared</a>.
+
+We begin by simulating how to provision a VMware vCenter Server (VCS) instance. Use the click-thru demonstration linked above to practice provisioning a VCS instance. The fields that require a text entry (e.g. service name) are pre-populated in the click-thru demonstration. Open the link and then click the play button ![](_attachments/ClickThruPlayButton.png) to begin the demonstration.
+
+!!! note "NAVIGATION"
+    Not sure where to click or what to do next? Simply click anywhere on the screen within the click-thru demo page and the spot to interact with next will be highlighted. Step-by-step instructions on how to navigate the demo, and repeat the demonstration again in front of clients, are provided in the write-up below.
+
+#
+# Step-By-Step Instructions
+----------------------
+
+VMWare Solutions, including the **Shared** plan and other tiers, are accessible through the <a href="https://cloud.ibm.com/vmware" target="_blank">VMware portal on IBM Cloud</a>. Be aware that if you provision a live VMware Shared instance using your *personal* IBM Cloud account, then your account (and credit card associated with that personal account) will be billed for the deployment.
 
 1. From the IBM Cloud dashboard, click the **VMware** tab on the left-hand navigation menu, or alternatively
 
@@ -29,12 +29,9 @@ VMWare Solutions, including the **Shared** plan and other tiers, are accessible 
 
 Ensure that your IBM Cloud account is using the ```ITZ-VMWARE``` account that you were invited to as part of the prerequisite setup for this hands-on material.
 
-3. You can switch to ```ITZ-VMWARE``` by clicking the drop-down selector in the top-right corner of the IBM Cloud interface, as shown in the screenshot below.
+3. Switch to your personal IBM Cloud account, or an account that you have permission to charge billable expenses to, by clicking the drop-down selector in the top-right corner of the IBM Cloud interface, as shown in the screenshot below.
 
 ![](_attachments/shared-provisioning-2.png)
-
-!!! warning "WARNING"
-    If you continue with the following instructions using your _personal_ IBM Cloud account, there is a risk that your account (and credit card associated with that personal account) will be billed for provisioning a VMware Solutions deployment. To avoid any unwanted charges, ensure that your account is switched to ```ITZ-VMWARE``` before continuing.
 
 With your account properly set, you can proceed with configuration and setup of a VMware Shared plan. There are four platforms currently provided for VMware on IBM Cloud: ```VMware Shared```, ```VMware as a Service```, ```VMware vSphere```, and ```VMware vCenter Server```. For the purposes of this module, you will be configuring and provisioning a ```VMware Shared``` platform.
 
