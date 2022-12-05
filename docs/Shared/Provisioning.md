@@ -29,6 +29,8 @@ VMWare Solutions, including the **Shared** plan and other tiers, are accessible 
 
 3. Switch to your personal IBM Cloud account, or an account that you have permission to charge billable expenses to, by clicking the drop-down selector in the top-right corner of the IBM Cloud interface.
 
+![](_attachments/shared-provisioning-2.png)
+
 With your account properly set, you can proceed with configuration and setup of a VMware Shared plan. There are four platforms currently provided for VMware on IBM Cloud: ```VMware Shared```, ```VMware as a Service```, ```VMware vSphere```, and ```VMware vCenter Server```. For the purposes of this module, you will be configuring and provisioning a ```VMware Shared``` platform.
 
 4. As shown in the screenshot below, select the **VMware Shared** tile and click **Create** to continue to the configuration page.
