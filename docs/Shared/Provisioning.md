@@ -27,8 +27,6 @@ VMWare Solutions, including the **Shared** plan and other tiers, are accessible 
 
 ![](_attachments/shared-provisioning-1.png)
 
-Ensure that your IBM Cloud account is using the ```ITZ-VMWARE``` account that you were invited to as part of the prerequisite setup for this hands-on material.
-
 3. Switch to your personal IBM Cloud account, or an account that you have permission to charge billable expenses to, by clicking the drop-down selector in the top-right corner of the IBM Cloud interface, as shown in the screenshot below.
 
 ![](_attachments/shared-provisioning-2.png)
@@ -62,7 +60,7 @@ The web browser will redirect to a new page, where you will be asked to provide 
 
 6. Supply a unique and memorable **Virtual data center name** for your environment.
 
-7. Set the **Resource Group** to ```Enablement-L3```. This determines how resources are organized within your IBM Cloud account. Resource Groups cannot be changed for a service instance once it has been deployed.
+7. Set the **Resource Group** to ```Enablement-L3```. This determines how resources are organized within your IBM Cloud account. Resource Groups cannot be changed for a service instance once it has been deployed. Note that if you are replicating these steps using your personal IBM Cloud account, you will likely see different Resource Groups available than the ones shown here.
 
 
 #
@@ -187,7 +185,7 @@ The pre-installed services include:
 #
 # After Placing An Order
 
-When satisfied with the configuration options, inspect the far-right side of the IBM Cloud interface to confirm your costs and agree to the terms of service. As mentioned before, **ensure you are using the ```ITZ-VMWARE``` account before deploying a VMware Shared plan**, or risk incurring charges on your personal credit card.
+When satisfied with the configuration options, inspect the far-right side of the IBM Cloud interface to confirm your costs and agree to the terms of service. As mentioned before, **be aware that provisioning a VMware Shared plan on IBM Cloud will result in billing to your personal account** (and associated credit card personal credit card).
 
 17. Verify that you have read and agree to the terms of service.
 
