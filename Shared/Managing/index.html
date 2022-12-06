@@ -477,27 +477,51 @@
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-5.png" /></p>
 <ol start="7">
-<li>Back on the Summary page, locate the <strong>vCloud Director console</strong> button near the top-right of the screen. Before resetting the admin password, this button would have been greyed out and inaccessible. With the password reset complete, the button is now active (blue) — click it to continue to the console login page.</li>
+<li>Locate the <strong>VMware Shared</strong> navigation link near the top-left of the page. Click the URL to return to the overview page for all VMware Shared instances.</li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-6.png" /></p>
 <ol start="8">
-<li>A new tab or window will open, prompting you to log in to the vCloud Director console. If one does not appear, check to make sure a pop-up blocker is not active. Use the <code>admin</code> and <code>password</code> fields recorded in <strong>Step 6</strong> to log in to the console.</li>
+<li>
+<p>Just to the left of the <code>Dallas Director 01</code> instance is a drop-down arrow — click this arrow to expand the list of all Virtual Data Centers (VDC) belonging to that instance.</p>
+</li>
+<li>
+<p>There may multiple VDCs belonging to the <code>Dallas Director 01</code> VMware Shared instance. In our example, click on the name of the <code>se-l3-shared</code> VDC to pull open additional details.</p>
+</li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-7.png" /></p>
+<ol start="10">
+<li>Let's experiment with resizing the amount of vCPU and RAM resources assigned to the VDC. Recall earlier that it was mentioned how IBM Cloud enables scalable deployments of VMware Shared, which can be adjusted (up or down) as the resource requirements of the instance change over its lifecycle. Edit the <strong>Resource Reservation</strong> field by clicking the pencil icon, as shown below.</li>
+</ol>
+<p><img alt="" src="../_attachments/shared-managing-8.png" /></p>
+<ol start="11">
+<li>
+<p>Adjust the <strong>vCPU Limit</strong> field down to <code>50</code> and reduce the <strong>RAM Limit</strong> field to <code>5120</code> GB.</p>
+</li>
+<li>
+<p>Take note that the metered billing for the instance will be adjusted based on the reduced resource requirements. When satisfied, click <strong>Modify</strong> to confirm and implement the changes.</p>
+</li>
+</ol>
+<p><img alt="" src="../_attachments/shared-managing-9.png" /></p>
+<ol start="7">
+<li>
+<p>Back on the Summary page, locate the <strong>vCloud Director console</strong> button near the top-right of the screen. Before resetting the admin password, this button would have been greyed out and inaccessible. With the password reset complete, the button is now active (blue) — click it to continue to the console login page.</p>
+</li>
+<li>
+<p>A new tab or window will open, prompting you to log in to the vCloud Director console. If one does not appear, check to make sure a pop-up blocker is not active. Use the <code>admin</code> and <code>password</code> fields recorded in <strong>Step 6</strong> to log in to the console.</p>
+</li>
+</ol>
 <p>After successfully authenticating, your browser will redirect to the <strong>vCloud Director console</strong>. From this page, you will be able to access many of the administrative functions for the VMware Shared environment (with some restrictions in place to ensure the safety and stability of the deployment). By default, the console will load to the <strong>Data Centers</strong> tab. Here you can inspect details on the virtual data center supporting your environment, which in the case of the example screenshot below is the <code>bienko-vdc</code> environment which was set up during the <a href="https://ibm.github.io/SalesEnablement-VMware-L3/Shared/Provisioning/" target="_blank">Provisioning</a> section earlier. A summary of the VDC's vCPU, memory, and storage utilization is provided at the bottom of the page.</p>
 <ol start="9">
 <li>Let's explore other elements of the vCloud Director console. From the navigation menu along the top of the console dashboard, click the <strong>Applications</strong> tab.</li>
 </ol>
-<p><img alt="" src="../_attachments/shared-managing-8.png" /></p>
 <h1 id="_3"></h1>
 <h1 id="managing-applications-and-virtual-machines">Managing Applications and Virtual Machines</h1>
 <hr />
 <p>The console's <strong>Applications</strong> dashboard allows for the centralized management and deployment of all applications— which are categorized as either <em>virtual machines</em> or <em>virtual applications</em> —within the VMware Shared environment. A virtualized application, or <em>vApp</em>, consists of one or more virtual machines (VMs) that communicate over the Shared plan's network, making use of the Shared plan's resources, or invoking services that the Shared plan supports. A single vApp can consist of one, or multiple, VMs as part of its backbone.</p>
 <ol start="10">
-<li>Let's try drafting a new virtualized application from scratch. Do so by clicking the <strong>New vApp</strong> button from the menu at the bottom of the page.</li>
-</ol>
-<p><img alt="" src="../_attachments/shared-managing-9.png" /></p>
-<ol start="11">
+<li>
+<p>Let's try drafting a new virtualized application from scratch. Do so by clicking the <strong>New vApp</strong> button from the menu at the bottom of the page.</p>
+</li>
 <li>
 <p>The first order of business is selecting which Virtual Data Center that the virtual application will be assigned to. By default, you should see the VDC environment that was created earlier (<code>bienko-vdc</code> in the example screenshot below).</p>
 </li>
