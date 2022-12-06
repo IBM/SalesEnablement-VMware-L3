@@ -54,19 +54,42 @@ A dialogue window will open, asking you to confirm an administrative password re
 
 ![](_attachments/shared-managing-5.png)
 
-7. Back on the Summary page, locate the **vCloud Director console** button near the top-right of the screen. Before resetting the admin password, this button would have been greyed out and inaccessible. With the password reset complete, the button is now active (blue) — click it to continue to the console login page.
+7. Locate the **VMware Shared** navigation link near the top-left of the page. Click the URL to return to the overview page for all VMware Shared instances.
 
 ![](_attachments/shared-managing-6.png)
 
-8. A new tab or window will open, prompting you to log in to the vCloud Director console. If one does not appear, check to make sure a pop-up blocker is not active. Use the ```admin``` and ```password``` fields recorded in **Step 6** to log in to the console.
+8. Just to the left of the ```Dallas Director 01``` instance is a drop-down arrow — click this arrow to expand the list of all Virtual Data Centers (VDC) belonging to that instance.
+
+9. There may multiple VDCs belonging to the ```Dallas Director 01``` VMware Shared instance. In our example, click on the name of the ```se-l3-shared``` VDC to pull open additional details.
 
 ![](_attachments/shared-managing-7.png)
+
+10. Let's experiment with resizing the amount of vCPU and RAM resources assigned to the VDC. Recall earlier that it was mentioned how IBM Cloud enables scalable deployments of VMware Shared, which can be adjusted (up or down) as the resource requirements of the instance change over its lifecycle. Edit the **Resource Reservation** field by clicking the pencil icon, as shown below.
+
+![](_attachments/shared-managing-8.png)
+
+11. Adjust the **vCPU Limit** field down to ```50``` and reduce the **RAM Limit** field to ```5120``` GB.
+
+12. Take note that the metered billing for the instance will be adjusted based on the reduced resource requirements. When satisfied, click **Modify** to confirm and implement the changes.
+
+![](_attachments/shared-managing-9.png)
+
+
+
+
+7. Back on the Summary page, locate the **vCloud Director console** button near the top-right of the screen. Before resetting the admin password, this button would have been greyed out and inaccessible. With the password reset complete, the button is now active (blue) — click it to continue to the console login page.
+
+
+
+8. A new tab or window will open, prompting you to log in to the vCloud Director console. If one does not appear, check to make sure a pop-up blocker is not active. Use the ```admin``` and ```password``` fields recorded in **Step 6** to log in to the console.
+
+
 
 After successfully authenticating, your browser will redirect to the **vCloud Director console**. From this page, you will be able to access many of the administrative functions for the VMware Shared environment (with some restrictions in place to ensure the safety and stability of the deployment). By default, the console will load to the **Data Centers** tab. Here you can inspect details on the virtual data center supporting your environment, which in the case of the example screenshot below is the ```bienko-vdc``` environment which was set up during the <a href="https://ibm.github.io/SalesEnablement-VMware-L3/Shared/Provisioning/" target="_blank">Provisioning</a> section earlier. A summary of the VDC's vCPU, memory, and storage utilization is provided at the bottom of the page.
 
 9. Let's explore other elements of the vCloud Director console. From the navigation menu along the top of the console dashboard, click the **Applications** tab.
 
-![](_attachments/shared-managing-8.png)
+
 
 #
 # Managing Applications and Virtual Machines
@@ -76,7 +99,7 @@ The console's **Applications** dashboard allows for the centralized management a
 
 10. Let's try drafting a new virtualized application from scratch. Do so by clicking the **New vApp** button from the menu at the bottom of the page.
 
-![](_attachments/shared-managing-9.png)
+
 
 11. The first order of business is selecting which Virtual Data Center that the virtual application will be assigned to. By default, you should see the VDC environment that was created earlier (```bienko-vdc``` in the example screenshot below).
 
