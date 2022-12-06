@@ -92,7 +92,7 @@ From this management screen, you can access information on the VMware Shared pla
 
 16. Our first task will be to define **Networking** parameters for the VDC. Click the **Networks** subdirectory from the list of tabs along the left side of the interface.
 
-17. Click the **New** button**, as shown in the screenshot below, to create a new network configuration for the VDC.
+17. Click the **New** button, as shown in the screenshot below, to create a new network configuration for the VDC.
 
 ![](_attachments/shared-managing-13.png)
 
@@ -116,15 +116,7 @@ You must now decide the **Network Type** appropriate for this deployment. There 
 
 ![](_attachments/shared-managing-15.png)
 
-
-
-
-
-
-
-
-
-48. Having selected the **Routed** network type in **Step 46**, which makes use of an edge gateway for regulated access to the network, we must now define an **Edge Connection** for the organization VDC. The configuration tool will automatically designate an edge connection (```edge-dal10-67c6f68e``` for the ```Dallas Director 01``` data center) with ```2``` External Networks and ```0``` Org VDC Networks.
+22. Having selected the **Routed** network type in **Step 46**, which makes use of an edge gateway for regulated access to the network, we must now define an **Edge Connection** for the organization VDC. The configuration tool will automatically designate an edge connection (```edge-dal12-d625b1f2``` for the ```Dallas Director 01``` data center) with ```2``` External Networks and ```0``` Org VDC Networks.
 
 Next, you must choose the type of Edge Connection to be applied. There are three options:
 
@@ -134,49 +126,72 @@ Next, you must choose the type of Edge Connection to be applied. There are three
 
 - *Subinterface*: For connecting to the edge gateway's internal trunk interface. The maximum number of supported network connections is ```200```.
 
-49. Select the **Internal** Edge Connection type.
+23. Select the **Internal** Edge Connection type. When satisfied, click **Next** to continue.
 
-50. When satisfied, click **Next** to continue.
+![](_attachments/shared-managing-16.png)
 
-![](_attachments/shared-managing-26.png)
+24. Provide a unique **Name** for the organization VDC network (```se-l3-network```) and optionally a basic **Description** to its purpose.
 
-51. Provide a unique **Name** for the organization VDC network (```BienkoNetwork```) and optionally a basic **Description** to its purpose.
+A **Gateway CIDR** must be assigned, which includes the IP address of the gateway. This value cannot be changed once assigned.
 
-A **Gateway CIDR** must be assigned, which includes the IP address of the gateway. This value cannot be changed once assigned. In our example, the CIDR of ```192.168.100.14/24``` represents the gateway address of ```192.168.100.14``` and its associated routing prefix of ```192.168.100.0```; or equivalently, its subnet mask of ```255.255.255.0```.
+25. Assign a CIDR of ```192.168.1.1/24``` and leave the **Dual-Stack Mode** option disabled. For our purposes, the network is not to be **Shared**: therefore, leave this option disabled.
 
-52. Assign a CIDR of ```192.168.100.14/24``` and leave the **Dual-Stack Mode** option disabled.
+26. When satisfied, click **Next** to continue.
 
-53. For our purposes, the network is not to be **Shared**: therefore, leave this option disabled.
+![](_attachments/shared-managing-17.png)
 
-54. When satisfied, click **Next** to continue.
+**Static IP Pools** must now be assigned to the Gateway CIDR assigned earlier in **Step 25**. Verify that the CIDR displayed on this panel matches the one that you designated previously. No additional modifications are required at this time.
 
-![](_attachments/shared-managing-27.png)
+27. When satisfied, click **Next** to continue.
 
-55. **Static IP Pools** must now be assigned to the Gateway CIDR assigned earlier in **Step 52**. Verify that the CIDR displayed on this panel matches the one that you designated previously.
-
-56. You may enable whichever range of IP addresses you wish; however, for the sake of example, let's assign a range of 7 IP addresses by entering ```192.168.100.15 - 192.168.100.20``` into the form as shown. Portable IP addresses are available to all resources on a VLAN, whereas static IP addresses are available to the resource identified as their routing endpoint.
-
-57. Click the **Add** button after entering the IP address ranges to add them to the Static IP Pool.
-
-58. When satisfied, click **Next** to continue.
-
-![](_attachments/shared-managing-28.png)
+![](_attachments/shared-managing-18.png)
 
 **DNS**, or the Domain Name System, provides the mapping between IP addresses (such as the ones specified earlier) and the "name" address that you typically enter into a web browser (```www.google.com```, for example). A DNS relay can be enabled for the edge gateway previously configured; however, the DNS relay must be set before deployment and cannot be modified after the fact.
 
-59. **Enable** the **Use Edge DNS** slider. The remaining fields below can remain blank.
+28. **Enable** the **Use Edge DNS** slider. The remaining fields below can remain blank. When satisfied, click **Next** to continue.
 
-60. When satisfied, click **Next** to continue.
-
-![](_attachments/shared-managing-29.png)
+![](_attachments/shared-managing-19.png)
 
 The **Ready to Complete** panel provides a full summary of your organization VDC network configurations. Here you can review the details of the network before choosing to commit to a deployment, or discard the network configuration completely.
 
-61. Click the **Finish** button to create the network.
+29. Click the **Finish** button to create the network.
 
-![](_attachments/shared-managing-30.png)
+![](_attachments/shared-managing-20.png)
 
-Your browser will automatically redirect to the **Networking** tab of the vCloud Director console.
+Your browser will automatically redirect to the **Networking** tab of the vCloud Director console. From the list of Networks, you will see the ```se-l3-network``` deploy and eventually update its status to ```Ready``` once fully initialized.
+
+30. Click the **Virtual Machines** subdirectory from the list of tabs along the left side of the interface.
+
+![](_attachments/shared-managing-21.png)
+
+The console's **Applications** dashboard allows for the centralized management and deployment of all applications— which are categorized as either *virtual machines* or *virtual applications* —within the VMware Shared environment. A virtualized application, or *vApp*, consists of one or more virtual machines (VMs) that communicate over the Shared plan's network, making use of the Shared plan's resources, or invoking services that the Shared plan supports. A single vApp can consist of one, or multiple, VMs as part of its backbone.
+
+31. Let's try drafting a new virtual machine from scratch. Do so by clicking the **New VM** button from the menu at the bottom of the page.
+
+![](_attachments/shared-managing-22.png)
+
+11. The first order of business is selecting which Virtual Data Center that the VM will be assigned to. By default, you should see the VDC environment that was created earlier (```bienko-vdc``` in the example screenshot below).
+
+12. Click **Next** to continue.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ![](_attachments/shared-managing-38.png)
 
@@ -214,15 +229,7 @@ Generalized information about the Edge Gateway are displayed on the details page
 # Managing Applications and Virtual Machines
 ----------------------
 
-The console's **Applications** dashboard allows for the centralized management and deployment of all applications— which are categorized as either *virtual machines* or *virtual applications* —within the VMware Shared environment. A virtualized application, or *vApp*, consists of one or more virtual machines (VMs) that communicate over the Shared plan's network, making use of the Shared plan's resources, or invoking services that the Shared plan supports. A single vApp can consist of one, or multiple, VMs as part of its backbone.
 
-10. Let's try drafting a new virtualized application from scratch. Do so by clicking the **New vApp** button from the menu at the bottom of the page.
-
-
-
-11. The first order of business is selecting which Virtual Data Center that the virtual application will be assigned to. By default, you should see the VDC environment that was created earlier (```bienko-vdc``` in the example screenshot below).
-
-12. Click **Next** to continue.
 
 
 
