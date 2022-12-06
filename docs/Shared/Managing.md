@@ -10,7 +10,7 @@ The following module guides business partners and IBM sellers through the myriad
 
 **——————— UPDATE THE TEXT BELOW**
 
-**Click-thru demo:** <a href="https://ibm.github.io/SalesEnablement-VMware-L3/includes/Shared-Provisioning/index.html" target ="_blank">Managing an instance of IBM Cloud VMware Solutions Shared</a>.
+**Click-thru demo:** <a href="https://ibm.github.io/SalesEnablement-VMware-L3/includes/Shared-Managing-VCD/index.html" target ="_blank">Managing an instance of IBM Cloud VMware Solutions Shared</a>.
 
 Use the click-thru demonstration linked above to practice managing an instance of VMware Shared. The fields that require a text entry (e.g. service name) are pre-populated in the click-thru demonstration. Open the link and then click the play button ![](_attachments/ClickThruPlayButton.png) to begin the demonstration.
 
