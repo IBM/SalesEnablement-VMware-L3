@@ -54,63 +54,226 @@ A dialogue window will open, asking you to confirm an administrative password re
 
 ![](_attachments/shared-managing-5.png)
 
-7. Back on the Summary page, locate the **vCloud Director console** button near the top-right of the screen. Before resetting the admin password, this button would have been greyed out and inaccessible. With the password reset complete, the button is now active (blue) — click it to continue to the console login page.
+7. Locate the **VMware Shared** navigation link near the top-left of the page. Click the URL to return to the overview page for all VMware Shared instances.
 
 ![](_attachments/shared-managing-6.png)
 
-8. A new tab or window will open, prompting you to log in to the vCloud Director console. If one does not appear, check to make sure a pop-up blocker is not active. Use the ```admin``` and ```password``` fields recorded in **Step 6** to log in to the console.
+8. Just to the left of the ```Dallas Director 01``` instance is a drop-down arrow — click this arrow to expand the list of all Virtual Data Centers (VDC) belonging to that instance.
+
+9. There may multiple VDCs belonging to the ```Dallas Director 01``` VMware Shared instance. In our example, click on the **Name** of the ```se-l3-shared``` VDC to pull open additional details.
 
 ![](_attachments/shared-managing-7.png)
 
-After successfully authenticating, your browser will redirect to the **vCloud Director console**. From this page, you will be able to access many of the administrative functions for the VMware Shared environment (with some restrictions in place to ensure the safety and stability of the deployment). By default, the console will load to the **Data Centers** tab. Here you can inspect details on the virtual data center supporting your environment, which in the case of the example screenshot below is the ```bienko-vdc``` environment which was set up during the <a href="https://ibm.github.io/SalesEnablement-VMware-L3/Shared/Provisioning/" target="_blank">Provisioning</a> section earlier. A summary of the VDC's vCPU, memory, and storage utilization is provided at the bottom of the page.
-
-9. Let's explore other elements of the vCloud Director console. From the navigation menu along the top of the console dashboard, click the **Applications** tab.
+10. Let's experiment with resizing the amount of vCPU and RAM resources assigned to the VDC. Recall earlier that it was mentioned how IBM Cloud enables scalable deployments of VMware Shared, which can be adjusted (up or down) as the resource requirements of the instance change over its lifecycle. Edit the **Resource Reservation** field by clicking the pencil icon, as shown below.
 
 ![](_attachments/shared-managing-8.png)
 
-#
-# Managing Applications and Virtual Machines
-----------------------
+11. Adjust the **vCPU Limit** field down to ```50``` vCPU and reduce the **RAM Limit** field to ```5120``` GB.
 
-The console's **Applications** dashboard allows for the centralized management and deployment of all applications— which are categorized as either *virtual machines* or *virtual applications* —within the VMware Shared environment. A virtualized application, or *vApp*, consists of one or more virtual machines (VMs) that communicate over the Shared plan's network, making use of the Shared plan's resources, or invoking services that the Shared plan supports. A single vApp can consist of one, or multiple, VMs as part of its backbone.
-
-10. Let's try drafting a new virtualized application from scratch. Do so by clicking the **New vApp** button from the menu at the bottom of the page.
+12. Take note that the metered billing for the instance will be adjusted based on the reduced resource requirements. When satisfied, click **Modify** to confirm and implement the changes.
 
 ![](_attachments/shared-managing-9.png)
 
-11. The first order of business is selecting which Virtual Data Center that the virtual application will be assigned to. By default, you should see the VDC environment that was created earlier (```bienko-vdc``` in the example screenshot below).
-
-12. Click **Next** to continue.
+13. Back on the Summary page, locate the **vCloud Director console** button near the top-right of the screen. Before resetting the admin password, this button would have been greyed out and inaccessible. With the password reset complete, the button is now active (blue) — click it to continue to the console login page.
 
 ![](_attachments/shared-managing-10.png)
 
-13. The new vApp will require a **Name** (```vAppSample```) and a **Description** (```Demonstration purposes only```). The **Power On** toggle can be left ```OFF``` for now, as we will not be deploying this example vApp to a live state.
-
-14. No virtual machines currently exist within the VMware Shared VDC environment, but if they did they would be listed within the table presented on this page. Instead, you will need to craft your own. Click the **Add Virtual Machine** button below the table to define a new VM.
+14. A new tab or window will open, prompting you to log in to the vCloud Director console. If one does not appear, check to make sure a pop-up blocker is not active. Use the ```admin``` and ```password``` fields recorded in **Step 6** to log in to the console. Click **Sign In** to continue.
 
 ![](_attachments/shared-managing-11.png)
 
-15. A new configuration window will open. Provide a **Name** (```BienkoVM```) and **Computer Name** (```BienkoVM```), as well as an optional **Description**, for the new VM.
+After successfully authenticating, your browser will redirect to the **vCloud Director console**. From this page, you will be able to access many of the administrative functions for the VMware Shared environment (with some restrictions in place to ensure the safety and stability of the deployment). By default, the console will load to the **Data Centers** tab. Here you can inspect details on the virtual data center supporting your environment. A summary of the VDC's vCPU, memory, and storage utilization is provided at the bottom of the page.
 
-16. The VM can either be crafted from scratch (**New**) or from a pre-designed template (**From Template**). One of the advantages of the VMware Shared plan on IBM Cloud is the wealth of templates available out of the box with the offering. Select the **From Template** option and then scroll through the template repository.
-
-17. We recommend selecting the ```vm-redhat8``` template, which corresponds to the Red Hat 8 official release (RHEL8), for the purposes of this demonstration — although you are free to choose any of your liking. Continue scrolling down the page to reveal more configuration options.
+15. Let's drill down into the ```se-l3-shared``` VDC that was re-sized earlier by clicking the tile, as shown, in the dashboard.
 
 ![](_attachments/shared-managing-12.png)
 
-18. **Storage** for the VM is our next consideration. As described earlier in the Provisioning module, there are a variety of storage options available for virtual machines and virtual applications deployed within the VMware Shared environment. Each storage tier provides different levels of throughput (IOPs) and levels of isolation (multi-tenant versus single-tenant), with differing levels of billable rates and charges associated with each tier. For our purposes, we recommend the ```Standard (VDC Default)``` tier of **Storage Policy**.
+From this management screen, you can access information on the VMware Shared plan's available ```Networks```, ```Edge Gateways```, ```Data Center Groups```, and ```Security Tags```. By default, the ```Networks``` associated with the deployment will be displayed first — at this time, your environment should contain no defined networks.
 
-19. **Compute** is dictated by the VDC sizing configuration that was set during the Provisioning module. The resources available to the VM we are defining here are restricted by the hardware configurations assigned to the VDC (```bienko-vdc```) when it was deployed earlier.
+16. Our first task will be to define **Networking** parameters for the VDC. Click the **Networks** subdirectory from the list of tabs along the left side of the interface.
 
-20. **NICs**, or Network Interface Cards, provide the network interface needed by the virtual machine for communication with the public internet, IBM Cloud, and on-premises resources. The *Primary NIC* will have been configured by default and no other adjustments are required.
+17. Click the **New** button, as shown in the screenshot below, to create a new network configuration for the VDC.
 
-21. When satisfied, click the **OK** button at the bottom of the panel to return to the vApp definition.
+![](_attachments/shared-managing-13.png)
+
+A new page will load to guide you through the process of defining an organization-wide virtual data center (VDC) network. The first element to be defined is the overall **Scope** of the network.
+
+18. The **Scope** of the network can be constrained to either an *organization-wide VDC* (providing connectivity only across the virtual machines belonging to that particular VDC), or across a *data center group* (connectivity across all VDCs belonging to that group, inclusive of all VMs belonging to those VDCs). Select the **Current Organization Virtual Data Center** option to keep networking connectivity restricted to only this singular VDC (```se-l3-shared```).
+
+19. When satisfied, click **Next** to continue.
+
+![](_attachments/shared-managing-14.png)
+
+You must now decide the **Network Type** appropriate for this deployment. There are two options:
+
+- *Routed*: A network type that utilizes an edge gateway to enable controlled access to networks and machines external to (outside of) the VDC.
+
+- *Isolated*: A network type that is only accessible by the VDC (or associated VDC Groups) specified in **Step 44**, thereby providing a fully isolated environment.
+
+20. Select the **Routed** Network Type.
+
+21. When satisfied, click **Next** to continue.
+
+![](_attachments/shared-managing-15.png)
+
+22. Having selected the **Routed** network type in **Step 46**, which makes use of an edge gateway for regulated access to the network, we must now define an **Edge Connection** for the organization VDC. The configuration tool will automatically designate an edge connection (```edge-dal12-d625b1f2``` for the ```Dallas Director 01``` data center) with ```2``` External Networks and ```0``` Org VDC Networks.
+
+Next, you must choose the type of Edge Connection to be applied. There are three options:
+
+- *Internal*: For connecting to one of the edge gateway's internal interfaces. The maximum number of supported network connections is ```9```.
+
+- *Distributed*: For connecting via fast and efficient *East-West* routing. The network will be connected to an internal interface of a distributed router that is exclusively associated with this gateway. The maximum number of supported network connections is ```400```.
+
+- *Subinterface*: For connecting to the edge gateway's internal trunk interface. The maximum number of supported network connections is ```200```.
+
+23. Select the **Internal** Edge Connection type. When satisfied, click **Next** to continue.
+
+![](_attachments/shared-managing-16.png)
+
+24. Provide a unique **Name** for the organization VDC network (```se-l3-network```) and optionally a basic **Description** to its purpose.
+
+A **Gateway CIDR** must be assigned, which includes the IP address of the gateway. This value cannot be changed once assigned.
+
+25. Assign a CIDR of ```192.168.1.1/24``` and leave the **Dual-Stack Mode** option disabled. For our purposes, the network is not to be **Shared**: therefore, leave this option disabled.
+
+26. When satisfied, click **Next** to continue.
+
+![](_attachments/shared-managing-17.png)
+
+**Static IP Pools** must now be assigned to the Gateway CIDR assigned earlier in **Step 25**. Verify that the CIDR displayed on this panel matches the one that you designated previously. No additional modifications are required at this time.
+
+27. When satisfied, click **Next** to continue.
+
+![](_attachments/shared-managing-18.png)
+
+**DNS**, or the Domain Name System, provides the mapping between IP addresses (such as the ones specified earlier) and the "name" address that you typically enter into a web browser (```www.google.com```, for example). A DNS relay can be enabled for the edge gateway previously configured; however, the DNS relay must be set before deployment and cannot be modified after the fact.
+
+28. **Enable** the **Use Edge DNS** slider. The remaining fields below can remain blank. When satisfied, click **Next** to continue.
+
+![](_attachments/shared-managing-19.png)
+
+The **Ready to Complete** panel provides a full summary of your organization VDC network configurations. Here you can review the details of the network before choosing to commit to a deployment, or discard the network configuration completely.
+
+29. Click the **Finish** button to create the network.
+
+![](_attachments/shared-managing-20.png)
+
+Your browser will automatically redirect to the **Networking** tab of the vCloud Director console. From the list of Networks, you will see the ```se-l3-network``` deploy and eventually update its status to ```Ready``` once fully initialized.
+
+30. Click the **Virtual Machines** subdirectory from the list of tabs along the left side of the interface.
+
+![](_attachments/shared-managing-21.png)
+
+The console's **Applications** dashboard allows for the centralized management and deployment of all applications— which are categorized as either *virtual machines* or *virtual applications* —within the VMware Shared environment. A virtualized application, or *vApp*, consists of one or more virtual machines (VMs) that communicate over the Shared plan's network, making use of the Shared plan's resources, or invoking services that the Shared plan supports. A single vApp can consist of one, or multiple, VMs as part of its backbone.
+
+31. Let's try drafting a new virtual machine from scratch. Do so by clicking the **New VM** button from the menu at the bottom of the page.
+
+![](_attachments/shared-managing-22.png)
+
+32. A new configuration window will open. Provide a **Name** (```se-l3-TestVM```) and **Computer Name** (```se-l3-testvm```), as well as an optional **Description**, for the new VM.
+
+33. The VM can either be crafted from scratch (**New**) or from a pre-designed template (**From Template**). One of the advantages of the VMware Shared plan on IBM Cloud is the wealth of templates available out of the box with the offering. Select the **From Template** option.
+
+34. **Disable** the **Power Off** toggle, as we do not want to initialize the VM until making additional configuration changes in a later step.
+
+35. We recommend selecting the ```vm-centos8``` template, which corresponds to the CentOS 8 (64-Bit) official release, for the purposes of this demonstration — although you are free to choose any of your liking. Continue scrolling down the page to reveal more configuration options.
+
+![](_attachments/shared-managing-23.png)
+
+**Storage** for the VM is our next consideration. As described earlier in the Provisioning module, there are a variety of storage options available for virtual machines and virtual applications deployed within the VMware Shared environment. Each storage tier provides different levels of throughput (IOPs) and levels of isolation (multi-tenant versus single-tenant), with differing levels of billable rates and charges associated with each tier. For our purposes, we recommend the ```Standard (VDC Default)``` tier of **Storage Policy**.
+
+**Compute** is dictated by the VDC sizing configuration that was set during the Provisioning module. The resources available to the VM we are defining here are restricted by the hardware configurations assigned to the VDC (```bienko-vdc```) when it was deployed earlier.
+
+**NICs**, or Network Interface Cards, provide the network interface needed by the virtual machine for communication with the public internet, IBM Cloud, and on-premises resources.
+
+36. The *Primary NIC* will have been configured by default, but additional modifications are needed before we can continue. Ensure the **Connected** field is toggled ```ON```
+
+37. Set the **Network** field to the network configuration deployed earlier: ```se-l3-network```
+
+38. Set the **IP Mode** to ```DHCP```
+
+39. When satisfied, click the **OK** button at the bottom of the panel to deploy the VM (which will remain powered off for now) and return to the **Virtual Machines** overview dashboard.
+
+![](_attachments/shared-managing-24.png)
+
+40. Locate the newly-minted VM tile on the page and click the **Details** button to inspect it further.
+
+![](_attachments/shared-managing-25.png)
+
+
+# Left Off Here ----------
+
 
 ![](_attachments/shared-managing-13.png)
 
 22. *(A):* A summary panel will now display outlining the full configuration of the vApp. To avoid incurring any unnecessary charges, click the **Cancel** button to return to the **Applications** tab.
 
 ![](_attachments/shared-managing-37.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+![](_attachments/shared-managing-38.png)
+
+62. From the list of subdirectories along the top of the screen, drill down into the **Edge Gateways** panel as shown.
+
+63. The panel will summarize all of the Edge Gateways currently deployed on the VMware Shared instance, including the one we just created (```edge-dal10-67c6f68e```). Click the **Name** of that Edge Gateway (your name may differ from the example shown) to expand additional details about it.
+
+![](_attachments/shared-managing-31.png)
+
+Generalized information about the Edge Gateway are displayed on the details page.
+
+64. Explore each of the subdirectories— *Services*, *Redeploy*, *Enable Distributed Routing*, *Sync Syslog*, and *Open in VDC Context* —to glimpse more of the administrative options available for your newly-created Edge Gateway and organization VDC network.
+
+65. Information and configuration options related to **External Networks** are available from the navigation menu on the left side of the panel.
+
+![](_attachments/shared-managing-32.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#
+# Managing Applications and Virtual Machines
+----------------------
+
+
+
+
+
+13. The new vApp will require a **Name** (```vAppSample```) and a **Description** (```Demonstration purposes only```). The **Power On** toggle can be left ```OFF``` for now, as we will not be deploying this example vApp to a live state.
+
+14. No virtual machines currently exist within the VMware Shared VDC environment, but if they did they would be listed within the table presented on this page. Instead, you will need to craft your own. Click the **Add Virtual Machine** button below the table to define a new VM.
+
+
+
+
 
 #
 # Creating vApps from a Template
@@ -188,103 +351,7 @@ The web browser will automatically be redirected back to the **Applications** ta
 
 41. From the dashboard of the vCloud Director console, switch to the **Networking** tab using the navigation bar along the top of the page.
 
-From this management screen, you can access information on the VMware Shared plan's available ```Networks```, ```Edge Gateways```, ```Data Center Groups```, and ```Security Tags```. By default, the ```Networks``` associated with the deployment will be displayed first — at this time, your environment should contain no defined networks.
 
-42. Click the **New** button, as shown in the screenshot below, to create a new network configuration.
-
-![](_attachments/shared-managing-23.png)
-
-A new page will load to guide you through the process of defining an organization-wide virtual data center (VDC) network. The first element to be defined is the overall **Scope** of the network.
-
-43. The **Scope** of the network can be constrained to either an *organization-wide VDC* (providing connectivity only across the virtual machines belonging to that particular VDC), or across a *data center group* (connectivity across all VDCs belonging to that group, inclusive of all VMs belonging to those VDCs). Select the **Organization Virtual Data Center** option to keep networking connectivity restricted to only one VDC.
-
-44. Given the selection made in **Step 43**, you will need to specify the organization VDC to which these constraints will apply. Select the VDC defined earlier (```bienko-vdc``` in this example).
-
-45. When satisfied, click **Next** to continue.
-
-![](_attachments/shared-managing-24.png)
-
-You must now decide the **Network Type** appropriate for this deployment. There are two options:
-
-- *Routed*: A network type that utilizes an edge gateway to enable controlled access to networks and machines external to (outside of) the VDC.
-
-- *Isolated*: A network type that is only accessible by the VDC (or associated VDC Groups) specified in **Step 44**, thereby providing a fully isolated environment.
-
-46. Select the **Routed** Network Type.
-
-47. When satisfied, click **Next** to continue.
-
-![](_attachments/shared-managing-25.png)
-
-48. Having selected the **Routed** network type in **Step 46**, which makes use of an edge gateway for regulated access to the network, we must now define an **Edge Connection** for the organization VDC. The configuration tool will automatically designate an edge connection (```edge-dal10-67c6f68e``` for the ```Dallas Director 01``` data center) with ```2``` External Networks and ```0``` Org VDC Networks.
-
-Next, you must choose the type of Edge Connection to be applied. There are three options:
-
-- *Internal*: For connecting to one of the edge gateway's internal interfaces. The maximum number of supported network connections is ```9```.
-
-- *Distributed*: For connecting via fast and efficient *East-West* routing. The network will be connected to an internal interface of a distributed router that is exclusively associated with this gateway. The maximum number of supported network connections is ```400```.
-
-- *Subinterface*: For connecting to the edge gateway's internal trunk interface. The maximum number of supported network connections is ```200```.
-
-49. Select the **Internal** Edge Connection type.
-
-50. When satisfied, click **Next** to continue.
-
-![](_attachments/shared-managing-26.png)
-
-51. Provide a unique **Name** for the organization VDC network (```BienkoNetwork```) and optionally a basic **Description** to its purpose.
-
-A **Gateway CIDR** must be assigned, which includes the IP address of the gateway. This value cannot be changed once assigned. In our example, the CIDR of ```192.168.100.14/24``` represents the gateway address of ```192.168.100.14``` and its associated routing prefix of ```192.168.100.0```; or equivalently, its subnet mask of ```255.255.255.0```.
-
-52. Assign a CIDR of ```192.168.100.14/24``` and leave the **Dual-Stack Mode** option disabled.
-
-53. For our purposes, the network is not to be **Shared**: therefore, leave this option disabled.
-
-54. When satisfied, click **Next** to continue.
-
-![](_attachments/shared-managing-27.png)
-
-55. **Static IP Pools** must now be assigned to the Gateway CIDR assigned earlier in **Step 52**. Verify that the CIDR displayed on this panel matches the one that you designated previously.
-
-56. You may enable whichever range of IP addresses you wish; however, for the sake of example, let's assign a range of 7 IP addresses by entering ```192.168.100.15 - 192.168.100.20``` into the form as shown. Portable IP addresses are available to all resources on a VLAN, whereas static IP addresses are available to the resource identified as their routing endpoint.
-
-57. Click the **Add** button after entering the IP address ranges to add them to the Static IP Pool.
-
-58. When satisfied, click **Next** to continue.
-
-![](_attachments/shared-managing-28.png)
-
-**DNS**, or the Domain Name System, provides the mapping between IP addresses (such as the ones specified earlier) and the "name" address that you typically enter into a web browser (```www.google.com```, for example). A DNS relay can be enabled for the edge gateway previously configured; however, the DNS relay must be set before deployment and cannot be modified after the fact.
-
-59. **Enable** the **Use Edge DNS** slider. The remaining fields below can remain blank.
-
-60. When satisfied, click **Next** to continue.
-
-![](_attachments/shared-managing-29.png)
-
-The **Ready to Complete** panel provides a full summary of your organization VDC network configurations. Here you can review the details of the network before choosing to commit to a deployment, or discard the network configuration completely.
-
-61. Click the **Finish** button to create the network.
-
-![](_attachments/shared-managing-30.png)
-
-Your browser will automatically redirect to the **Networking** tab of the vCloud Director console.
-
-![](_attachments/shared-managing-38.png)
-
-62. From the list of subdirectories along the top of the screen, drill down into the **Edge Gateways** panel as shown.
-
-63. The panel will summarize all of the Edge Gateways currently deployed on the VMware Shared instance, including the one we just created (```edge-dal10-67c6f68e```). Click the **Name** of that Edge Gateway (your name may differ from the example shown) to expand additional details about it.
-
-![](_attachments/shared-managing-31.png)
-
-Generalized information about the Edge Gateway are displayed on the details page.
-
-64. Explore each of the subdirectories— *Services*, *Redeploy*, *Enable Distributed Routing*, *Sync Syslog*, and *Open in VDC Context* —to glimpse more of the administrative options available for your newly-created Edge Gateway and organization VDC network.
-
-65. Information and configuration options related to **External Networks** are available from the navigation menu on the left side of the panel.
-
-![](_attachments/shared-managing-32.png)
 
 #
 # Additional Capabilities and Tooling
