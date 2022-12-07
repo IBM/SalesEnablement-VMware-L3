@@ -137,7 +137,7 @@ There are several considerations to take into account creating a private network
 # Virtual Data Center Capacity
 ----------------------
 
-These values essentially determine the compute processing capacity that is allocated to your virtual data center. It is measured in vCPU increments. Each vCPU increment represents a single 2.0 GHz core.  Compute memory, or "RAM limit" as it is described on the IBM Cloud portal, is allocated in one gigabyte (GB) increments. RAM limits identify the maximum amount of random access memory available to each virtual data center.
+These values essentially determine the compute processing capacity that is allocated to your virtual data center. It is measured in vCPU increments. Each vCPU increment represents a single 2.0 GHz core. Compute memory, or "RAM limit" as it is described on the IBM Cloud portal, is allocated in one gigabyte (GB) increments. RAM limits identify the maximum amount of random access memory available to each virtual data center.
 
 The limit placed on the maximum vCPU values determines the total number of processing units available for each virtual data center. Similarly, the RAM limit sets the maximum amount of memory available. You can adjust either of these values after you provision the virtual data center — giving customers the ability to scale and grow (or scale down) their virtual date center over time.
 

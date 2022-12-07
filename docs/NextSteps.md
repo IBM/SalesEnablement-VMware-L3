@@ -1,6 +1,6 @@
-This {{learningplan.name}} demonstrated several of the {{offering.name}} offerings available. Users learned the basics for provisioning and managing both VMware Shared and VMware vCenter Server resources. But there is still more to learn about {{offering.name}}. Links to specific topics were provided throughout this demonstration guide. Take the time to read the official VMware documentation <a href="https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage" target="_blank">here</a>.
+This {{learningplan.name}} demonstrated several of the {{offering.name}} offerings available. Users learned the basics for provisioning and managing both VMware Shared and VMware Dedicated resources. But there is still more to learn about {{offering.name}}. Links to specific topics are provided throughout this demonstration guide. Take the time to read the official {{offering.name}}}} documentation <a href="https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage" target="_blank">here</a>.
 
-And check out this <a href="https://cloud.ibm.com/vmware/compare_offerings" target="_blank">offering comparison page</a> as well.
+Be sure to check out this <a href="https://cloud.ibm.com/vmware/compare_offerings" target="_blank">offering comparison page</a> as well.
 
 Finally, remember to complete the {{learningplan.name}} learning plan.
 

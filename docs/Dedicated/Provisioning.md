@@ -27,7 +27,7 @@ Learn more about the licensing options <a href="https://cloud.ibm.com/docs/vmwar
 8. Under the **NSX** section, click the pull-down menu that currently shows **Data Center SP Professional**.
 9. Select the **Data Center SP Advanced** option.
 
-In this deployment, a single **Consolidated** cluster will be used. **Consolidated** clusters are used for both the management components of the VCS deployment as well as client workloads. This is typically fine for small deployments, and will potentially save the client some money.  However, for larger deployments with varying performance requirements for workloads, separating the management cluster from other workload clusters is the preferred architecture. Refer to the documentation for more details on management and workload clusters <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-scb-orderinginstance-consoli" target="_blank">here</a>.
+In this deployment, a single **Consolidated** cluster will be used. **Consolidated** clusters are used for both the management components of the VCS deployment as well as client workloads. This is typically fine for small deployments, and will potentially save the client some money. However, for larger deployments with varying performance requirements for workloads, separating the management cluster from other workload clusters is the preferred architecture. Refer to the documentation for more details on management and workload clusters <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-scb-orderinginstance-consoli" target="_blank">here</a>.
 
 Later the other options for to provision dedicated **Workload** and **Edge services** clusters will be explored, but for this environment a single **Consolidated** cluster is used.
 

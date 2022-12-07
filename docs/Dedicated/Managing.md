@@ -158,7 +158,7 @@ This screen image was created shortly after the provisioning completed for the i
 
 35. Click the **Summary** option in the left-hand menu.
 
-Notice the information provided for the various VMware management components. The user ID and passwords to the components are made available to the client's administrators as VCS is NOT a fully managed service.  The client is responsible for managing the VMware components like VCS, NSX, etc. Learn more about customer responsibilities <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_compl_info" target="_blank">here</a>.
+Notice the information provided for the various VMware management components. The user ID and passwords to the components are made available to the client's administrators as VCS is NOT a fully managed service. The client is responsible for managing the VMware components like VCS, NSX, etc. Learn more about customer responsibilities <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_compl_info" target="_blank">here</a>.
 
 36. Click the **vCenter console** link at the top of the page.
 
