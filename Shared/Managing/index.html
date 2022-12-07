@@ -13,7 +13,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.4.0">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.4.1">
     
     
       
@@ -428,22 +428,16 @@
 
 
 <p><div class="video-container"><iframe src="../_videos/VMware%20L3%20Shared%20Managing.mp4" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
-<div class="admonition tip">
-<p class="admonition-title">WAYS TO WATCH</p>
-<p>In addition to the embedded video, IBMers and Business Partners can also <a href="https://ibm.seismic.com/Link/Content/DCFGW2RT6jVGm82VTDMJ6TdDJC4V" target="_blank">download the recording from Seismic</a>.</p>
-</div>
 <p>The following module guides business partners and IBM sellers through the myriad of features and management tools available from within the VMware Shared instance dashboard on IBM Cloud. You will explore various elements of the management panels and tooling, including: data centers, applications, virtual machines, networking, libraries, administration, and system monitoring.</p>
 <h1 id="_1"></h1>
 <h1 id="click-thru-demonstration">Click-Thru Demonstration</h1>
 <hr />
-<p><strong>——————— UPDATE THE TEXT BELOW</strong></p>
 <p><strong>Click-thru demo:</strong> <a href="https://ibm.github.io/SalesEnablement-VMware-L3/includes/Shared-Managing-VCD/index.html" target ="_blank">Managing an instance of IBM Cloud VMware Solutions Shared</a>.</p>
 <p>Use the click-thru demonstration linked above to practice managing an instance of VMware Shared. The fields that require a text entry (e.g. service name) are pre-populated in the click-thru demonstration. Open the link and then click the play button <img alt="" src="../_attachments/ClickThruPlayButton.png" /> to begin the demonstration.</p>
 <div class="admonition note">
 <p class="admonition-title">NAVIGATION</p>
 <p>Not sure where to click or what to do next? Simply click anywhere on the screen within the click-thru demo page and the spot to interact with next will be highlighted. Step-by-step instructions on how to navigate the demo, and repeat the demonstration again in front of clients, are provided in the write-up below.</p>
 </div>
-<p><strong>——————— UPDATE THE TEXT ABOVE</strong></p>
 <h1 id="_2"></h1>
 <h1 id="step-by-step-instructions">Step-By-Step Instructions</h1>
 <hr />
@@ -647,181 +641,80 @@
 <li>Locate the newly-minted VM tile on the page and click the <strong>Details</strong> button to inspect it further.</li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-25.png" /></p>
-<h1 id="left-off-here-">Left Off Here ----------</h1>
-<p><img alt="" src="../_attachments/shared-managing-13.png" /></p>
-<ol start="22">
-<li><em>(A):</em> A summary panel will now display outlining the full configuration of the vApp. To avoid incurring any unnecessary charges, click the <strong>Cancel</strong> button to return to the <strong>Applications</strong> tab.</li>
-</ol>
-<p><img alt="" src="../_attachments/shared-managing-37.png" /></p>
-<p><img alt="" src="../_attachments/shared-managing-38.png" /></p>
-<ol start="62">
+<ol start="41">
 <li>
-<p>From the list of subdirectories along the top of the screen, drill down into the <strong>Edge Gateways</strong> panel as shown.</p>
+<p>Let's reconfigure the guest operating system (OS) associated with the VM. Once inside the Details panel, click the <strong>Guest OS Customization</strong> subdirectory from the interface on the left side of the panel.</p>
 </li>
 <li>
-<p>The panel will summarize all of the Edge Gateways currently deployed on the VMware Shared instance, including the one we just created (<code>edge-dal10-67c6f68e</code>). Click the <strong>Name</strong> of that Edge Gateway (your name may differ from the example shown) to expand additional details about it.</p>
+<p>Locate the <strong>Edit</strong> button, as shown in the screenshot below, and click the URL to open a new pop-up configuration window.</p>
+</li>
+</ol>
+<p><img alt="" src="../_attachments/shared-managing-26.png" /></p>
+<ol start="43">
+<li>
+<p>You will want to set your own password for the guest OS. Therefore, <strong>DISABLE</strong> the <strong>Auto Generate Password</strong> toggle.</p>
+</li>
+<li>
+<p><strong>ENABLE</strong> the <strong>Require Administrator to change password on first login</strong> option — this will prompt you to create a new password for the guest OS upon first connecting to the VM (once powered on).</p>
+</li>
+<li>
+<p>When satisfied, click <strong>Save</strong> to confirm the selections and return to the VM summary panel.</p>
+</li>
+</ol>
+<p><img alt="" src="../_attachments/shared-managing-27.png" /></p>
+<ol start="46">
+<li>
+<p>From the interface along the top of the panel, select the <strong>All Actions</strong> drop-down.</p>
+</li>
+<li>
+<p>Drill down into <strong>Power</strong> and select the <strong>Power On, Force Customization</strong> option to initialize the newly-configured VM.</p>
+</li>
+</ol>
+<p><img alt="" src="../_attachments/shared-managing-28.png" /></p>
+<ol start="48">
+<li>The VM will take a moment to initialize and power on. Once ready, click the <strong>Launch Web Console</strong> button from the top of the panel.</li>
+</ol>
+<p><img alt="" src="../_attachments/shared-managing-29.png" /></p>
+<ol start="49">
+<li>
+<p>An SSH console will appear in a pop-up window. Enter <code>root</code> as your login ID and then enter any password. You will initially receive a warning that the password provided is <em>incorrect</em>, and then subsequently will be asked to create a new password for the login. This is a result of the configuration options set in <strong>Step 44</strong>. Enter a new password of your choosing (confirming the password a second time when asked to do so) and continue logging in to the VM console.</p>
+</li>
+<li>
+<p>After successfully connecting to the console, safely <strong>close</strong> the pop-up window and return to the vCloud Director web interface.</p>
+</li>
+</ol>
+<p><img alt="" src="../_attachments/shared-managing-30.png" /></p>
+<ol start="51">
+<li>
+<p>Once again, select the <strong>All Actions</strong> drop-down from the top of the panel's interface.</p>
+</li>
+<li>
+<p>Click the <strong>Power Off</strong> button to disable the VM.</p>
 </li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-31.png" /></p>
-<p>Generalized information about the Edge Gateway are displayed on the details page.</p>
-<ol start="64">
+<ol start="53">
 <li>
-<p>Explore each of the subdirectories— <em>Services</em>, <em>Redeploy</em>, <em>Enable Distributed Routing</em>, <em>Sync Syslog</em>, and <em>Open in VDC Context</em> —to glimpse more of the administrative options available for your newly-created Edge Gateway and organization VDC network.</p>
+<p>Take note that the <strong>Power On</strong> and <strong>Power Off</strong> buttons have updated to reflect the VM status. For a third time, select the <strong>All Actions</strong> drop-down from the panel's interface.</p>
 </li>
 <li>
-<p>Information and configuration options related to <strong>External Networks</strong> are available from the navigation menu on the left side of the panel.</p>
+<p>Click the <strong>Delete</strong> button to tear down the VM instance. Confirm your selection when prompted to do so.</p>
 </li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-32.png" /></p>
-<h1 id="_3"></h1>
-<h1 id="managing-applications-and-virtual-machines">Managing Applications and Virtual Machines</h1>
-<hr />
-<ol start="13">
+<ol start="55">
 <li>
-<p>The new vApp will require a <strong>Name</strong> (<code>vAppSample</code>) and a <strong>Description</strong> (<code>Demonstration purposes only</code>). The <strong>Power On</strong> toggle can be left <code>OFF</code> for now, as we will not be deploying this example vApp to a live state.</p>
+<p>Close the vCloud Director web dashboard and return to the IBM Cloud dashboard. From the drop-down in the top-right corner of the interface (as shown in the screenshot below), click the <strong>Actions</strong> button.</p>
 </li>
 <li>
-<p>No virtual machines currently exist within the VMware Shared VDC environment, but if they did they would be listed within the table presented on this page. Instead, you will need to craft your own. Click the <strong>Add Virtual Machine</strong> button below the table to define a new VM.</p>
+<p>Select the <strong>Monitoring</strong> button to open the IBM Cloud monitoring dashboard for the VMware Shared instance.</p>
 </li>
-</ol>
-<h1 id="_4"></h1>
-<h1 id="creating-vapps-from-a-template">Creating vApps from a Template</h1>
-<hr />
-<ol start="22">
-<li><em>(B):</em> An alternative to defining a vApp from scratch is to select from the pre-built catalog of vApps that are packaged with every VMware Shared deployment on IBM Cloud. To inspect the resources available, click the <strong>Add vApp from Catalog</strong> button at the bottom of the page.</li>
-</ol>
-<p><img alt="" src="../_attachments/shared-managing-14.png" /></p>
-<ol start="23">
-<li>
-<p>A configuration window will open to configure a cataloged virtual application. First, select from the list of pre-built templates. For our demonstration purposes, we recommend selecting the <code>CentOS-7-Template-Official</code>, but do take the time to browse the available options for yourself before continuing.</p>
-</li>
-<li>
-<p>When satisfied with your selection, click <strong>Next</strong>.</p>
-</li>
-</ol>
-<p><img alt="" src="../_attachments/shared-managing-15.png" /></p>
-<ol start="25">
-<li>The vApp will require a <strong>Name</strong> (<code>BienkoVAppTemplate</code>) and optional <strong>Description</strong>.</li>
-</ol>
-<p>The <strong>Runtime lease</strong> field determines the length of time that the vApp can run within the VDC before its access to system resources is paused. The <strong>Storage lease</strong> field sets the time that the vApp remains available, from the moment it is stopped (when the <em>Runtime lease</em> expires). After the <em>Storage lease</em> has expired, clean-up of the vApp resources and associated data will begin automatically.</p>
-<ol start="26">
-<li>
-<p>For our demonstration purposes, both the <strong>Runtime lease</strong> and <strong>Storage lease</strong> fields can be set to <code>Never Expires</code>.</p>
-</li>
-<li>
-<p>When satisfied, click <strong>Next</strong> to continue.</p>
-</li>
-</ol>
-<p><img alt="" src="../_attachments/shared-managing-16.png" /></p>
-<p>The resources to which the vApp has permitted access to are configured on the following page. As described in <strong>Step 18</strong>, there are a variety of <strong>Storage Policies</strong> available — with differing metering and pricing metrics associated with each tier.</p>
-<ol start="28">
-<li>
-<p>For the purposes of our demonstration, configure the <code>vm-centos07</code> vApp to utilize the <code>Standard</code> <strong>Storage Tier</strong>.</p>
-</li>
-<li>
-<p><strong>Per-Disk Storage Policies</strong> are configured in the second table of this panel. You must <strong>Select a VM</strong>, which should be automatically populated to <code>vm-centos07</code> (or the VM naming that you specified earlier). By default, the <em>Storage Policy</em> will inherit the type of storage specified in <strong>Step 28</strong> (<code>Standard</code>).</p>
-</li>
-<li>
-<p>When satisfied, click <strong>Next</strong> to continue.</p>
-</li>
-</ol>
-<p><img alt="" src="../_attachments/shared-managing-17.png" /></p>
-<ol start="31">
-<li>
-<p>The vApp's <strong>Compute Policies</strong> are configured next. The total number of vCPUs that the vApp can access are determined by the <strong>Virtual CPUs</strong> field (<code>2</code>) and the constraints on <strong>Cores per Socket</strong> that can be accessed per vCPU are determined by the second field (<code>1</code>). The <strong>Number of Sockets</strong> is fixed at <code>2</code> for our example.</p>
-</li>
-<li>
-<p>The maximum amount of RAM available to the vApp is determined by the <strong>Memory</strong> field (<code>8 GB</code>).</p>
-</li>
-<li>
-<p>When satisfied, click <strong>Next</strong> to continue.</p>
-</li>
-</ol>
-<p><img alt="" src="../_attachments/shared-managing-18.png" /></p>
-<ol start="34">
-<li>
-<p>The <strong>Customize Hardware</strong> panel will allow you to configure the hardware— storage, in our case —available to the virtual machines running as a part of this vApp. Recall that a vApp can be comprised of one, or many, virtual machines. The <strong>Hard Disks</strong> associated with the vApp have been configured automatically to a size of <code>64GB</code>.</p>
-</li>
-<li>
-<p>When satisfied, click <strong>Next</strong> to continue.</p>
-</li>
-</ol>
-<p><img alt="" src="../_attachments/shared-managing-19.png" /></p>
-<p>Via the <strong>Configure Networking</strong> panel, you can specify and constrain the virtual networks that VMs running within the vApp will be able to connect to. These variables can also be adjusted after the vApp has been configured and launched. The vApp (<code>vm-centos07</code>) to which these networking configurations will be applied has been selected automatically.</p>
-<ol start="36">
-<li>
-<p>You must specify the <strong>Network</strong> field for this vApp: select the <code>vAppNet-vro-template-network</code> from the list of pre-configured networking templates.</p>
-</li>
-<li>
-<p>When satisfied, click <strong>Next</strong> to continue.</p>
-</li>
-</ol>
-<p><img alt="" src="../_attachments/shared-managing-20.png" /></p>
-<ol start="38">
-<li>
-<p>Additional properties can be configured via the <strong>Custom Properties</strong> tab. Should you wish, you can assign a custom hostname for guests via the <code>guest.hostname</code> property for this vApp. Leave this field blank.</p>
-</li>
-<li>
-<p>When satisfied, click <strong>Next</strong> to continue.</p>
-</li>
-</ol>
-<p><img alt="" src="../_attachments/shared-managing-21.png" /></p>
-<p>The <strong>Ready to Complete</strong> panel provides a full summary of your vApp (from Template) configurations. Here you can review the vApp before choosing to commit to a deployment, or discard the vApp configuration completely.</p>
-<ol start="40">
-<li>Click the <strong>Cancel</strong> button to avoid any billing charges.</li>
-</ol>
-<p><img alt="" src="../_attachments/shared-managing-22.png" /></p>
-<p>The web browser will automatically be redirected back to the <strong>Applications</strong> tab of the vCloud Director console.</p>
-<h1 id="_5"></h1>
-<h1 id="managing-networks">Managing Networks</h1>
-<hr />
-<ol start="41">
-<li>From the dashboard of the vCloud Director console, switch to the <strong>Networking</strong> tab using the navigation bar along the top of the page.</li>
-</ol>
-<h1 id="_6"></h1>
-<h1 id="additional-capabilities-and-tooling">Additional Capabilities and Tooling</h1>
-<hr />
-<p>For the purposes of this hands-on demonstration, we won't go too deeply into detail on other areas of the VMware Solutions Shared plan environment. Until live applications, virtualized machines, and a workforce of users are actively engaged with the instance, these other areas of the vCloud Director console will remain relatively quiet. However, we have included pointers below to relevant areas that may spark interest and conversations with clients. Feel free to peruse these areas and explore topics that may be pertinent to your customer engagements.</p>
-<ol start="66">
-<li>Using the navigation tabs along the top of the console, explore the <strong>Libraries</strong> tab. Here you can investigate more details on the vApp templates that were touched on earlier in this hands-on material. Users can expand the number of templates available within their own environment by importing them directly from VMware's vCenter.</li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-33.png" /></p>
-<ol start="67">
-<li>
-<p>From the <strong>Administration</strong> tab, a myriad of options for user management and access control are available.</p>
-</li>
-<li>
-<p>Here, VMware Shared users with administrative privileges can create new users, groups for those users, and roles for users to be assigned to. Identity providers, policies, certificates, and other security settings can also be implemented from this page.</p>
-</li>
+<ol start="57">
+<li>From the <strong>Monitoring</strong> tab it is possible for administrative users to inspect running <em>Tasks</em> and <em>Events</em> across the instance. Explore the interface and use the filters along the bottom of the page to look across activity for the environment across different ranges of time.</li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-34.png" /></p>
-<ol start="69">
-<li>
-<p>As an example, the screenshot below emulates the <strong>Create User</strong> panel. A user <code>vAppAuthor</code> is defined and an authentication password is assigned.</p>
-</li>
-<li>
-<p>The <strong>Roles</strong> field determines the level of privileged access and capabilities granted to the user. An administrator responsible for creating the user will be able to select from a variety of Roles (pre-built or admin-defined), such as <code>vApp Author</code>, that enable a user to carry out their expected job responsibilities without compromising the security of the VMware Shared instance as a whole.</p>
-</li>
-<li>
-<p><strong>Quotas</strong> can be applied to the user, limiting how many VMs (running or paused) that said user can manage within the instance.</p>
-</li>
-<li>
-<p>Discard any changes made to the user and group definitions.</p>
-</li>
-</ol>
-<p><img alt="" src="../_attachments/shared-managing-35.png" /></p>
-<ol start="73">
-<li>
-<p>Lastly, from the <strong>Monitoring</strong> tab it is possible for administrative users to inspect running <em>Tasks</em> and <em>Events</em> across the instance.</p>
-</li>
-<li>
-<p>Click on any of the task or event names to drill down into more granular details surrounding that item.</p>
-</li>
-<li>
-<p>When you have completed your tour of the vCloud Director console, click the username dropdown in the top-right corner of the dashboard and <strong>Log Out</strong> to end your session.</p>
-</li>
-</ol>
-<p><img alt="" src="../_attachments/shared-managing-36.png" /></p>
 <p>At this point in time, you have successfully explored the myriad of features and management tools available from within the <strong>VMware Shared</strong> dashboard on IBM Cloud. You should now have greater familiarity and fluency with the various elements of the management panels and tooling, including: how to manage data centers, building applications and virtual machines through the guided web interface, establishing networking rules, and the wealth of tooling available for managing the environment once in production.</p>
 <p>In the following chapter, you will investigate <strong>IBM Cloud for VMware Solutions Dedicated</strong>.</p>
 
