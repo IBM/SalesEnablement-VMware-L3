@@ -610,14 +610,49 @@
 <li>Let's try drafting a new virtual machine from scratch. Do so by clicking the <strong>New VM</strong> button from the menu at the bottom of the page.</li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-22.png" /></p>
-<ol start="11">
+<ol start="32">
 <li>
-<p>The first order of business is selecting which Virtual Data Center that the VM will be assigned to. By default, you should see the VDC environment that was created earlier (<code>bienko-vdc</code> in the example screenshot below).</p>
+<p>A new configuration window will open. Provide a <strong>Name</strong> (<code>se-l3-TestVM</code>) and <strong>Computer Name</strong> (<code>se-l3-testvm</code>), as well as an optional <strong>Description</strong>, for the new VM.</p>
 </li>
 <li>
-<p>Click <strong>Next</strong> to continue.</p>
+<p>The VM can either be crafted from scratch (<strong>New</strong>) or from a pre-designed template (<strong>From Template</strong>). One of the advantages of the VMware Shared plan on IBM Cloud is the wealth of templates available out of the box with the offering. Select the <strong>From Template</strong> option.</p>
+</li>
+<li>
+<p><strong>Disable</strong> the <strong>Power Off</strong> toggle, as we do not want to initialize the VM until making additional configuration changes in a later step.</p>
+</li>
+<li>
+<p>We recommend selecting the <code>vm-centos8</code> template, which corresponds to the CentOS 8 (64-Bit) official release, for the purposes of this demonstration — although you are free to choose any of your liking. Continue scrolling down the page to reveal more configuration options.</p>
 </li>
 </ol>
+<p><img alt="" src="../_attachments/shared-managing-23.png" /></p>
+<p><strong>Storage</strong> for the VM is our next consideration. As described earlier in the Provisioning module, there are a variety of storage options available for virtual machines and virtual applications deployed within the VMware Shared environment. Each storage tier provides different levels of throughput (IOPs) and levels of isolation (multi-tenant versus single-tenant), with differing levels of billable rates and charges associated with each tier. For our purposes, we recommend the <code>Standard (VDC Default)</code> tier of <strong>Storage Policy</strong>.</p>
+<p><strong>Compute</strong> is dictated by the VDC sizing configuration that was set during the Provisioning module. The resources available to the VM we are defining here are restricted by the hardware configurations assigned to the VDC (<code>bienko-vdc</code>) when it was deployed earlier.</p>
+<p><strong>NICs</strong>, or Network Interface Cards, provide the network interface needed by the virtual machine for communication with the public internet, IBM Cloud, and on-premises resources.</p>
+<ol start="36">
+<li>
+<p>The <em>Primary NIC</em> will have been configured by default, but additional modifications are needed before we can continue. Ensure the <strong>Connected</strong> field is toggled <code>ON</code></p>
+</li>
+<li>
+<p>Set the <strong>Network</strong> field to the network configuration deployed earlier: <code>se-l3-network</code></p>
+</li>
+<li>
+<p>Set the <strong>IP Mode</strong> to <code>DHCP</code></p>
+</li>
+<li>
+<p>When satisfied, click the <strong>OK</strong> button at the bottom of the panel to deploy the VM (which will remain powered off for now) and return to the <strong>Virtual Machines</strong> overview dashboard.</p>
+</li>
+</ol>
+<p><img alt="" src="../_attachments/shared-managing-24.png" /></p>
+<ol start="40">
+<li>Locate the newly-minted VM tile on the page and click the <strong>Details</strong> button to inspect it further.</li>
+</ol>
+<p><img alt="" src="../_attachments/shared-managing-25.png" /></p>
+<h1 id="left-off-here-">Left Off Here ----------</h1>
+<p><img alt="" src="../_attachments/shared-managing-13.png" /></p>
+<ol start="22">
+<li><em>(A):</em> A summary panel will now display outlining the full configuration of the vApp. To avoid incurring any unnecessary charges, click the <strong>Cancel</strong> button to return to the <strong>Applications</strong> tab.</li>
+</ol>
+<p><img alt="" src="../_attachments/shared-managing-37.png" /></p>
 <p><img alt="" src="../_attachments/shared-managing-38.png" /></p>
 <ol start="62">
 <li>
@@ -648,36 +683,7 @@
 <li>
 <p>No virtual machines currently exist within the VMware Shared VDC environment, but if they did they would be listed within the table presented on this page. Instead, you will need to craft your own. Click the <strong>Add Virtual Machine</strong> button below the table to define a new VM.</p>
 </li>
-<li>
-<p>A new configuration window will open. Provide a <strong>Name</strong> (<code>BienkoVM</code>) and <strong>Computer Name</strong> (<code>BienkoVM</code>), as well as an optional <strong>Description</strong>, for the new VM.</p>
-</li>
-<li>
-<p>The VM can either be crafted from scratch (<strong>New</strong>) or from a pre-designed template (<strong>From Template</strong>). One of the advantages of the VMware Shared plan on IBM Cloud is the wealth of templates available out of the box with the offering. Select the <strong>From Template</strong> option and then scroll through the template repository.</p>
-</li>
-<li>
-<p>We recommend selecting the <code>vm-redhat8</code> template, which corresponds to the Red Hat 8 official release (RHEL8), for the purposes of this demonstration — although you are free to choose any of your liking. Continue scrolling down the page to reveal more configuration options.</p>
-</li>
 </ol>
-<p><img alt="" src="../_attachments/shared-managing-12.png" /></p>
-<ol start="18">
-<li>
-<p><strong>Storage</strong> for the VM is our next consideration. As described earlier in the Provisioning module, there are a variety of storage options available for virtual machines and virtual applications deployed within the VMware Shared environment. Each storage tier provides different levels of throughput (IOPs) and levels of isolation (multi-tenant versus single-tenant), with differing levels of billable rates and charges associated with each tier. For our purposes, we recommend the <code>Standard (VDC Default)</code> tier of <strong>Storage Policy</strong>.</p>
-</li>
-<li>
-<p><strong>Compute</strong> is dictated by the VDC sizing configuration that was set during the Provisioning module. The resources available to the VM we are defining here are restricted by the hardware configurations assigned to the VDC (<code>bienko-vdc</code>) when it was deployed earlier.</p>
-</li>
-<li>
-<p><strong>NICs</strong>, or Network Interface Cards, provide the network interface needed by the virtual machine for communication with the public internet, IBM Cloud, and on-premises resources. The <em>Primary NIC</em> will have been configured by default and no other adjustments are required.</p>
-</li>
-<li>
-<p>When satisfied, click the <strong>OK</strong> button at the bottom of the panel to return to the vApp definition.</p>
-</li>
-</ol>
-<p><img alt="" src="../_attachments/shared-managing-13.png" /></p>
-<ol start="22">
-<li><em>(A):</em> A summary panel will now display outlining the full configuration of the vApp. To avoid incurring any unnecessary charges, click the <strong>Cancel</strong> button to return to the <strong>Applications</strong> tab.</li>
-</ol>
-<p><img alt="" src="../_attachments/shared-managing-37.png" /></p>
 <h1 id="_4"></h1>
 <h1 id="creating-vapps-from-a-template">Creating vApps from a Template</h1>
 <hr />
