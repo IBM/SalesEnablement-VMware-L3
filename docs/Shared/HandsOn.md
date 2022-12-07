@@ -1,0 +1,32 @@
+Thus far, the experience provided in this learning plan with IBM Cloud for VMware Solutions Shared as been through videos and click-thru demonstrations. As an optional exercise, a hands-on environment of the **VMware Shared** instance built during the earlier modules is available through an IBM Technology Zone (ITZ) environment that you can reserve. IBMers are strongly encouraged to utilize this environment as part of their Stand and Deliver required for the {{learningplan.name}} completion.
+
+The user access provided to the instance in ITZ is restricted utilizing IBM Cloud's Identity and Access Management controls. Users will have the ability to view the VMware Shared instances already provisioned in the account via the IBM Cloud Portal as well as the ability to deploy a VM and/or vApp using VMware vCloud Directory. Users will NOT have the ability to provision new VMware Shared instances or modify the existing instances.
+
+??? info See all the VMware Shared specific IAM access provided in the ITZ environment
+    vmware-solutions.instances.view: List or view IBM Cloud for VMware Solutions instances
+
+    vmware-solutions.directorsite.vappauthor: Director vApp Author
+
+    vmware-solutions.instances.view: List or view IBM Cloud for VMware Solutions instances
+
+    vmware-solutions.directorsite.vappuser: Director vApp User
+
+    vmware-solutions.instances.view: List or view IBM Cloud for VMware Solutions instances
+
+    vmware-solutions.directorsite.consoleuser: Director Console User
+
+    vmware-solutions.instances.view: List or view IBM Cloud for VMware Solutions instances
+
+    vmware-solutions.directorsite.reader: Director Reader
+
+    iam.policy.read: The ability to see policies.
+
+    vmware-solutions.instances.view: List or view IBM Cloud for VMware Solutions instances
+
+    vmware-solutions.directorsite.viewer: Viewer in Director
+
+In the video below, learn how to make a reservation in ITZ, how to access the existing VMware Shared instance, and what all can be done in the provided environment. Note, many of the steps illustrated in the video have been speed up to reduce the length of video. Use the steps from the provisioning VMware Shared click-thru demo from the previous module once your ITZ environment is ready.
+
+![type:video](./_videos/VMwareShared-HandsOn-final.mp4)
+
+To make a ITZ reservation and access the environment, click <a href="https://techzone.ibm.com/collection/ibm-cloud-for-vmware-level-3" target="_blank">here</a>. If for some reason the browser page redirects don't work, simply search on "VMware Level 3" to find the ITZ collection.
