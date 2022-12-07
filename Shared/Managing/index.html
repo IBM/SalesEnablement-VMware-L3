@@ -509,7 +509,7 @@
 <li>Let's drill down into the <code>se-l3-shared</code> VDC that was re-sized earlier by clicking the tile, as shown, in the dashboard.</li>
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-12.png" /></p>
-<p>From this management screen, you can access information on the VMware Shared plan's available <code>Networks</code>, <code>Edge Gateways</code>, <code>Data Center Groups</code>, and <code>Security Tags</code>. By default, the <code>Networks</code> associated with the deployment will be displayed first — at this time, your environment should contain no defined networks.</p>
+<p>From this management screen, you can access information on the VMware Shared plan's available <code>Networks</code>, <code>Edge Gateways</code>, <code>Data Center Groups</code>, and <code>Security Tags</code>.</p>
 <ol start="16">
 <li>
 <p>Our first task will be to define <strong>Networking</strong> parameters for the VDC. Click the <strong>Networks</strong> subdirectory from the list of tabs along the left side of the interface.</p>
@@ -535,7 +535,7 @@
 <p><em>Routed</em>: A network type that utilizes an edge gateway to enable controlled access to networks and machines external to (outside of) the VDC.</p>
 </li>
 <li>
-<p><em>Isolated</em>: A network type that is only accessible by the VDC (or associated VDC Groups) specified in <strong>Step 44</strong>, thereby providing a fully isolated environment.</p>
+<p><em>Isolated</em>: A network type that is only accessible by a specific VDC (or associated VDC Groups), thereby providing a fully isolated environment.</p>
 </li>
 </ul>
 <ol start="20">
@@ -548,7 +548,7 @@
 </ol>
 <p><img alt="" src="../_attachments/shared-managing-15.png" /></p>
 <ol start="22">
-<li>Having selected the <strong>Routed</strong> network type in <strong>Step 46</strong>, which makes use of an edge gateway for regulated access to the network, we must now define an <strong>Edge Connection</strong> for the organization VDC. The configuration tool will automatically designate an edge connection (<code>edge-dal12-d625b1f2</code> for the <code>Dallas Director 01</code> data center) with <code>2</code> External Networks and <code>0</code> Org VDC Networks.</li>
+<li>Having selected the <strong>Routed</strong> network type earlier, which makes use of an edge gateway for regulated access to the network, we must now define an <strong>Edge Connection</strong> for the organization VDC. The configuration tool will automatically designate an edge connection (<code>edge-dal12-d625b1f2</code> for the <code>Dallas Director 01</code> data center) with <code>2</code> External Networks and <code>0</code> Org VDC Networks.</li>
 </ol>
 <p>Next, you must choose the type of Edge Connection to be applied. There are three options:</p>
 <ul>
