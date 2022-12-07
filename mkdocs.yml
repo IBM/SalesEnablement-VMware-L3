@@ -18,6 +18,7 @@ nav:
     - 'Introduction': 'Shared/Introduction.md'
     - 'Provisioning': 'Shared/Provisioning.md'
     - 'Managing': 'Shared/Managing.md'
+    - 'Optional Hands On Access': 'Shared/HandsOn.md'
   - 'VMware Solutions Dedicated':
     - 'Introduction': 'Dedicated/Introduction.md'
     - 'Provisioning': 'Dedicated/Provisioning.md'
