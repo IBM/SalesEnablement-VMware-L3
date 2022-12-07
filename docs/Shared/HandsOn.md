@@ -2,7 +2,7 @@ Thus far, the experience provided in this learning plan with IBM Cloud for VMwar
 
 The user access provided to the instance in ITZ is restricted utilizing IBM Cloud's Identity and Access Management controls. Users will have the ability to view the VMware Shared instances already provisioned in the account via the IBM Cloud Portal as well as the ability to deploy a VM and/or vApp using VMware vCloud Directory. Users will NOT have the ability to provision new VMware Shared instances or modify the existing instances.
 
-??? info See all the VMware Shared specific IAM access provided in the ITZ environment
+??? info "See all the VMware Shared specific IAM access provided in the ITZ environment"
     vmware-solutions.instances.view: List or view IBM Cloud for VMware Solutions instances
 
     vmware-solutions.directorsite.vappauthor: Director vApp Author
@@ -25,7 +25,7 @@ The user access provided to the instance in ITZ is restricted utilizing IBM Clou
 
     vmware-solutions.directorsite.viewer: Viewer in Director
 
-In the video below, learn how to make a reservation in ITZ, how to access the existing VMware Shared instance, and what all can be done in the provided environment. Note, many of the steps illustrated in the video have been speed up to reduce the length of video. Use the steps from the provisioning VMware Shared click-thru demo from the previous module once your ITZ environment is ready.
+In the video below, learn how to make a reservation in ITZ, how to access the existing VMware Shared instance, and what all can be done in the provided environment. Note, many of the steps illustrated in the video have been speed up to reduce the length of video. Use the steps from the **Managing** click-thru demo from the previous module once your ITZ environment is ready.
 
 ![type:video](./_videos/VMwareShared-HandsOn-final.mp4)
 
