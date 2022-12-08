@@ -47,7 +47,7 @@ A dialogue window will open, asking you to confirm an administrative password re
 
 ![](_attachments/shared-managing-5.png)
 
-7. Locate the **VMware Shared** navigation link near the top-left of the page. Click the URL to return to the overview page for all VMware Shared instances.
+7. Locate the **VMware Shared** navigation link at the top left of the page. Click the URL to return to the overview page for all VMware Shared instances.
 
 ![](_attachments/shared-managing-6.png)
 
@@ -175,7 +175,7 @@ The console's **Applications** dashboard allows for the centralized management a
 
 **Storage** for the VM is our next consideration. As described earlier in the Provisioning module, there are a variety of storage options available for virtual machines and virtual applications deployed within the VMware Shared environment. Each storage tier provides different levels of throughput (IOPs) and levels of isolation (multi-tenant versus single-tenant), with differing levels of billable rates and charges associated with each tier. For our purposes, we recommend the ```Standard (VDC Default)``` tier of **Storage Policy**.
 
-**Compute** is dictated by the VDC sizing configuration that was set during the Provisioning module. The resources available to the VM we are defining here are restricted by the hardware configurations assigned to the VDC (```bienko-vdc```) when it was deployed earlier.
+**Compute** is dictated by the VDC sizing configuration that was set during the Provisioning module. The resources available to the VM we are defining here are restricted by the hardware configurations assigned to the VDC when it was deployed earlier.
 
 **NICs**, or Network Interface Cards, provide the network interface needed by the virtual machine for communication with the public internet, IBM Cloud, and on-premises resources.
 
@@ -231,7 +231,7 @@ The console's **Applications** dashboard allows for the centralized management a
 
 53. Take note that the **Power On** and **Power Off** buttons have updated to reflect the VM status. For a third time, select the **All Actions** drop-down from the panel's interface.
 
-54. Click the **Delete** button to tear down the VM instance. Confirm your selection when prompted to do so.
+54. Click the **Delete** button to tear down the VM instance. Confirm the selection when prompted to do so.
 
 ![](_attachments/shared-managing-32.png)
 

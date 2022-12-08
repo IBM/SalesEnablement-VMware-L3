@@ -70,7 +70,7 @@ The web browser will redirect to a new page, where you will be asked to provide 
 
     from: ```single``` or ```multi-zone```.
 
-A **single zone** VMware virtual data center deployment will provision the environment within a single available center (easier to manage, but potentially vulnerable to a single point of failure).
+A **single zone** VMware virtual data center deployment will provision the environment within a single availability center (easier to manage, but vulnerable to a single point of failure).
 
 A **multi-zone** VMware virtual data center deployment will deploy across two availability zones in an IBM Cloud multi-zone region, providing failover in the event that a single-zone data center failure occurs.
 
