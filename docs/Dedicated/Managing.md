@@ -53,6 +53,10 @@ Notice, new workload clusters can be provisioned in different IBM Cloud data cen
   - disaster recovery (DR)
 
 19. Click the **Edge services cluster** radio button.
+
+??? question "BP quiz question"
+    Take note of CPU model options for **Edge services clusters**.
+
 20. Click the **{{itz.dedicated.instanceName}} (primary)** link at the top of the page.
 21. Click the **Services** option in the left hand menu.
 22. Click the **Veeam** link in the table of **Services**.

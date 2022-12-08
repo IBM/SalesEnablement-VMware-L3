@@ -25,7 +25,7 @@ VMWare Solutions, including the **Shared** plan and other tiers, are accessible 
 
 ![](_attachments/shared-managing-1.png)
 
-3. From the variety of VMware Solutions plans available, click on the **VMware Shared** tab.
+3. From the variety of VMware Solutions plans available, click on the **VMware Shared** option.
 
 ![](_attachments/shared-managing-2.png)
 
@@ -57,11 +57,17 @@ A dialogue window will open, asking you to confirm an administrative password re
 
 ![](_attachments/shared-managing-7.png)
 
+??? question "BP quiz question"
+    Take note of both VDC names that have been provisioned in **Dallas Director 01**.
+
 10. Let's experiment with resizing the amount of vCPU and RAM resources assigned to the VDC. Recall earlier that it was mentioned how IBM Cloud enables scalable deployments of VMware Shared, which can be adjusted (up or down) as the resource requirements of the instance change over its lifecycle. Edit the **Resource Reservation** field by clicking the pencil icon, as shown below.
 
 ![](_attachments/shared-managing-8.png)
 
 11. Adjust the **vCPU Limit** field down to ```50``` vCPU and reduce the **RAM Limit** field to ```5120``` GB.
+
+??? question "BP quiz question"
+    Take note of the vCPU and RAM limits before they are changed.
 
 12. Take note that the metered billing for the instance will be adjusted based on the reduced resource requirements. When satisfied, click **Modify** to confirm and implement the changes.
 
