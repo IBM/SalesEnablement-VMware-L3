@@ -7,9 +7,9 @@ Now it is time to manage the VMware vCenter Server (VCS) instance. Use the click
 
 **Click-thru demo:** <a href="https://ibm.github.io/SalesEnablement-VMware-L3/includes/VMware-Dedicated-Managing/index.html" target ="_blank">Manage an instance of IBM Cloud VMware Solutions **Dedicated**</a>
 
-2. Click the **VMware** ![](_attachments/VMicon.png) icon in the left-hand menu bar.
-3. Click the **Resources** option in left-hand menu.
-4. Click the **vCenter Server** option under **Resources** in left-hand menu.
+2. Click the **VMware** ![](_attachments/VMicon.png) icon in the left hand menu bar.
+3. Click the **Resources** option in left hand menu.
+4. Click the **vCenter Server** option under **Resources** in left hand menu.
 5. Click the **{{itz.dedicated.instanceName}}** entry in the list of VCS instances.
 6. Click the **Actions** pulldown menu at top right.
 7. Click the **Delete instance** option.
@@ -17,7 +17,7 @@ Now it is time to manage the VMware vCenter Server (VCS) instance. Use the click
 Read the information provided regarding deleting a VCS instance.
 
 8. Click the **Cancel** button.
-9. Click the **Infrastructure** option in left-hand menu.
+9. Click the **Infrastructure** option in left hand menu.
 10. Click the **{{itz.dedicated.clusterName}}** entry in the list of clusters.
 
 Recall from the provisioning click-thru demonstration that a three node converged cluster created. From this page hosts can be added and removed from the cluster.
@@ -39,7 +39,7 @@ Notice additional storage shares can be added to the cluster. Shares can be adde
 Take a minute to review the details of the **Private VLAN** that was created when the cluster was created.
 
 16. Click anywhere on the screen to return to the cluster overview page.
-17. Click the **Infrastructure** option in left-hand menu.
+17. Click the **Infrastructure** option in left hand menu.
 18. Click the **Add** button.
 
 Recall, when originally provisioned, this VCS instance was created with a single consolidate cluster for both the VMware management, workloads, and edge services. From this page, new workload and edge services clusters can be added to the existing VCS instance. The information required and steps to complete the configuration of the additional workloads is very similar to when the original cluster was provisioned.
@@ -54,7 +54,7 @@ Notice, new workload clusters can be provisioned in different IBM Cloud data cen
 
 19. Click the **Edge services cluster** radio button.
 20. Click the **{{itz.dedicated.instanceName}} (primary)** link at the top of the page.
-21. Click the **Services** option in the left-hand menu.
+21. Click the **Services** option in the left hand menu.
 22. Click the **Veeam** link in the table of **Services**.
 
 Notice the details provided for the **Veeam** service. Instructions and the necessary IDs and passwords are provided for accessing the **Veeam** instances that was automatically deployed with the VCS instance. Note, one of the first steps that clients will want to perform is to configure Veeam to backup deployed VMs.
@@ -69,14 +69,14 @@ Notice that all the services that were not initially deployed at provisioning ar
 27. Click the **Transformation and modernization of VMware applications** title to hide the tile.
 28. Click the **Management tools** title to hide the tile.
 29. Click the **{{itz.dedicated.instanceName}} (primary)** link at the top of the page.
-30. Click the **Licensing** option in the left-hand menu.
+30. Click the **Licensing** option in the left hand menu.
 
 {{offering.name}} offers multiple options for VMware NSX licensing. Notice the different capabilities of each licensing option. Clients can change the license for NSX.
 
 31. Click the **Change license** button.
 32. Click the **Choose edition** pull-down menu.
 33. Click the **Cancel** button.
-34. Click the **Deployment history** option in the left-hand menu.
+34. Click the **Deployment history** option in the left hand menu.
 
 This screen image was created shortly after the provisioning completed for the instance. Notice only 10 of the 37 entries are displayed. For a complete list, expand the section below.
 
@@ -156,7 +156,7 @@ This screen image was created shortly after the provisioning completed for the i
     11/14/22 23:55	Cancel Clouddriver VSI (10.87.32.142)
 
 
-35. Click the **Summary** option in the left-hand menu.
+35. Click the **Summary** option in the left hand menu.
 
 Notice the information provided for the various VMware management components. The user ID and passwords to the components are made available to the client's administrators as VCS is NOT a fully managed service. The client is responsible for managing the VMware components like VCS, NSX, etc. Learn more about customer responsibilities <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_compl_info" target="_blank">here</a>.
 

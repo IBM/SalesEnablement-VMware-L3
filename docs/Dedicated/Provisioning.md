@@ -9,7 +9,7 @@ Note, fields that require a text entry (e.g. service name) are pre-populated in 
 
 **Click-thru demo:** <a href="https://ibm.github.io/SalesEnablement-VMware-L3/includes/VMware-Dedicated-Provisioning/index.html" target ="_blank">Provision an instance of IBM Cloud VMware Solutions **Dedicated**</a>
 
-2. Click the **VMware** ![](_attachments/VMicon.png) icon in the left-hand menu bar.
+2. Click the **VMware** ![](_attachments/VMicon.png) icon in the left hand menu bar.
 3. Click the **VMware vCenter Server** tile.
 4. Click in the **Instance name** text entry field.
 
@@ -20,7 +20,7 @@ The Instance name field will automatically change to {{itz.dedicated.instanceNam
 
 VCS supports multisite vCenter Server instances. In this demonstration, only a primary instance is provisioned. Learn more about multisite vCenter instances <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_multisite" target="_blank">here</a>.
 
-7. Click **Licensing** in the left-hand menu.
+7. Click **Licensing** in the left hand menu.
 
 Learn more about the licensing options <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-licensing-settings" target="_blank">here</a>.
 
@@ -59,7 +59,7 @@ Network planning for any VCS deployment is critical. Clients are expected to mak
 
 A valid **Domain name** needs to be specified for the VCS deployment. The Domain name field will automatically change to **myroot.mydomain.com** for this environment. Notice how both the **Hostname prefix** and **Domain name** fields are used to specify the complete hostnames for the bare-metal servers. The **Configure host names individually** checkbox can be used for clients that desire to specify hostnames individually.
 
-21. Click the **Add-on services** option in left-hand menu.
+21. Click the **Add-on services** option in left hand menu.
 
 When ordering a VCS instances, clients can also include add-on services.
 
@@ -118,17 +118,17 @@ The vRealize Operations and vRealize Log Insight service deploys the VMware vRea
 
 Notice the messages being displayed. The status of the provisioning process can be observed.
 
-43. Click **Resources** in left-hand menu.
-44. Click **vCenter Server** under **Resources** in left-hand menu.
+43. Click **Resources** in left hand menu.
+44. Click **vCenter Server** under **Resources** in left hand menu.
 45. Click the **{{itz.dedicated.instanceName}}** in the table.
 
 Notice the **Creating** status at the top of the screen by the instance name.
 
-46. Click the **Infrastructure** option in left-hand menu.
+46. Click the **Infrastructure** option in left hand menu.
 
 Notice the single, consolidated cluster requested earlier listed in the table and the status is **Initializing**.
 
-47. Click the **Deployment history** option in left-hand menu.
+47. Click the **Deployment history** option in left hand menu.
 
 Notice the steps and timestamps as the VCS instances is being provisioned.
 Now, fast forward 11 hours.
