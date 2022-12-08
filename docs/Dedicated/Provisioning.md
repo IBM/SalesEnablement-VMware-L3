@@ -11,6 +11,10 @@ Note, fields that require a text entry (e.g. service name) are pre-populated in 
 
 2. Click the **VMware** ![](_attachments/VMicon.png) icon in the left hand menu bar.
 3. Click the **VMware vCenter Server** tile.
+
+??? question "BP quiz question"
+    Take note of the VMware vSphere version.
+
 4. Click in the **Instance name** text entry field.
 
 The Instance name field will automatically change to {{itz.dedicated.instanceName}}. The IBM Cloud portal provides the ability to provision a new instance based on a previously saved template.
@@ -23,6 +27,9 @@ VCS supports multisite vCenter Server instances. In this demonstration, only a p
 7. Click **Licensing** in the left hand menu.
 
 Learn more about the licensing options <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-licensing-settings" target="_blank">here</a>.
+
+??? question "BP quiz question"
+    Take note of the 4 NSX license options.
 
 8. Under the **NSX** section, click the pull-down menu that currently shows **Data Center SP Professional**.
 9. Select the **Data Center SP Advanced** option.
