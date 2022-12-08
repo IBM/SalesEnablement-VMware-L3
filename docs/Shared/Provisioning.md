@@ -8,7 +8,7 @@ The following module will guide business partners and IBM sellers through the pr
 
 **Click-thru demo:** <a href="https://ibm.github.io/SalesEnablement-VMware-L3/includes/Shared-Provisioning/index.html" target ="_blank">Provision an instance of IBM Cloud VMware Solutions Shared</a>.
 
-We begin by simulating how to provision a VMware vCenter Server (VCS) instance. Use the click-thru demonstration linked above to practice provisioning a VCS instance. The fields that require a text entry (e.g. service name) are pre-populated in the click-thru demonstration. Open the link and then click the play button ![](_attachments/ClickThruPlayButton.png) to begin the demonstration.
+We begin by simulating how to provision a VMware Shared instance. Use the click-thru demonstration linked above to practice the provisioning process. The fields that require a text entry (e.g. service name) are pre-populated in the click-thru demonstration. Open the link and then click the play button ![](_attachments/ClickThruPlayButton.png) to begin the demonstration.
 
 !!! note "NAVIGATION"
     Not sure where to click or what to do next? Simply click anywhere on the screen within the click-thru demo page and the spot to interact with next will be highlighted. Step-by-step instructions on how to navigate the demo, and repeat the demonstration again in front of clients, are provided in the write-up below.
@@ -29,7 +29,7 @@ VMWare Solutions, including the **Shared** plan and other tiers, are accessible 
 
 ![](_attachments/shared-provisioning-2.png)
 
-With your account properly set, you can proceed with configuration and setup of a VMware Shared plan. There are four flavors currently provided for VMware on IBM Cloud: ```VMware Shared```, ```VMware as a Service```, ```VMware vSphere```, and ```VMware vCenter Server```. For the purposes of this module, you will be configuring and provisioning a ```VMware Shared``` instance.
+With your account properly set, you can proceed with configuration and setup of a VMware Shared plan. There are four flavors currently provided for VMware on IBM Cloud: ```VMware Shared```, ```VMware as a Service```, ```VMware vSphere```, and ```VMware vCenter Server```. For the purposes of this module, you will be provisioning and configuring a ```VMware Shared``` instance.
 
 4. As shown in the screenshot below, select the **VMware Shared** tile and click **Create** to continue to the configuration page.
 
