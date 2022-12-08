@@ -67,7 +67,7 @@ A dialogue window will open, asking you to confirm an administrative password re
 
 ![](_attachments/shared-managing-9.png)
 
-13. Back on the Summary page, locate the **vCloud Director console** button near the top-right of the screen. Before resetting the admin password, this button would have been greyed out and inaccessible. With the password reset complete, the button is now active (blue) — click it to continue to the console login page.
+13. Back on the Summary page, locate the **vCloud Director console** button near the top right of the screen. Before resetting the admin password, this button would have been greyed out and inaccessible. With the password reset complete, the button is now active (blue) — click it to continue to the console login page.
 
 ![](_attachments/shared-managing-10.png)
 
@@ -235,7 +235,7 @@ The console's **Applications** dashboard allows for the centralized management a
 
 ![](_attachments/shared-managing-32.png)
 
-55. Close the vCloud Director web dashboard and return to the IBM Cloud dashboard. From the drop-down in the top-right corner of the interface (as shown in the screenshot below), click the **Actions** button.
+55. Close the vCloud Director web dashboard and return to the IBM Cloud dashboard. From the drop-down in the top right corner of the interface (as shown in the screenshot below), click the **Actions** button.
 
 56. Select the **Monitoring** button to open the IBM Cloud monitoring dashboard for the VMware Shared instance.
 

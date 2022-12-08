@@ -25,7 +25,7 @@ VMWare Solutions, including the **Shared** plan and other tiers, are accessible 
 
 ![](_attachments/shared-provisioning-1.png)
 
-3. Switch to your personal IBM Cloud account, or an account that you have permission to charge billable expenses to, by clicking the drop-down selector in the top-right corner of the IBM Cloud interface.
+3. Switch to your personal IBM Cloud account, or an account that you have permission to charge billable expenses to, by clicking the drop-down selector in the top right corner of the IBM Cloud interface.
 
 ![](_attachments/shared-provisioning-2.png)
 
