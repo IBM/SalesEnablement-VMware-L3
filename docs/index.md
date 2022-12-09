@@ -41,8 +41,6 @@ In some images, the following styles of highlighting are utilized:
 - **Click-thru interactive demonstrations**: Links to click-thru demonstrations will open in a new browser window or tab with a screen similar to the image below. Click the ```(>)``` icon to get started and follow the steps outlined within this L3 demonstration guide. If unsure of where to click to proceed, click anywhere on the screen and a highlight box will appear indicating where to click next.
 ![](_attachments/welcome-4.png)
 
-
-#
 # Acronyms
 -----------------------------
 
