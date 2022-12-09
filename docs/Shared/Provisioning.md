@@ -139,13 +139,13 @@ These values essentially determine the compute processing capacity that is alloc
 
 The limit placed on the maximum vCPU values determines the total number of processing units available for each virtual data center. Similarly, the RAM limit sets the maximum amount of memory available. You can adjust either of these values after you provision the virtual data center — giving customers the ability to scale and grow (or scale down) their virtual date center over time.
 
-13. Set the value of **vCPU Limit** to ```1```.
+13. Set the value of **vCPU Limit** to ```100```.
 
-14. Set the value of **RAM Limit** to ```1```.
+14. Set the value of **RAM Limit** to ```10240```.
 
 ![](_attachments/shared-provisioning-7.png)
 
-The *least* amount of vCPU that can be provisioned for any data center is 1 vCPU; RAM is likewise limited to a minimum of 1 GB. By setting both parameters to 1, the environment for this hands-on material will be as economically-priced as possible. Obviously, in the case of a real-world demonstration environment (or a production environment), you will want to size these appropriately to the anticipated workloads that the virtual server will be subject to.
+The *least* amount of vCPU that can be provisioned for any data center is 1 vCPU; RAM is likewise limited to a minimum of 1 GB. Obviously, in the case of a real-world demonstration environment (or a production environment), you will want to size these appropriately to the anticipated workloads that the virtual server will be subject to.
 
 
 
