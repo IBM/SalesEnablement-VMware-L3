@@ -13,7 +13,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.4.0">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.4.1">
     
     
       
@@ -466,7 +466,7 @@
 </ol>
 <p><img alt="" src="../_attachments/shared-provisioning-1.png" /></p>
 <ol start="3">
-<li>Switch to your personal IBM Cloud account, or an account that you have permission to charge billable expenses to, by clicking the drop-down selector in the top right corner of the IBM Cloud interface.</li>
+<li>Switch to your personal IBM Cloud account, or an account that you have permission to charge billable expenses to, by clicking the drop-down selector in the top right corner of the IBM Cloud interface. <em>Note:</em> this step is not shown as part of the Click-thru demonstration.</li>
 </ol>
 <p><img alt="" src="../_attachments/shared-provisioning-2.png" /></p>
 <p>With your account properly set, you can proceed with configuration and setup of a VMware Shared plan. There are four flavors currently provided for VMware on IBM Cloud: <code>VMware Shared</code>, <code>VMware as a Service</code>, <code>VMware vSphere</code>, and <code>VMware vCenter Server</code>. For the purposes of this module, you will be provisioning and configuring a <code>VMware Shared</code> instance.</p>
@@ -495,7 +495,7 @@
 </div>
 <ol start="6">
 <li>
-<p>Supply a unique and memorable <strong>Virtual data center name</strong> for your environment.</p>
+<p>Supply a unique and memorable <strong>Virtual data center name</strong> for your environment, such as <code>se-l3-shared</code>.</p>
 </li>
 <li>
 <p>Set the <strong>Resource Group</strong> to <code>Enablement-L3</code>. This determines how resources are organized within your IBM Cloud account. Resource Groups cannot be changed for a service instance once it has been deployed. Note that if you are replicating these steps using your personal IBM Cloud account, you will likely see different Resource Groups available than the ones shown here.</p>
@@ -516,13 +516,13 @@
 <p>Select the <code>Single-zone VMware virtual data center</code> topology.</p>
 </li>
 <li>
-<p><strong>Geography</strong> should be set to the region located closest to your local area.</p>
+<p><strong>Geography</strong> should be set to the region located closest to your local area. <em>Note:</em> this step is not shown as part of the Click-thru demonstration.</p>
 </li>
 <li>
 <p>Use the default value selected for <strong>Site</strong>.</p>
 </li>
 <li>
-<p>Use the default value selected for <strong>Location</strong>.</p>
+<p>Use the default value selected for <strong>Location</strong>. <em>Note:</em> for the Click-thru demonstration, you will be asked to inspect the <strong>Location</strong> options before cancelling back out to the main configuration page.</p>
 </li>
 </ol>
 <p><img alt="" src="../_attachments/shared-provisioning-5.png" /></p>
@@ -537,7 +537,7 @@
 <p>The <strong>public network</strong> endpoints that are provisioned by default are the five public IP addresses that are displayed in the VMware Shared virtual data center details page. After the demonstration environment has provisioned, you will be able to go and inspect those for yourself.</p>
 <p>A <strong>private network</strong> endpoint allows a customer's IBM Cloud account devices or resources to connect to their virtual data centers by using the IBM Cloud private network. The private network endpoint service is available and ready to use in all virtual data centers provisioned through the IBM Cloud.</p>
 <ol start="12">
-<li>To give the environment the widest range of options, select the <code>Public and Private</code> <strong>Networking</strong> option from the configuration panel.</li>
+<li>Click the <strong>Networking</strong> tab from the sidebar. To give the environment the widest range of options, select the <code>Public and Private</code> <strong>Networking</strong> option from the configuration panel.</li>
 </ol>
 <p><img alt="" src="../_attachments/shared-provisioning-6.png" /></p>
 <div class="admonition tip">
@@ -612,7 +612,7 @@
 <h1 id="_8"></h1>
 <h1 id="pre-installed-services">Pre-Installed Services</h1>
 <hr />
-<p>There are three services pre-installed with every deployment of VMware Shared on IBM Cloud. While they are ready for activation at any time, they are not free to use — if a customer wishes to make use of these services, they must agree to the terms of use license and incur the costs associated with that add-on service. If the pre-installed service is never activated or used, no additional charges will be leveed against the VMware Shared customer.</p>
+<p>There are three services pre-installed with every deployment of VMware Shared on IBM Cloud. While they are ready for activation at any time, they are not free to use — if a client wishes to make use of these services, they must agree to the terms of use license and incur the costs associated with that add-on service. If the pre-installed service is never activated or used, no additional charges will be leveed against the VMware Shared client.</p>
 <ol start="16">
 <li>These services, as described, are pre-installed with every VMware Shared deployment on IBM Cloud. We will not be making use of these services for the purposes of this hands-on lab and as such they can be ignored for now.</li>
 </ol>
@@ -644,7 +644,7 @@
 <p><img alt="" src="../_attachments/shared-provisioning-10.png" /></p>
 <p>Once you click <strong>Confirm</strong>, the deployment of the resources starts automatically and a message will be displayed on the IBM Cloud interface explaining that the order is being processed. You can check the deployment status, including any issues that might require your attention, by viewing the <strong>Resources</strong> tab from the <a href="https://cloud.ibm.com/vmware" target="_blank">VMware Solutions dashboard</a>.</p>
 <ol start="19">
-<li>Return to the <a href="https://cloud.ibm.com/vmware" target="_blank">VMware Solutions dashboard</a> and drill down into <strong>Resources</strong> &gt; <strong>VMware Shared</strong> to monitor the progress of your deployment.</li>
+<li>Return to the <a href="https://cloud.ibm.com/vmware" target="_blank">VMware Solutions dashboard</a> and drill down into <strong>Resources</strong> &gt; <strong>VMware Shared</strong> to monitor the progress of your deployment. <em>Note:</em> this step is not shown as part of the Click-thru demonstration.</li>
 </ol>
 <p><img alt="" src="../_attachments/shared-provisioning-11.png" /></p>
 <p>Once the resources have been successfully deployed, the components that are described within the <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview#shared_overview-specs" target="_blank">technical specifications documentation for VMware Shared</a> will be installed within your VMware virtual instance.</p>
