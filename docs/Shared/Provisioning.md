@@ -25,7 +25,7 @@ VMWare Solutions, including the **Shared** plan and other tiers, are accessible 
 
 ![](_attachments/shared-provisioning-1.png)
 
-3. Switch to your personal IBM Cloud account, or an account that you have permission to charge billable expenses to, by clicking the drop-down selector in the top right corner of the IBM Cloud interface.
+3. Switch to your personal IBM Cloud account, or an account that you have permission to charge billable expenses to, by clicking the drop-down selector in the top right corner of the IBM Cloud interface. *Note:* this step is not shown as part of the Click-thru demonstration.
 
 ![](_attachments/shared-provisioning-2.png)
 
@@ -57,7 +57,7 @@ The web browser will redirect to a new page, where you will be asked to provide 
 !!! warning "ADJUSTING COSTS"
     Take note that the **Summary** panel at the far-right side of the IBM Cloud dashboard dynamically updates as you adjust configuration options on this page. Try out various options along the way to preview how these features impact the cost of a VMware Shared deployment. You can also read more about pricing within the **About** tab.
 
-6. Supply a unique and memorable **Virtual data center name** for your environment.
+6. Supply a unique and memorable **Virtual data center name** for your environment, such as ```se-l3-shared```.
 
 7. Set the **Resource Group** to ```Enablement-L3```. This determines how resources are organized within your IBM Cloud account. Resource Groups cannot be changed for a service instance once it has been deployed. Note that if you are replicating these steps using your personal IBM Cloud account, you will likely see different Resource Groups available than the ones shown here.
 
@@ -76,11 +76,11 @@ A **multi-zone** VMware virtual data center deployment will deploy across two av
 
 8. Select the ```Single-zone VMware virtual data center``` topology.
 
-9. **Geography** should be set to the region located closest to your local area.
+9. **Geography** should be set to the region located closest to your local area. *Note:* this step is not shown as part of the Click-thru demonstration.
 
 10. Use the default value selected for **Site**.
 
-11. Use the default value selected for **Location**.
+11. Use the default value selected for **Location**. *Note:* for the Click-thru demonstration, you will be asked to inspect the **Location** options before cancelling back out to the main configuration page.
 
 ![](_attachments/shared-provisioning-5.png)
 
@@ -97,7 +97,7 @@ The **public network** endpoints that are provisioned by default are the five pu
 
 A **private network** endpoint allows a customer's IBM Cloud account devices or resources to connect to their virtual data centers by using the IBM Cloud private network. The private network endpoint service is available and ready to use in all virtual data centers provisioned through the IBM Cloud.
 
-12. To give the environment the widest range of options, select the ```Public and Private``` **Networking** option from the configuration panel.
+12. Click the **Networking** tab from the sidebar. To give the environment the widest range of options, select the ```Public and Private``` **Networking** option from the configuration panel.
 
 ![](_attachments/shared-provisioning-6.png)
 
@@ -170,7 +170,7 @@ Encryption-enabled storage policies are available to all virtual data centers. E
 # Pre-Installed Services
 ----------------------
 
-There are three services pre-installed with every deployment of VMware Shared on IBM Cloud. While they are ready for activation at any time, they are not free to use — if a customer wishes to make use of these services, they must agree to the terms of use license and incur the costs associated with that add-on service. If the pre-installed service is never activated or used, no additional charges will be leveed against the VMware Shared customer.
+There are three services pre-installed with every deployment of VMware Shared on IBM Cloud. While they are ready for activation at any time, they are not free to use — if a client wishes to make use of these services, they must agree to the terms of use license and incur the costs associated with that add-on service. If the pre-installed service is never activated or used, no additional charges will be leveed against the VMware Shared client.
 
 16. These services, as described, are pre-installed with every VMware Shared deployment on IBM Cloud. We will not be making use of these services for the purposes of this hands-on lab and as such they can be ignored for now.
 
@@ -199,7 +199,7 @@ When satisfied with the configuration options, inspect the far-right side of the
 
 Once you click **Confirm**, the deployment of the resources starts automatically and a message will be displayed on the IBM Cloud interface explaining that the order is being processed. You can check the deployment status, including any issues that might require your attention, by viewing the **Resources** tab from the <a href="https://cloud.ibm.com/vmware" target="_blank">VMware Solutions dashboard</a>.
 
-19. Return to the <a href="https://cloud.ibm.com/vmware" target="_blank">VMware Solutions dashboard</a> and drill down into **Resources** > **VMware Shared** to monitor the progress of your deployment.
+19. Return to the <a href="https://cloud.ibm.com/vmware" target="_blank">VMware Solutions dashboard</a> and drill down into **Resources** > **VMware Shared** to monitor the progress of your deployment. *Note:* this step is not shown as part of the Click-thru demonstration.
 
 ![](_attachments/shared-provisioning-11.png)
 

@@ -1,6 +1,6 @@
 ![type:video](./_videos/VMware L3 Shared Introduction.mp4)
 
-**IBM Cloud for VMware Solutions Shared** provides customizable deployment choices of VMware Virtual Data Center environments, all provisioned through automation via the IBM Cloud for standardized, reliable, enterprise-ready deployments. VMware Shared virtual data center instances can quickly and seamlessly migrate or deploy VMware workloads to the cloud — on top of IBM-hosted and VMware-certified infrastructure. The service is HIPAA-enabled, provides Identity Access Management (IAM) out of the box, and is validated for financial services use cases.
+**IBM Cloud for VMware Solutions Shared** provides customizable deployment choices of VMware Virtual Data Center environments, all provisioned through automation via the IBM Cloud for standardized, reliable, enterprise-ready deployments. VMware Shared virtual data center instances can quickly and seamlessly migrate or deploy VMware workloads to the cloud — on top of IBM-hosted and VMware-certified infrastructure. The service provides Identity Access Management (IAM) out of the box and is validated for financial services use cases.
 
 #
 #IBM Cloud for VMware Solutions Shared is built around three key pillars:
