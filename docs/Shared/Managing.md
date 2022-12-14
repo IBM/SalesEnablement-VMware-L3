@@ -17,7 +17,7 @@ Use the click-thru demonstration linked above to practice managing an instance o
 # Step-By-Step Instructions
 ----------------------
 
-VMWare Solutions, including the **Shared** plan and other tiers, are accessible through the <a href="https://cloud.ibm.com/vmware" target="_blank">VMware portal on IBM Cloud</a>. Be aware that if you provision a live VMware Shared instance using your *personal* IBM Cloud account, then your account (and credit card associated with that personal account) will be billed for the deployment.
+VMware Solutions, including the **Shared** plan and other tiers, are accessible through the <a href="https://cloud.ibm.com/vmware" target="_blank">VMware portal on IBM Cloud</a>. Be aware that if you provision a live VMware Shared instance using your *personal* IBM Cloud account, then your account (and credit card associated with that personal account) will be billed for the deployment.
 
 1. From the IBM Cloud dashboard, click the **VMware** tab from the left hand navigation menu, or alternatively search for ```VMware Solutions``` in the search bar.
 
@@ -43,7 +43,7 @@ The browser will load a Summary panel for the VMware Shared instance, supplying 
 
 A dialogue window will open, asking you to confirm an administrative password reset for the instance. Confirm the selection and wait for the reset to complete. The **User name** will always be set to ```admin``` by default. The **Password** will be uniquely generated each time a reset is conducted.
 
-6. Click the "eyeball" icon to view the password and the "box" icon to copy the password to your machine's clipboard. **Record** both of these values to a notepad — you will need to reference these later for connecting to the vCloud Director console. Click the **Close** button to continue.
+6. Click the "eyeball" icon to view the password and the "box" icon to copy the password to your machine's clipboard. **Record** both of these values to a notepad — you will need to reference these later for connecting to the vCloud Director console. Click the **Close** button to continue. *Note:* the inspection and copy to clipboard steps are shown as a single interaction in the Click-thru demonstration.
 
 ![](_attachments/shared-managing-5.png)
 
@@ -147,7 +147,9 @@ A **Gateway CIDR** must be assigned, which includes the IP address of the gatewa
 
 **DNS**, or the Domain Name System, provides the mapping between IP addresses (such as the ones specified earlier) and the "name" address that you typically enter into a web browser (```www.google.com```, for example). A DNS relay can be enabled for the edge gateway previously configured; however, the DNS relay must be set before deployment and cannot be modified after the fact.
 
-28. **Enable** the **Use Edge DNS** slider. The remaining fields below can remain blank. When satisfied, click **Next** to continue.
+28. **Enable** the **Use Edge DNS** slider. *Note:* this step is not shown as part of the Click-thru demonstration.
+
+The remaining fields below can remain blank. When satisfied, click **Next** to continue.
 
 ![](_attachments/shared-managing-19.png)
 
@@ -231,7 +233,7 @@ The console's **Applications** dashboard allows for the centralized management a
 
 51. Once again, select the **All Actions** drop-down from the top of the panel's interface.
 
-52. Click the **Power Off** button to disable the VM.
+52. Drill down into **Power** and click the the **Power Off** button to disable the VM.
 
 ![](_attachments/shared-managing-31.png)
 
@@ -241,7 +243,7 @@ The console's **Applications** dashboard allows for the centralized management a
 
 ![](_attachments/shared-managing-32.png)
 
-55. Close the vCloud Director web dashboard and return to the IBM Cloud dashboard. From the drop-down in the top right corner of the interface (as shown in the screenshot below), click the **Actions** button.
+55. Close the vCloud Director web dashboard and return to the IBM Cloud dashboard. From the drop-down in the top right corner of the interface (as shown in the screenshot below), click the **Actions** button. *Note:* this step, and **Step 56** and **Step 57**, is not shown as part of the Click-thru demonstration.
 
 56. Select the **Monitoring** button to open the IBM Cloud monitoring dashboard for the VMware Shared instance.
 
