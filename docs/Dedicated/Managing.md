@@ -20,7 +20,7 @@ Read the information provided regarding deleting a VCS instance.
 9. Click the **Infrastructure** option in left hand menu.
 10. Click the **{{itz.dedicated.clusterName}}** entry in the list of clusters.
 
-Recall from the provisioning click-thru demonstration that a three node converged cluster created. From this page hosts can be added and removed from the cluster.
+Recall from the provisioning click-thru demonstration that a three node converged cluster was created. From this page hosts can be added and removed from the cluster.
 
 11. Click the **Add** button to add a host.
 
@@ -42,7 +42,7 @@ Take a minute to review the details of the **Private VLAN** that was created whe
 17. Click the **Infrastructure** option in left hand menu.
 18. Click the **Add** button.
 
-Recall, when originally provisioned, this VCS instance was created with a single consolidate cluster for both the VMware management, workloads, and edge services. From this page, new workload and edge services clusters can be added to the existing VCS instance. The information required and steps to complete the configuration of the additional workloads is very similar to when the original cluster was provisioned.
+Recall, when originally provisioned, this VCS instance was created with a single consolidate cluster for both the VMware management, workloads, and edge services. From this page, new workload and edge services clusters can be added to the existing VCS instance. The information required and steps to complete the configuration of the additional workloads are very similar to when the original cluster was provisioned.
 
 Notice, new workload clusters can be provisioned in different IBM Cloud data centers with different bare metal server configurations. This flexibility allows client scenarios like:
 
@@ -61,7 +61,7 @@ Notice, new workload clusters can be provisioned in different IBM Cloud data cen
 21. Click the **Services** option in the left hand menu.
 22. Click the **Veeam** link in the table of **Services**.
 
-Notice the details provided for the **Veeam** service. Instructions and the necessary IDs and passwords are provided for accessing the **Veeam** instances that was automatically deployed with the VCS instance. Note, one of the first steps that clients will want to perform is to configure Veeam to backup deployed VMs.
+Notice the details provided for the **Veeam** service. Instructions and the necessary IDs and passwords are provided for accessing the **Veeam** instances that were automatically deployed with the VCS instance. Note, one of the first steps that clients will want to perform is to configure Veeam to backup deployed VMs.
 
 23. Click anywhere on the screen to continue.
 24. Click the **Add** button.
