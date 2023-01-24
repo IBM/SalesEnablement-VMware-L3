@@ -59,7 +59,7 @@ The web browser will redirect to a new page, where you will be asked to provide 
 
 6. Supply a unique and memorable **Virtual data center name** for your environment, such as ```se-l3-shared```.
 
-7. Set the **Resource Group** to ```Enablement-L3```. This determines how resources are organized within your IBM Cloud account. Resource Groups cannot be changed for a service instance once it has been deployed. Note that if you are replicating these steps using your personal IBM Cloud account, you will likely see different Resource Groups available than the ones shown here.
+7. Set the **Resource Group** to ```Enablement-L3```. This determines how resources are organized within your IBM Cloud account. Resource Groups cannot be changed for a service instance once it has been deployed. You will **not** be able to set this value in the ITZ environment. If you are replicating these steps using your personal IBM Cloud account, you will likely see different Resource Groups available than the ones shown here.
 
 #
 # Deployment Topology
