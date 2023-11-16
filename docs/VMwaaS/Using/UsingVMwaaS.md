@@ -78,7 +78,7 @@ Note, if the browser window is narrow, you might see an **account selection** ic
 
 On the VMwaaS page, observe the resources that are pre-provisioned in the shared ITZ account. These are the resources that were provisioned when the click-thru demos were created and should look familiar. Feel free to explore the resources that use the IBM Cloud portal. Remember, you will not have permission to add, modify, or remove these resources.
 
-9. Click either of the **Go to VMware console** links.
+9. Click one of the **VMware console** links.
 
 ![](_attachments/portalVMwaaSVDCs.png)
 
@@ -88,9 +88,15 @@ On the VMwaaS page, observe the resources that are pre-provisioned in the shared
 
 Once signed in to the VMware Cloud Director (vCD) web console, feel free to explore all the capabilities provided. Again, your user ID has the ability to create, modify, and delete virtual machines (VMs), but you will not be able to add, modify, or remove networks or other network components.
 
-11. Click either of the virtual data center (VDC) tiles.
+11. Click one of the virtual data center (VDC) tiles.
+
+If using one of the **single-tenant** instance, you will need to choose from one of the two available data centers.
 
 ![](_attachments/vCD-vdcs.png)
+
+If using the **multitenant** instance, you will only see one data center.
+
+![](_attachments/vCD-vdcs-MT.png)
 
 !!! Warning "The images below might differ from what you see in vCD"
 
@@ -122,13 +128,11 @@ It is recommended to select one of the Linux based images (for example CentOS, R
 
 Recall from the click-thru demos, two storage pools were created: 0.25 input/output operations per second per gigabyte (IOPS/GB) and 2 IOPS/GB.
 
-17. Select the **{{itz.VMwaaS.network}}** in the network interface card (NICs) table.
+17. In the network interface card (NICs) table, verify **{{itz.VMwaaS.network}}** (**single-tenant**) or **{{itz.VMwaaS.networkMT}}** (**multitenant**) is selected..
 
 ![](_attachments/vCD-newVMselectNetwork.png)
 
-Only one network is defined.
-
-18. Click **OK**.
+18.  Click **OK**.
 
 ![](_attachments/vCD-newVMOK.png)
 
@@ -173,13 +177,17 @@ The web console opens in a new browser window.
 
 !!! Warning "Web console might not work with all browsers"
 
-    Issues were encountered opening the web console using the Safari browser on Mac OS. No issues were encountered when using Firefox on Mac OS. If you encounters, please try another browser.
+    Issues were encountered opening the web console using the Safari browser on Mac OS. No issues were encountered when using Firefox on Mac OS. If you encounter issues, please try another browser.
 
 When the **login** prompt appears, use the root ID, and the password you specified earlier. Note, you are required to change the password the first time you log in. You now have full access to the VM. If you are new to Linux, try a few commands like:
 
-```ls -l```
+```
+ls -l
+```
 
-```ps -ef```
+```
+ps -ef
+```
 
 The next steps walk you through deleting the VM that was created. Note, you do not have to do this right now, but remove all VMs you create before your ITZ reservation expires.
 
