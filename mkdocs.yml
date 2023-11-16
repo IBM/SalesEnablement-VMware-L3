@@ -16,21 +16,31 @@ nav:
   - 'Welcome': 'index.md'
   - 'VMware as a Service':
     - 'Introduction': 'VMwaaS/Introduction.md'
-    - 'Provisioning': 'VMwaaS/Provisioning.md'
-    - 'Managing': 
-      - 'Overview': 'VMwaaS/Managing/ManagingIntro.md'
-      - 'Managing a site using the IBM Cloud Portal': 'VMwaaS/Managing/ManagingSite.md'
-      - 'Managing VDCs using the IBM Cloud Portal': 'VMwaaS/Managing/ManagingVDC.md'
+    - 'VMwaaS - single-tenant':
+      - 'Provisioning': 'VMwaaS/VMwaaS-st/Provisioning.md'
+      - 'Managing': 
+        - 'Overview': 'VMwaaS/VMwaaS-st/Managing/ManagingIntro.md'
+        - 'Managing a site using the IBM Cloud Portal': 'VMwaaS/VMwaaS-st/Managing/ManagingSite.md'
+        - 'Managing VDCs using the IBM Cloud Portal': 'VMwaaS/VMwaaS-st/Managing/ManagingVDC.md'
+    - 'VMwaaS - multitenant':
+      - 'Provisioning': 'VMwaaS/VMwaaS-mt/Provisioning-mt.md'
+      - 'Managing': 
+        - 'Overview': 'VMwaaS/VMwaaS-mt/Managing/ManagingIntro-mt.md'
+        - 'Managing VDCs using the IBM Cloud Portal': 'VMwaaS/VMwaaS-mt/Managing/ManagingVDC-mt.md'
     - 'Using VMwaaS': 
       - 'Overview': 'VMwaaS/Using/UsingIntro.md'
       - 'Setting up a VDC network': 'VMwaaS/Using/NetworkSetupInVCD.md'
       - 'Using VMware Cloud Director': 'VMwaaS/Using/UsingVMwaaS.md'
     - 'The client demonstration': 'VMwaaS/PuttingItAllTogether.md'
-  - 'VMware Solutions Dedicated':
-    - 'Introduction': 'Dedicated/Introduction.md'
-    - 'Provisioning': 'Dedicated/Provisioning.md'
-    - 'Managing': 'Dedicated/Managing.md'
-  - 'Next Steps': 'NextSteps.md'
+  - 'VMware vCenter Server':
+    - 'Introduction': 'VCS/Introduction.md'
+    - 'Provisioning': 'VCS/Provisioning.md'
+    - 'Managing': 'VCS/Managing.md'
+  - 'VMware Cloud Foundation':
+    - 'Introduction': 'VCF/Introduction.md'
+    - 'Provisioning': 'VCF/Provisioning.md'
+    - 'Managing': 'VCF/Managing.md'  
+  - 'Next steps': 'NextSteps.md'
   - 'VMware Solutions Shared (OPTIONAL)':
     - 'Introduction': 'Shared/Introduction.md'
     - 'Provisioning': 'Shared/Provisioning.md'
@@ -43,6 +53,7 @@ theme:
     - navigation.instant
     - navigation.tracking
     - content.code.annotate
+    - content.code.copy
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -102,3 +113,8 @@ extra:
       vdc2: "se-l3-test"
       dcgroup: "se-l3-dc-group"
       network: "se-l3-network"
+      networkMT: "se-l3-mt-network"
+    VMwaaSmt:
+      sitename: "IBM VMwaaS Multitenant - WDC"
+      vdc: "mt-vdc"
+      
