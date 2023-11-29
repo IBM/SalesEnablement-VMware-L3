@@ -51,7 +51,8 @@ multitenant: dev-1 (powered off)
 
 Here is a video of me powering off and removing leftover VMs:
 
-![type:video](_videos/RemoveVMs-final.mp4)
+https://github.com/IBM/SalesEnablement-VMware-L3/assets/29982016/237cbd21-9a09-4926-a730-8b115a419aa0
+
 
 
 
