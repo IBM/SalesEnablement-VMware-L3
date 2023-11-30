@@ -19,12 +19,6 @@ In the ITZ automation, users are added to the above ITZ account and the VMware-L
 
 ![](_attachments/VMware-L3-accessgroup.png)
 
-- It appears ITZ has a gate on this ITZ account and users occasionally see reservations failed with:
-
-    ```Error: Insufficient quota capacity for:    {"target":"ibmcloud","accountPool":"itzvmware","geo":"americas","region":"","accounts":["itzvmware"],"dataCenters":["dal10"],"customerData":false,"customerDataTypes":[],"usageCategory":"Practice / Self-Education"}```
-
-I'm investigating why this is occurring since this particular environment does not provision any new resources.
-
 ## Maintenance
 
 Verify the following resources are available (https://cloud.ibm.com/vmware/resources/vdc):
