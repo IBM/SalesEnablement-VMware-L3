@@ -34,9 +34,24 @@ Specific criteria that must be demonstrated as part of the Stand & Deliver recor
 !!! tip "FIND HELP"
     If at any point during the hands-on material you need help from the team of authors and other IBM experts, connect with the team in the <a href="https://ibm.enterprise.slack.com/archives/C03PQ47KRQE" target="_blank">#cloud-platform-demo-feedback</a> Slack channel. Any comments or suggestions are also welcome in this channel.
 
-#
-# Navigating the Lab Guide
------------------------------
+## Support
+
+Think something is down? Check the applicable status pages for current updates:
+
+-  <a href="https://techzone.status.io/" target="_blank">IBM Technology Zone</a>
+-  <a href="https://cloud.ibm.com/status" target="_blank">IBM Cloud</a>
+
+For issues with provisioning or accessing an environment in IBM Technology Zone (ITZ) open a ticket with ITZ support:
+- Web:  <a href="https://ibmsf.force.com/ibminternalproducts/s/createrecord/NewCase?language=en_US" target="_blank">IBM Technology Zone</a>
+- E-mail: <a href="mailto:techzone.help@ibm.com" target="_blank">techzone.help.ibm.com</a>
+
+For issues related to specific steps found in the demonstration guide after the ITZ environment is provisioned, contact the authors:
+
+- Slack: <a href="{{supportSlack.url}}" target="_blank">{{supportSlack.name}}</a> - IBM only
+- E-mail: <a href="{{supportEmail}}" target="_blank">{{supportEmail}}</a>
+
+
+## Using the demonstration guide
 
 The Level 3 demonstration guide is organized into four chapters, covering the ```VMware as a Service```, ```VMware vCenter Server```, ```VMware Cloud Foundation```, and ```VMware Shared``` offerings of the **IBM Cloud for VMware Solutions** portfolio. These chapters contain modules that provide an *Introduction* to the offering, steps to *Provision* a deployment, and explore how clients *Manage* their instances through the IBM Cloud portal and the respective VMware tools.
 
@@ -57,8 +72,7 @@ In some images, the following styles of highlighting are used:
 - **Click-thru interactive demonstrations**: Links to click-thru demonstrations open in a new browser window or tab. Click the **play** icon to get started and follow the steps that are outlined. If unsure of how to proceed, click anywhere on the screen and a highlight box indicates where to click next.
 ![](_attachments/welcome-4.png)
 
-# Acronyms
------------------------------
+## Acronyms
 
 The following acronyms and short-form terminology are used throughout the guide:
 ```
