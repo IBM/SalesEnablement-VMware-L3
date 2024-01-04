@@ -1,5 +1,11 @@
 Now, it is time to provision a VMware Cloud Foundation (VCF) instance. Use the click-thru demonstration to practice provisioning a VCF instance.
 
+!!! Important "VMware Cloud Foundation - Advanced Edition has been withdrawn!"
+
+    After the acquisition of VMware by Broadcom, VMware announced the withdrawal of the **Advanced Edition** of VMware Cloud Editions. This option will be removed from the IBM Cloud Portal around mid-January 2024. 
+
+    The information below still reflects the Advanced Edition as do the click-thru demos associated with provisioning and managing VCF using the IBM Cloud Portal.  These will be updated in the near future.
+
 !!! tip
     
     Due to the number of inputs required for provisioning a VCF cluster, a few additional features have been added to this click thru-demonstration. In the IBM Cloud portal, notice there are quite a few information icons ![](_attachments/infoIcon.png) for various fields. If they appear above the next click position ![](_attachments/greenBox.png), they can be clicked to learn more about that particular field. 
