@@ -2,7 +2,7 @@
 
 !!! Important "VMware Cloud Foundation - Advanced Edition has been withdrawn!"
 
-    After the acquisition of VMware by Broadcom, VMware announced the withdrawal of the **Advanced Edition** of VMware Cloud Editions. This option will be removed from the IBM Cloud Portal around mid-January 2024. 
+    After the acquisition of VMware by Broadcom, VMware announced the withdrawal of the **Advanced Edition** of VMware Cloud Editions. This option will be removed from the IBM Cloud Portal around mid-January, 2024. 
 
     The information below still reflects the Advanced Edition as do the click-thru demos associated with provisioning and managing VCF using the IBM Cloud Portal.  These will be updated in the near future.
 
