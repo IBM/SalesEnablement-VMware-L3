@@ -1,3 +1,12 @@
+!!! Warning "Maintenance outage on Thursday, January 11 starting at 1p.m. EST"
+
+    On Thursday, January 11, 2024 beginning at 1p.m. EST, one of the VMware as a Service (VMwaaS) instances (**se-le-site**) wil undergo maintenance. During this maintenance, the underlying VMware NSX-T deployment will be upgraded. This event is expected to last approximately 4 hours. The site and the 2 associated virtual data centers (se-l3-development and se-l3-test) will be unavailable during this period. This outage only affects your ability to complete the **Using VMware Cloud Director** section of this demonstration.
+
+    Once the maintenance is complete, this warning message will be removed.  
+
+    Thanks, and we appreciate your patience.
+
+
 One of the many reasons clients consider VMware as a Service (VMwaaS) on IBM Cloud is for the ease of rapidly deploying virtual machines (VMs) to run their business workloads. Step-by-step instructions are provided on how to use VMware Cloud Director (vCD) to create and access VMs running in the VMwaaS virtual data centers (VDCs). 
 
 Thus far, the experience that was provided in this learning plan was through videos and click-thru demonstrations. A hands-on environment of the **VMwaaS** instance that was built during the earlier modules is available through an IBM Technology Zone (ITZ) environment that you can reserve <a href="https://techzone.ibm.com/collection/ibm-cloud-for-vmware-level-3/journey-complete-learning-activity-for-ibm-cloud-for-vmware-level-3-sales-enablement" target="_blank">here</a>.
