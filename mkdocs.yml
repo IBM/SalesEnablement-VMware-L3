@@ -1,8 +1,8 @@
 # Project info
-site_name: IBM Cloud for VMware Solutions
+site_name: IBM Cloud for VMware Solutions for Technical Sales Level 3
 site_description: IBM Cloud for VMware Solutions Level 3 Demonstration Guide now with VMware as a Service
-site_author: Andrew R. Jones (andrewj@us.ibm.com) & Chris Bienko (cdbienko@us.ibm.com)
-copyright: Copyright &copy; 2022, 2023 IBM
+site_author: Andrew R. Jones (andrewj@us.ibm.com)
+copyright: Copyright &copy; 2022, 2023, 2024 IBM
 
 # Repository
 repo_name:  IBM/SalesEnablement-VMware-L3
@@ -14,38 +14,45 @@ docs_dir: docs
 
 nav:
   - 'Welcome': 'index.md'
-  - 'VMware as a Service':
-    - 'Introduction': 'VMwaaS/Introduction.md'
-    - 'VMwaaS - single-tenant':
-      - 'Provisioning': 'VMwaaS/VMwaaS-st/Provisioning.md'
-      - 'Managing': 
-        - 'Overview': 'VMwaaS/VMwaaS-st/Managing/ManagingIntro.md'
-        - 'Managing a site using the IBM Cloud Portal': 'VMwaaS/VMwaaS-st/Managing/ManagingSite.md'
-        - 'Managing VDCs using the IBM Cloud Portal': 'VMwaaS/VMwaaS-st/Managing/ManagingVDC.md'
-    - 'VMwaaS - multitenant':
-      - 'Provisioning': 'VMwaaS/VMwaaS-mt/Provisioning-mt.md'
-      - 'Managing': 
-        - 'Overview': 'VMwaaS/VMwaaS-mt/Managing/ManagingIntro-mt.md'
-        - 'Managing VDCs using the IBM Cloud Portal': 'VMwaaS/VMwaaS-mt/Managing/ManagingVDC-mt.md'
-    - 'Using VMwaaS': 
-      - 'Overview': 'VMwaaS/Using/UsingIntro.md'
-      - 'Setting up a VDC network': 'VMwaaS/Using/NetworkSetupInVCD.md'
-      - 'Using VMware Cloud Director': 'VMwaaS/Using/UsingVMwaaS.md'
-    - 'The client demonstration': 'VMwaaS/PuttingItAllTogether.md'
-  - 'VMware vCenter Server':
-    - 'Introduction': 'VCS/Introduction.md'
-    - 'Provisioning': 'VCS/Provisioning.md'
-    - 'Managing': 'VCS/Managing.md'
-  - 'VMware Cloud Foundation':
-    - 'Introduction': 'VCF/Introduction.md'
-    - 'Provisioning': 'VCF/Provisioning.md'
-    - 'Managing': 'VCF/Managing.md'  
+  - 'Reserve the IBM Technology Zone environment': 'TechZoneEnvironment.md'
+  - 'VMware Cloud Foundation (VCF) as a Service':
+    - 'Introduction': 'VCFaaS/Introduction.md'
+    - 'VCF as a Service - multitenant':
+      - 'Provisioning': 'VCFaaS/VCFaaS-mt/Provisioning-mt.md'
+      - 'Managing': 'VCFaaS/VCFaaS-mt/Managing-mt.md'
+      - 'Managing a site': 'VCFaaS/VCFaaS-mt/Managing-mt-site.md'
+      - 'Operating': 'VCFaaS/VCFaaS-mt/Operating-mt.md'
+      - 'Monitoring': 'VCFaaS/VCFaaS-mt/Monitoring-mt.md'
+      - 'Migrating virtual machines from VMware Shared': 'VCFaaS/VCFaaS-mt/MigratingFromShared.md'
+      # - 'NRFR - Managing': 
+      #   - 'NRFR - Overview': 'VMwaaS/VMwaaS-mt/Managing/ManagingIntro-mt.md'
+      #   - 'NRFR - Managing VDCs using the IBM Cloud Portal': 'VMwaaS/VMwaaS-mt/Managing/ManagingVDC-mt.md'
+    # - 'NRFR - VMwaaS - single-tenant':
+    #   - 'NRFR - Provisioning': 'VMwaaS/VMwaaS-st/Provisioning.md'
+    #   - 'NRFR - Managing': 
+    #     - 'NRFR - Overview': 'VMwaaS/VMwaaS-st/Managing/ManagingIntro.md'
+    #     - 'NRFR - Managing a site using the IBM Cloud Portal': 'VMwaaS/VMwaaS-st/Managing/ManagingSite.md'
+    #     - 'NRFR - Managing VDCs using the IBM Cloud Portal': 'VMwaaS/VMwaaS-st/Managing/ManagingVDC.md'
+    # - 'NRFR - Using VMwaaS': 
+    #   - 'NRFR - Overview': 'VMwaaS/Using/UsingIntro.md'
+    #   - 'NRFR - Setting up a VDC network': 'VMwaaS/Using/NetworkSetupInVCD.md'
+    #   - 'NRFR - Using VMware Cloud Director': 'VMwaaS/Using/UsingVMwaaS.md'
+    # - 'NRFR - The client demonstration': 'VMwaaS/PuttingItAllTogether.md'
+  - 'VMware Cloud Foundation for Classic':
+    - 'Introduction': 'VCF-Classic/Introduction.md'
+    - 'Provisioning': 'VCF-Classic/Provisioning.md'
+    - 'Managing': 'VCF-Classic/Managing.md'
+  # - 'NRFR - VMware Cloud Foundation':
+  #   - 'NRFR - Introduction': 'VCF/Introduction.md'
+  #   - 'NRFR - Provisioning': 'VCF/Provisioning.md'
+  #   - 'NRFR - Managing': 'VCF/Managing.md'  
+  - 'Client demonstrations': 'Client demonstrations.md'
   - 'Next steps': 'NextSteps.md'
-  - 'VMware Solutions Shared (OPTIONAL)':
-    - 'Introduction': 'Shared/Introduction.md'
-    - 'Provisioning': 'Shared/Provisioning.md'
-    - 'Managing': 'Shared/Managing.md'
-    - 'Hands On Access': 'Shared/HandsOn.md'
+  # - 'NRFR - VMware Solutions Shared (OPTIONAL)':
+  #   - 'NRFR - Introduction': 'Shared/Introduction.md'
+  #   - 'NRFR - Provisioning': 'Shared/Provisioning.md'
+  #   - 'NRFR - Managing': 'Shared/Managing.md'
+  #   - 'NRFR - Hands On Access': 'Shared/HandsOn.md'
 
 theme:
   name: material
@@ -82,33 +89,54 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.keys
   - attr_list
-
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
 extra:
   generator: false
-  supportEmail: "andrewj@us.ibm.com"
+  supportEmail: "andrewj@us.ibm.com;hlwillia@us.ibm.com"
   supportSlack: 
     name: "#cloud-platform-demo-feedback"
     url: "https://ibm-technology-sales.slack.com/archives/C03PQ47KRQE"
   gitRepo: "https://github.com/IBM/SalesEnablement-VMware-L3"
   learningplan:
-    name: "IBM Cloud for VMware Solutions Level 3"
+    name: "IBM Cloud for VMware Solutions for Technical Sales Level 3"
   level2learningplan:
     name: "IBM Cloud for VMware Solutions Sales Foundation"
     YLurl: "https://yourlearning.ibm.com/activity/PLAN-9B285157EA97"
     BPurl: "https://learn.ibm.com/course/view.php?id=11142"
+  badge:
+    name: "IBM Cloud for VMware Solutions Technical Sales Intermediate"
   offering:
     name: "IBM Cloud for VMware Solutions"
   guide:
-    name: "IBM Cloud for VMware Solutions - Level 3 Demonstration Guide"
+    name: "IBM Cloud for VMware Solutions for Technical Sales Level 3 Demonstration Guide"
     url: "https://ibm.github.io/SalesEnablement-VMware-L3/"
+  clickthru:
+    vcsProvisioning: "https://ibm.github.io/SalesEnablement-VMware-L3/includes/VCF-Classic-Provisioning/index.html"
+    vcsManaging: "https://ibm.github.io/SalesEnablement-VMware-L3/includes/VCF-Classic-Managing/index.html"
+    vcsManagingMenu: "https://ibm.github.io/SalesEnablement-VMware-L3/includes/VCF-Classic-ManagingMenu/index.html"
+    vcsaasmtProvisioning: "https://ibm.github.io/SalesEnablement-VMware-L3/includes/VCF-aas-MT-Provisioning/index.html"
+    vcsaasmtManaging: "https://ibm.github.io/SalesEnablement-VMware-L3/includes/VCF-aas-MT-Managing/index.html"
+    migrating1: "https://ibm.github.io/SalesEnablement-VMware-L3/includes/MigrateSharedToAsAServiceWithCallout/index.html"
+    migrating2: "https://ibm.github.io/SalesEnablement-VMware-L3/includes/MigrateSharedToAsAService/index.html"
   itz:
     account: "2326338 - ITZ-VMWARE"
-    collection: ""
-    environment: ""
-    resourceGroup: "Enablement-L3"
+    collectionName: "IBM Cloud for VMware Solutions - Level 3"
+    collectionURL: "https://techzone.ibm.com/collection/ibm-cloud-for-vmware-level-3"
+    environment: "https://techzone.ibm.com/my/reservations/create/638a1f6a308f5500188808a7"
+    resourceGroup: "SalesEnablement-L3-2024"
+    accessGroup: "VMware-L3"
     dedicated:
-      instanceName: "vcs-l3"
-      clusterName: "vcs-dv-consolidated"
+      instanceName: "vcs-se-l3"
+      clusterName: "vcs-mc-consolidated"
+    VCFaaSmt:
+      name: "vdc-mt-se-l3"
+      siteName: "IBM VCFaaS Multitenant - DAL"
+    tgID: "0136372c-2832-4706-8690-82164d6006a7"
+
     VMwaaS:
       siteName: "se-le-site"
       pvdc: "se-l3-provider"

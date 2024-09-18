@@ -19,7 +19,7 @@ We begin by simulating how to provision a VMware Shared instance. Use the click-
 
 VMWare Solutions, including the **Shared** plan and other tiers, are accessible through the <a href="https://cloud.ibm.com/vmware" target="_blank">VMware portal on IBM Cloud</a>. Be aware that if you provision a live VMware Shared instance using your *personal* IBM Cloud account, then your account (and credit card associated with that personal account) will be billed for the deployment.
 
-1. From the IBM Cloud dashboard, click the **VMware** tab on the left hand navigation menu, or alternatively
+1. From the IBM Cloud dashboard, click the **VMware** tab on the left menu, or alternatively
 
 2. Search for ```VMware Solutions``` in the search bar at the top of the page.
 
