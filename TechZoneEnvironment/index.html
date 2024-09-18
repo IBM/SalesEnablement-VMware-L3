@@ -1,0 +1,914 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="IBM Cloud for VMware Solutions Level 3 Demonstration Guide now with VMware as a Service">
+      
+      
+        <meta name="author" content="Andrew R. Jones (andrewj@us.ibm.com)">
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../VCFaaS/Introduction/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.6">
+    
+    
+      
+        <title>Reserve the IBM Technology Zone environment - IBM Cloud for VMware Solutions for Technical Sales Level 3</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.35e1ed30.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.356b1318.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#creating-a-reservation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="IBM Cloud for VMware Solutions for Technical Sales Level 3" class="md-header__button md-logo" aria-label="IBM Cloud for VMware Solutions for Technical Sales Level 3" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            IBM Cloud for VMware Solutions for Technical Sales Level 3
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Reserve the IBM Technology Zone environment
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="IBM Cloud for VMware Solutions for Technical Sales Level 3" class="md-nav__button md-logo" aria-label="IBM Cloud for VMware Solutions for Technical Sales Level 3" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    IBM Cloud for VMware Solutions for Technical Sales Level 3
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Reserve the IBM Technology Zone environment
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Reserve the IBM Technology Zone environment
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-reservation" class="md-nav__link">
+    Creating a reservation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extend-the-reservation" class="md-nav__link">
+    Extend the reservation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accept-the-invitation-to-join-the-itz-ibm-cloud-account" class="md-nav__link">
+    Accept the invitation to join the ITZ IBM Cloud account
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    VMware Cloud Foundation (VCF) as a Service
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            VMware Cloud Foundation (VCF) as a Service
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VCFaaS/Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    VCF as a Service - multitenant
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            VCF as a Service - multitenant
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VCFaaS/VCFaaS-mt/Provisioning-mt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Provisioning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VCFaaS/VCFaaS-mt/Managing-mt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VCFaaS/VCFaaS-mt/Managing-mt-site/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing a site
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VCFaaS/VCFaaS-mt/Operating-mt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Operating
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VCFaaS/VCFaaS-mt/Monitoring-mt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Monitoring
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VCFaaS/VCFaaS-mt/MigratingFromShared/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Migrating virtual machines from VMware Shared
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    VMware Cloud Foundation for Classic
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            VMware Cloud Foundation for Classic
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VCF-Classic/Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VCF-Classic/Provisioning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Provisioning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VCF-Classic/Managing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Client%20demonstrations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Client demonstrations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../NextSteps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Next steps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-reservation" class="md-nav__link">
+    Creating a reservation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extend-the-reservation" class="md-nav__link">
+    Extend the reservation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accept-the-invitation-to-join-the-itz-ibm-cloud-account" class="md-nav__link">
+    Accept the invitation to join the ITZ IBM Cloud account
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Reserve the IBM Technology Zone environment</h1>
+
+<div><p>While some of the modules in the <strong>IBM Cloud for VMware Solutions for Technical Sales Level 3 Demonstration Guide</strong> use click-through demonstrations, other modules use pre-provisioned VMware Cloud Foundation (VCF) as a Service instances running in IBM Cloud in an IBM Technology Zone (ITZ) owned IBM Cloud account. The resources in this IBM CLoud account are shared by all users with an active ITZ reservation for the environment. To access these resources, you must first create a reservation in ITZ for the environment. Detailed steps for creating the reservation and accessing the environment are provided below.</p>
+<div class="admonition important">
+<p class="admonition-title">About the IBM Technology Zone (ITZ) environment</p>
+<p>Before proceeding, read and understand the details about the ITZ environment and your access in the ITZ IBM Cloud account.</p>
+<ul>
+<li>
+<p>You must first accept the invitation to join the ITZ IBM Cloud account before you will be able to access it. Details below in the step-by-step guidance.</p>
+</li>
+<li>
+<p>Your user ID in the ITZ IBM Cloud account is limited. You will <strong>not</strong> be able create new IBM Cloud resources (for example you will not be able to provision an VCF as a Service instance). You will <strong>not</strong> be able to delete, or modify the pre-provisioned resources.</p>
+</li>
+<li>
+<p>Your user ID <strong>will</strong> have permission to create, delete, and modify resources in the provisioned VCF as a Service instances using VMware vCloud Director (VCD). </p>
+</li>
+<li>
+<p>In the VCF as a Service instances, do not delete or modify any of the pre-provisioned resources as described in the demonstration guide.</p>
+</li>
+<li>
+<p>In the VCF as a Service instances, you are responsible for deleting any resources you create. Do this before your ITZ reservation expires.</p>
+</li>
+<li>
+<p>Remember, that the environment is shared by all users of the environment. Do <strong>not</strong> delete or modify resources created by other users.</p>
+</li>
+</ul>
+</div>
+<h2 id="creating-a-reservation">Creating a reservation</h2>
+<p>Follow these steps to create a reservation in ITZ.</p>
+<ol>
+<li>
+<p>Click the link below to open a browser to the reservation page of the <strong>IBM Cloud for VMware Solutions - Level 3</strong>.</p>
+<div class="admonition warning">
+<p class="admonition-title">You may be asked to authenticate to IBM Technology Zone</p>
+<p>These steps are not detailed here.</p>
+</div>
+<p><a href="https://techzone.ibm.com/my/reservations/create/638a1f6a308f5500188808a7" target="_blank">IBM Cloud for VMware Solutions - Level 3 - reservation page</a></p>
+</li>
+<li>
+<p>Click <strong>Reserve now</strong>.</p>
+<p>The <strong>Reserve now</strong> option requests the reservation be created now. You can optionally schedule the reservation for later if you like.</p>
+<p><img alt="" src="../_attachments/itzRSVPReserveNow.png"></p>
+</li>
+<li>
+<p>Complete the form and click <strong>Submit</strong>.</p>
+<p><strong>a</strong>. You can optionally change the <strong>Name</strong> field for the reservation.</p>
+<p><strong>b</strong>. Select the <strong>Education</strong> purpose tile.</p>
+<p><strong>c</strong>. Enter a <strong>Purpose description</strong>.</p>
+<p><strong>d</strong>. Select any geography in the <strong>Preferred Geography</strong> drop-down.</p>
+<p><strong>e</strong>. The <strong>End date and time</strong> will be set to 2 days after the current date and time.</p>
+<div class="admonition tip">
+<p class="admonition-title">Extending a reservation</p>
+<p>The initial reservation duration is set by ITZ at 2 days and cannot be extended at the time the reservation is created. You can, and are encouraged to, extend the reservation once it is in the <strong>Ready</strong> state. Two extensions of 2 day increments is allowed. Steps to extend the reservation are shown below.</p>
+</div>
+<p><strong>f</strong>. Accept the IBM Technology Zone's terms and conditions and security policies.</p>
+<p><strong>g</strong>. When satisfied with the parameters, click <strong>Submit</strong>.</p>
+<p><img alt="" src="../_attachments/itzRSVPReservationPage.png"></p>
+</li>
+</ol>
+<h2 id="extend-the-reservation">Extend the reservation</h2>
+<p>The ITZ provisioning process takes approximately 10 minutes. During this process, your user ID is created in the ITZ IBM Cloud account and added to the appropriate security access group. </p>
+<p>You will receive multiple emails from ITZ as the provisioning process runs. One will state the reservation is provisioning and the other will say the environment is <strong>Ready</strong>. </p>
+<p>In rare cases, the provisioning process may fail. If you receive and email stating the reservation failed, try again by repeating steps 1-3.</p>
+<p>Once your reservation is in the <strong>Ready</strong> state, you can extend the reservation to a total of 6 days. Depending on your schedule, you may want to do this. Remember, IBM sellers will need the environment to record their Stand and Deliver, and Business Partners will need it while taking the quiz.</p>
+<ol start="4">
+<li>
+<p>Click <strong>My reservations</strong> or if the button doesn't work, expand <strong>My Library</strong> and select <strong>My Reservations</strong>.</p>
+<p>With some browsers the <strong>My reservations</strong> button does not always work.</p>
+<p><img alt="" src="../_attachments/itzMyReservations.png"></p>
+</li>
+<li>
+<p>Click the <strong>overflow icon</strong> (<img alt="" src="../_attachments/overflowIcon.png">) on the reservation tile and select <strong>Extend</strong>.</p>
+<p><img alt="" src="../_attachments/itzExtendMenu.png"></p>
+</li>
+<li>
+<p>Click the <strong>Select a date</strong> option, specify the date to extend to, and then click <strong>Extend</strong>.</p>
+<p><img alt="" src="../_attachments/itzExtendRsvp.png"></p>
+</li>
+</ol>
+<p>If you anticipate needing additional time, repeat steps 5 and 6 once more to extend the reservation to the maximum of 6 days.</p>
+<h2 id="accept-the-invitation-to-join-the-itz-ibm-cloud-account">Accept the invitation to join the ITZ IBM Cloud account</h2>
+<p>In addition to the ITZ emails, you will receive an email from <strong>IBM Cloud</strong> inviting you to join the ITZ IBM Cloud account. This email will arrive just before or after you receive the ITZ email stating the reservation is ready. If you do not receive the email from IBM Cloud, log into the <a href="https://cloud.ibm.com" target="_blank">IBM Cloud portal</a> and skip to step 8.</p>
+<ol start="7">
+<li>
+<p>Open the email from IBM Cloud, and click <strong>Join now</strong>.</p>
+<p>After clicking <strong>Join now</strong> a browser window should open.</p>
+<p><img alt="" src="../_attachments/itzJoinEmail.png"></p>
+</li>
+</ol>
+<p>Clicking the <em>Join now</em> link should open a browser window to an IBM Cloud portal log in page. Follow the directions to log in and jump to step 11.</p>
+<p>If you are not directed to a page to accept to join the account and land on the main page of the IBM Cloud portal for another IBM Cloud account you are already a member of, follow the next steps.</p>
+<ol start="8">
+<li>
+<p>Click the <strong>Notifications</strong> icon (<img alt="" src="../_attachments/itzJoinNotificationsIcon.png">).</p>
+<p><img alt="" src="../_attachments/itzJoinPortalPage1.png"></p>
+</li>
+<li>
+<p>Click the most recent notification with the subject <strong>Action required: You are invited to join an account in IBM Cloud</strong>.</p>
+<p><img alt="" src="../_attachments/itzJoinPortalPage2.png"></p>
+</li>
+<li>
+<p>Click <strong>Join now</strong> in the notification.</p>
+<p><img alt="" src="../_attachments/itzJoinPortalPage3.png"></p>
+</li>
+<li>
+<p>Select <strong>I accept the product Terms and Conditions of this registration form</strong> in the <strong>Account notice</strong> tile.</p>
+<p><img alt="" src="../_attachments/itzJoinPortalPage4.png"></p>
+</li>
+<li>
+<p>Click <strong>Proceed</strong> to switch to the ITZ IBM Cloud account.</p>
+<p><img alt="" src="../_attachments/itzJoinPortalPage5.png"></p>
+</li>
+<li>
+<p>Verify you are logged into the ITZ IBM Cloud account (2326338 - ITZ-VMWARE).</p>
+<p><img alt="" src="../_attachments/itzJoinPortalPage7.png"></p>
+<p>Note, if your browser window is small, the <strong>Account</strong> drop down list in top menu may be replaced if the <strong>Switch account</strong> icon (<img alt="" src="../_attachments/switchAccountIcon.png">). Click the <strong>Switch account</strong> icon to verify the <strong>2326338 - ITZ-VMWARE</strong> is selected as the active account.</p>
+<p><img alt="" src="../_attachments/itzJoinPortalPage8.png"></p>
+</li>
+</ol>
+<p>Your ITZ reservation is now active, and you have access to the IBM Cloud account and shared, pre-provisioned resources required to complete the IBM Cloud for VMware Solutions for Technical Sales Level 3 learning plan.</p></div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2022, 2023, 2024 IBM
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate", "content.code.copy"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.aecac24b.min.js"></script>
+      
+    
+  </body>
+</html>
