@@ -3,7 +3,7 @@ automation, and security in a single, **client-managed** platform on IBM Cloud.
 
 In the following chapters, you will:
 
-- Experience how to provision a **VCF for Classic** instance using a click-through demonstration.
+- Experience how to provision a **VCF for Classic** instance by using a click-through demonstration.
 
-- Experience managing a **VCF for Classic** instance using the a click-through demonstration.
+- Experience managing a **VCF for Classic** instance by using a click-through demonstration.
 

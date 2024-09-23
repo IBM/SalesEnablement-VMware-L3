@@ -20,13 +20,13 @@ This chapter focuses on using the IBM Cloud portal to manage aspects of the Virt
 
     ![](_attachments/errorMessage.png)
 
-1. Click the link below to open a browser to the IBM Cloud portal.
+1. Click the following link to open a browser to the IBM Cloud portal.
 
     <a href="https://cloud.ibm.com" target="_blank">IBM Cloud portal</a>
 
-2. If not already in the {{itz.account}}, switch to the {{itz.account}} IBM Cloud account.
+2. If not already in the {{itz.account}} account, switch to the {{itz.account}} IBM Cloud account.
 
-    Depending on the size of the browser window, the switch account menu will vary as seen in these two animated images.
+    Depending on the size of the browser window, the switch account menu varies as seen in these two animated images.
 
     ![](_attachments/switchAccount1.gif)
 
@@ -36,11 +36,11 @@ This chapter focuses on using the IBM Cloud portal to manage aspects of the Virt
 
     ![](_attachments/ip-dashboard-vmware.png)
 
-4. Click **VCF as a Service** in left menu.
+4. Click **VCF as a Service** in the left menu.
 
     ![](_attachments/ip-vmware-VCFaaS-menu.png)
 
-    Notice the 2 tabs: **Virtual data centers** and **Cloud Director sites**. For this demonstration, use only the **{{itz.VCFaaSmt.name}}** virtual data center (VDC)! As you are accessing the live IBM Cloud portal, the number of data centers you see may vary. The **{{itz.VCFaaSmt.name}}** VCD is part of the **IBM VCFaaS Multitenant - DAL** VMware Cloud Director (VDC) site. This site is managed by IBM and other tenants that selected the Dallas location. This chapter will only focus on the VDC and not the site.
+    Notice the 2 tabs: **Virtual data centers** and **Cloud Director sites**. For this demonstration, use only the **{{itz.VCFaaSmt.name}}** virtual data center (VDC)! As you are accessing the live IBM Cloud portal, the number of data centers you see may vary. The **{{itz.VCFaaSmt.name}}** VCD is part of the **IBM VCFaaS Multitenant - DAL** VMware Cloud Director (VDC) site. This site is managed by IBM and other tenants that selected the Dallas location. This module focuses on the VDC and not the site.
 
 5. Click **{{itz.VCFaaSmt.name}}**.
 
@@ -57,11 +57,11 @@ This chapter focuses on using the IBM Cloud portal to manage aspects of the Virt
     
     **d.** The location of the VCD.
     
-    **e.** The VCD instance ID. This is required when accessing the instance through the IBM Cloud application programming interfaces (APIs) and command line interfaces (CLIs).
+    **e.** The VCD instance ID. This is required when accessing the instance through the IBM Cloud application programming interfaces (APIs) and command-line interfaces (CLIs).
     
     **f.** The network edge type.
     
-    **g.** The connections supported.
+    **g.** The type of connections supported.
     
     **h.** The fast provisioning setting.
     
@@ -102,15 +102,15 @@ This chapter focuses on using the IBM Cloud portal to manage aspects of the Virt
 
         Several videos of how to use VMware Cloud Director Availability (VCDA) are included in the product documentation, including this one that illustrates <a href="https://cloud.ibm.com/docs/vmware-service?topic=vmware-service-vcda-migrating-cloudtocloud-vmaas" target="_blank">migration from the VCF as a Service multitenant instance to a VCF as a Service single-tenant instance</a>
 
-    There are 2 **Add-on services** included in this VDC instance: 
+    There are two **Add-on services** included in this VDC instance: 
     
     - **VMware Cloud Director Availability**
 
-        VMware Cloud Director Availability (VCDA) delivers simple, secure, and cost effective migration and disaster recovery protection of workloads. The VCDA service is included by default in all multitenant VDCs and optionally included in single-tenant VCF as a Service Cloud Director sites at no charge. Learn more about VCDA <a href="https://cloud.ibm.com/docs/vmware-service?topic=vmware-service-tenant-vcda" target="_blank">here</a>.
+        VMware Cloud Director Availability (VCDA) delivers simple, secure, and cost-effective migration and disaster recovery protection of workloads. The VCDA service is included by default in all multitenant VDCs and optionally included in single-tenant VCF as a Service Cloud Director sites at no charge. Learn more about VCDA <a href="https://cloud.ibm.com/docs/vmware-service?topic=vmware-service-tenant-vcda" target="_blank">here</a>.
 
     - **Veeam Backup and Replication**
 
-        **Veeam Backup and Replication Always-On Enterprise** provides data centers with high-speed recovery and data loss avoidance. This service seamlessly integrates as a managed solution to help enterprises achieve high availability and provides recovery points for applications and data. By using this service, enterprises control the backup of all virtual machines (VMs) for their infrastructure directly from the Veeam console. For multitenant instances, Veeam is installed site where the VDC is provisioned. Learn more about Veeam and the simple install process <a href="https://cloud.ibm.com/docs/vmware-service?topic=vmware-service-tenant-veeam" target="_blank">here</a>.
+        **Veeam Backup and Replication Always-On Enterprise** provides data centers with high-speed recovery and data loss avoidance. This service seamlessly integrates as a managed solution to help enterprises achieve high availability and provides recovery points for applications and data. By using this service, enterprises control the backup of all virtual machines (VMs) for their infrastructure directly from the Veeam console. For multitenant instances, Veeam is installed on the site where the VDC is provisioned. Learn more about Veeam and the installation process <a href="https://cloud.ibm.com/docs/vmware-service?topic=vmware-service-tenant-veeam" target="_blank">here</a>.
 
     ![](_attachments/ip-vmware-VCFaaS-addOnServices.png)
 
@@ -145,7 +145,7 @@ This chapter focuses on using the IBM Cloud portal to manage aspects of the Virt
 
 16. Examine the **Architecture diagram**.
 
-    The IBM Cloud for VCF as a Service interconnect architecture uses the VDC edge to support inbound and outbound network traffic from VDC networks to other transit gateway endpoints including IBM Virtual Private Cloud and classic infrastructure as well as direct link connections to on-premises resources. The VDC edge uses a set of six connections to the transit gateway forming a highly available network path supporting traffic flow using all three zones in the region.
+    The IBM Cloud for VCF as a Service interconnect architecture uses the VDC edge to support inbound and outbound network traffic from VDC networks to other transit gateway endpoints including IBM Virtual Private Cloud and classic infrastructure as well as direct link connections to on-premises resources. The VDC edge uses a set of six connections to the transit gateway forming a highly available network path supporting traffic flow by using all three zones in the region.
 
     ![](_attachments/ip-vmware-VCFaaS-instanceinterconnectivityLearnMoreArchitecture.png)
 
@@ -171,4 +171,4 @@ That concludes the overview of managing a VCF as a Service multitenant instance 
   
 - Explore the integration between a VCF as a Service multitenant instance and IBM Cloud monitoring.
 
-In the next chapter, using the IBM Cloud portal, briefly examine the VCF as a Service multitenant **site** where the VCF as a Service multitenant instance is running.
+In the next chapter, by using the IBM Cloud portal, briefly examine the VCF as a Service multitenant **site** where the VCF as a Service multitenant instance is running.
