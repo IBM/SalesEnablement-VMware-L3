@@ -772,12 +772,12 @@
 </div>
 <ol>
 <li>
-<p>Click the link below to open a browser to the IBM Cloud portal.</p>
+<p>Click the following link to open a browser to the IBM Cloud portal.</p>
 <p><a href="https://cloud.ibm.com" target="_blank">IBM Cloud portal</a></p>
 </li>
 <li>
-<p>If not already in the 2326338 - ITZ-VMWARE, switch to the 2326338 - ITZ-VMWARE IBM Cloud account.</p>
-<p>Depending on the size of the browser window, the switch account menu will vary as seen in these two animated images.</p>
+<p>If not already in the 2326338 - ITZ-VMWARE account, switch to the 2326338 - ITZ-VMWARE IBM Cloud account.</p>
+<p>Depending on the size of the browser window, the switch account menu varies as seen in these two animated images.</p>
 <p><img alt="" src="../_attachments/switchAccount1.gif"></p>
 <p><img alt="" src="../_attachments/switchAccount2.gif"></p>
 </li>
@@ -786,9 +786,9 @@
 <p><img alt="" src="../_attachments/ip-dashboard-vmware.png"></p>
 </li>
 <li>
-<p>Click <strong>VCF as a Service</strong> in left menu.</p>
+<p>Click <strong>VCF as a Service</strong> in the left menu.</p>
 <p><img alt="" src="../_attachments/ip-vmware-VCFaaS-menu.png"></p>
-<p>Notice the 2 tabs: <strong>Virtual data centers</strong> and <strong>Cloud Director sites</strong>. For this demonstration, use only the <strong>vdc-mt-se-l3</strong> virtual data center (VDC)! As you are accessing the live IBM Cloud portal, the number of data centers you see may vary. The <strong>vdc-mt-se-l3</strong> VCD is part of the <strong>IBM VCFaaS Multitenant - DAL</strong> VMware Cloud Director (VDC) site. This site is managed by IBM and other tenants that selected the Dallas location. This chapter will only focus on the VDC and not the site.</p>
+<p>Notice the 2 tabs: <strong>Virtual data centers</strong> and <strong>Cloud Director sites</strong>. For this demonstration, use only the <strong>vdc-mt-se-l3</strong> virtual data center (VDC)! As you are accessing the live IBM Cloud portal, the number of data centers you see may vary. The <strong>vdc-mt-se-l3</strong> VCD is part of the <strong>IBM VCFaaS Multitenant - DAL</strong> VMware Cloud Director (VDC) site. This site is managed by IBM and other tenants that selected the Dallas location. This module focuses on the VDC and not the site.</p>
 </li>
 <li>
 <p>Click <strong>vdc-mt-se-l3</strong>.</p>
@@ -803,9 +803,9 @@
 <p><strong>b.</strong> The pricing plan selected for the instance.</p>
 <p><strong>c.</strong> The VDC site where the VCD is located.</p>
 <p><strong>d.</strong> The location of the VCD.</p>
-<p><strong>e.</strong> The VCD instance ID. This is required when accessing the instance through the IBM Cloud application programming interfaces (APIs) and command line interfaces (CLIs).</p>
+<p><strong>e.</strong> The VCD instance ID. This is required when accessing the instance through the IBM Cloud application programming interfaces (APIs) and command-line interfaces (CLIs).</p>
 <p><strong>f.</strong> The network edge type.</p>
-<p><strong>g.</strong> The connections supported.</p>
+<p><strong>g.</strong> The type of connections supported.</p>
 <p><strong>h.</strong> The fast provisioning setting.</p>
 <p><strong>i.</strong> The public IPs assigned to the VCD instance.</p>
 <p><img alt="" src="../_attachments/ip-vmware-VCFaaS-instanceSummary.png"></p>
@@ -840,15 +840,15 @@
 <p>At this time, administrative access to the <strong>Add-on services</strong> for this instance is not provided. The IBM Cloud Identity Access Management (IAM) controls do not provide sufficient isolation control for these services in a shared environment like the one used by this learning plan.</p>
 <p>Several videos of how to use VMware Cloud Director Availability (VCDA) are included in the product documentation, including this one that illustrates <a href="https://cloud.ibm.com/docs/vmware-service?topic=vmware-service-vcda-migrating-cloudtocloud-vmaas" target="_blank">migration from the VCF as a Service multitenant instance to a VCF as a Service single-tenant instance</a></p>
 </div>
-<p>There are 2 <strong>Add-on services</strong> included in this VDC instance: </p>
+<p>There are two <strong>Add-on services</strong> included in this VDC instance: </p>
 <ul>
 <li>
 <p><strong>VMware Cloud Director Availability</strong></p>
-<p>VMware Cloud Director Availability (VCDA) delivers simple, secure, and cost effective migration and disaster recovery protection of workloads. The VCDA service is included by default in all multitenant VDCs and optionally included in single-tenant VCF as a Service Cloud Director sites at no charge. Learn more about VCDA <a href="https://cloud.ibm.com/docs/vmware-service?topic=vmware-service-tenant-vcda" target="_blank">here</a>.</p>
+<p>VMware Cloud Director Availability (VCDA) delivers simple, secure, and cost-effective migration and disaster recovery protection of workloads. The VCDA service is included by default in all multitenant VDCs and optionally included in single-tenant VCF as a Service Cloud Director sites at no charge. Learn more about VCDA <a href="https://cloud.ibm.com/docs/vmware-service?topic=vmware-service-tenant-vcda" target="_blank">here</a>.</p>
 </li>
 <li>
 <p><strong>Veeam Backup and Replication</strong></p>
-<p><strong>Veeam Backup and Replication Always-On Enterprise</strong> provides data centers with high-speed recovery and data loss avoidance. This service seamlessly integrates as a managed solution to help enterprises achieve high availability and provides recovery points for applications and data. By using this service, enterprises control the backup of all virtual machines (VMs) for their infrastructure directly from the Veeam console. For multitenant instances, Veeam is installed site where the VDC is provisioned. Learn more about Veeam and the simple install process <a href="https://cloud.ibm.com/docs/vmware-service?topic=vmware-service-tenant-veeam" target="_blank">here</a>.</p>
+<p><strong>Veeam Backup and Replication Always-On Enterprise</strong> provides data centers with high-speed recovery and data loss avoidance. This service seamlessly integrates as a managed solution to help enterprises achieve high availability and provides recovery points for applications and data. By using this service, enterprises control the backup of all virtual machines (VMs) for their infrastructure directly from the Veeam console. For multitenant instances, Veeam is installed on the site where the VDC is provisioned. Learn more about Veeam and the installation process <a href="https://cloud.ibm.com/docs/vmware-service?topic=vmware-service-tenant-veeam" target="_blank">here</a>.</p>
 </li>
 </ul>
 <p><img alt="" src="../_attachments/ip-vmware-VCFaaS-addOnServices.png"></p>
@@ -882,7 +882,7 @@
 </li>
 <li>
 <p>Examine the <strong>Architecture diagram</strong>.</p>
-<p>The IBM Cloud for VCF as a Service interconnect architecture uses the VDC edge to support inbound and outbound network traffic from VDC networks to other transit gateway endpoints including IBM Virtual Private Cloud and classic infrastructure as well as direct link connections to on-premises resources. The VDC edge uses a set of six connections to the transit gateway forming a highly available network path supporting traffic flow using all three zones in the region.</p>
+<p>The IBM Cloud for VCF as a Service interconnect architecture uses the VDC edge to support inbound and outbound network traffic from VDC networks to other transit gateway endpoints including IBM Virtual Private Cloud and classic infrastructure as well as direct link connections to on-premises resources. The VDC edge uses a set of six connections to the transit gateway forming a highly available network path supporting traffic flow by using all three zones in the region.</p>
 <p><img alt="" src="../_attachments/ip-vmware-VCFaaS-instanceinterconnectivityLearnMoreArchitecture.png"></p>
 </li>
 <li>
@@ -911,7 +911,7 @@
 <p>Explore the integration between a VCF as a Service multitenant instance and IBM Cloud monitoring.</p>
 </li>
 </ul>
-<p>In the next chapter, using the IBM Cloud portal, briefly examine the VCF as a Service multitenant <strong>site</strong> where the VCF as a Service multitenant instance is running.</p></div>
+<p>In the next chapter, by using the IBM Cloud portal, briefly examine the VCF as a Service multitenant <strong>site</strong> where the VCF as a Service multitenant instance is running.</p></div>
 
 
 

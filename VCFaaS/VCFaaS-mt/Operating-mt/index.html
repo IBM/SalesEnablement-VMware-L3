@@ -747,10 +747,10 @@
 <p>How the <em>"on IBM Cloud"</em> capabilities of the <strong>VCF as a Service multitenant</strong> are exposed through the VMware web console (VMware vCloud Director [VCD]).</p>
 </li>
 <li>
-<p>How to provision basic resources including data center groups, networks, and virtual machines using VCD.</p>
+<p>How to provision basic resources including data center groups, networks, and virtual machines by using VCD.</p>
 </li>
 <li>
-<p>Illustrate how a <strong>VCF as a Service multitenant</strong> instance on IBM Cloud is just like VCF in a client's enterprise data center.</p>
+<p>Illustrate how a <strong>VCF as a Service multitenant</strong> instance on IBM Cloud is like VCF in a client's enterprise data center.</p>
 </li>
 </ul>
 <div class="admonition important">
@@ -762,12 +762,12 @@
 </div>
 <ol>
 <li>
-<p>Click the link below to open a browser to the IBM Cloud portal.</p>
+<p>Click the following link to open a browser to the IBM Cloud portal.</p>
 <p><a href="https://cloud.ibm.com/vmware/resources/vdc" target="_blank">IBM Cloud portal</a></p>
 </li>
 <li>
-<p>If not already in the 2326338 - ITZ-VMWARE, switch to the 2326338 - ITZ-VMWARE IBM Cloud account.</p>
-<p>Depending on the size of the browser window, the switch account menu will vary as seen in these two animated images.</p>
+<p>If not already in the 2326338 - ITZ-VMWARE account, switch to the 2326338 - ITZ-VMWARE IBM Cloud account.</p>
+<p>Depending on the size of the browser window, the switch account menu varies as seen in these two animated images.</p>
 <p><img alt="" src="../_attachments/switchAccount3.gif"></p>
 <p><img alt="" src="../_attachments/switchAccount4.gif"></p>
 </li>
@@ -781,7 +781,7 @@
 </li>
 <li>
 <p>Click <strong>SIGN IN WITH OIDC</strong>.</p>
-<p>Single sign-on has been enabled as part of the <strong>VCF as a Service</strong> integration with VCD. The integration is between the VMware components and IBM Cloud Identity and Access Management (IAM). OpenID Connect (OIDC) is an identity layer built on top of the OAuth 2.0 framework. It allows third-party applications to verify the identity of the end-user and to obtain basic user profile information. Learn more about OIDC <a href="https://auth0.com/docs/authenticate/protocols/openid-connect-protocol" target="_blank">here</a>. Learn more about the IBM Cloud IAM and VMware sign in capabilities <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-iam-integration" target="_blank">here</a>.</p>
+<p>Single sign-on has been enabled as part of the <strong>VCF as a Service</strong> integration with VCD. The integration is between the VMware components and IBM Cloud Identity and Access Management (IAM). OpenID Connect (OIDC) is an identity layer that is built on the OAuth 2.0 framework. It allows third-party applications to verify the identity of the user and to obtain basic user profile information. Learn more about OIDC <a href="https://auth0.com/docs/authenticate/protocols/openid-connect-protocol" target="_blank">here</a>. Learn more about the IBM Cloud IAM and VMware sign-in capabilities <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-iam-integration" target="_blank">here</a>.</p>
 <p><img alt="" src="../_attachments/vcd-LoginScreen.png"></p>
 <div class="admonition warning">
 <p class="admonition-title">You may be asked to reauthenticate to IBM Cloud</p>
@@ -789,16 +789,16 @@
 </div>
 </li>
 <li>
-<p>Explore the information displayed on the <strong>Data Centers</strong> summary page and then click the vdc-mt-se-l3 tile.</p>
-<p>The screen capture shown below was taken before any resources were provisioned in the <strong>VCF as a Service</strong> instance. Your view will be different and reflect any currently provisioned resources.</p>
+<p>Explore the information that is displayed on the <strong>Data Centers</strong> summary page and then click the vdc-mt-se-l3 tile.</p>
+<p>The screen capture that is shown was taken before any resources were provisioned in the <strong>VCF as a Service</strong> instance. Your view is different and reflect any currently provisioned resources.</p>
 <p><img alt="" src="../_attachments/vcd-DataCentersSummary.png"></p>
 </li>
 </ol>
 <h3 id="networking">Networking</h3>
 <p>The network for a <strong>VCF as a Service</strong> environment is a critical element that clients must plan carefully. Some information on network planning is provided in the IBM Cloud documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vcd-ops-guide#vcd-ops-guide-networking" target="_blank">here</a>. VMware also has good documentation that is accessible through the vCloud Director web console or <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-0544FE2A-B036-43E0-B549-40BACDF261B6.html" target="_blank">here</a>. The network implementation in this demonstration environment is minimal and should not be considered as a best of practice.</p>
-<p>The next steps show how to create a data center group, expand the scope of an edge gateway, and create a network that can be used by virtual machines (VMs). Data center groups allow administrators to group VDCs together to share network resources. In this ITZ environment, a group of only one VDC will be created. However, in most client environments, there will be multiple VDCs, and connectivity will need to be established between them. To allow network connectivity to VMs, a data center group and network needs to be created in the virtual data center. </p>
+<p>The next steps show how to create a data center group, expand the scope of an edge gateway, and create a network that used by virtual machines (VMs). Data center groups allow administrators to group VDCs together to share network resources. In this ITZ environment, a group of only one VDC is created. However, in most client environments, there will be multiple VDCs, and connectivity will need to be established between them. To allow network connectivity to VMs, a data center group and network needs to be created in the virtual data center. </p>
 <div class="admonition warning">
-<p class="admonition-title">In the ITZ enviroment, you can, but you don't need to</p>
+<p class="admonition-title">In the ITZ environment, you can, but you don't need to</p>
 <p>While you can create a new data center group and network in the instance, there is no need to as they have already been created in the ITZ environment. If you do create new ones, please delete yours, and only yours before your ITZ reservation expires.</p>
 </div>
 <ol start="7">
@@ -838,7 +838,7 @@
 <p><img alt="" src="../_attachments/vcd-dcgToEGTabpng.png"></p>
 </li>
 <li>
-<p>Click vdc-mt-se-l3 in the table. Note the name in the table will have a unique ID appended to it.</p>
+<p>Click vdc-mt-se-l3 in the table. Note that the name in the table has a unique ID appended to it.</p>
 <p><img alt="" src="../_attachments/vcd-eg-Table.png"></p>
 </li>
 <li>
@@ -873,7 +873,7 @@
 </li>
 <li>
 <p>Enter a <strong>Name</strong> and <strong>Description</strong> and then specify a new CIDR and click <strong>NEXT</strong>.</p>
-<p>In this demonstration environment, a network is created using the non-routable private network CIDR of 192.168.1.1/24. </p>
+<p>In this demonstration environment, a network is created that uses the nonroutable private network CIDR of 192.168.1.1/24. </p>
 <p>The <em>Dual-Stack Mode</em> enables support for both IPv4 and IPv6 addressing. The <em>Distributed Routing</em> option provides fast and efficient East-West routing. This can be disabled to connect to the service router and force all VM traffic through the service router.</p>
 <p><img alt="" src="../_attachments/vcd-network-General.png"></p>
 </li>
@@ -887,27 +887,27 @@
 </li>
 <li>
 <p>Click <strong>CANCEL</strong> and then <strong>YES</strong> in the <strong>Cancel Wizard</strong> dialog.</p>
-<p>This action has already been performed on the existing network. If you were to create a new one, you would click <em>FINISH</em>.</p>
+<p>This action was performed on the existing network. If you were to create a new one, you would click <em>FINISH</em>.</p>
 <p><img alt="" src="../_attachments/vcd-network-Cancel.png"></p>
-<p>Once the network is created and the status turns to <strong>Normal</strong>, the next step is to activate dynamic host configuration protocol (DHCP) so VMs are automatically assigned network addresses when they are provisioned.</p>
+<p>Once the network is created and the status turns to <strong>Normal</strong>, the next step is to activate the dynamic host configuration protocol (DHCP) so VMs are automatically assigned network addresses when they are provisioned.</p>
 </li>
 <li>
 <p>Click <strong>vdc-mt-se-l3-defaultNetwork</strong> in the table.</p>
 <p><img alt="" src="../_attachments/vcd-network-TableCreated.png"></p>
 </li>
 <li>
-<p>Click <strong>DHCP</strong> in left menu.</p>
+<p>Click <strong>DHCP</strong> in the left menu.</p>
 <p><img alt="" src="../_attachments/vcd-network-DHCPMenu.png"></p>
 </li>
 </ol>
 <div class="admonition important">
-<p class="admonition-title">Please read about the next few steps</p>
+<p class="admonition-title">Read about the next few steps</p>
 <p>The next few steps <strong>cannot</strong> be performed with the default network already created in the ITZ environment. You can perform them if you create a new network. The steps are provided for education purposes. The next step you can actually perform is step 33.</p>
 </div>
 <ol start="28">
 <li>
 <p>Click <strong>ACTIVATE</strong>.</p>
-<p>Note, this option will not be available for the network already created, rather you will see <em>DEACTIVATE</em>. <strong>DO NOT</strong> <em>deactivate</em> DHCP for the default network!</p>
+<p>Note, this option will not be available for the network that is already created, rather you see <em>DEACTIVATE</em>. <strong>DO NOT</strong> <em>deactivate</em> DHCP for the default network!</p>
 <p><img alt="" src="../_attachments/vcd-network-DHCPActivate.png"></p>
 </li>
 <li>
@@ -953,12 +953,12 @@
 </li>
 <li>
 <p>Enter a unique <strong>Name</strong> and <strong>Computer Name</strong>.</p>
-<p>The <strong>Computer Name</strong> will autofill with the specified <strong>Name</strong> unless it does not conform to a valid hostname.</p>
+<p>The <strong>Computer Name</strong> autofills with the specified <strong>Name</strong> unless it does not conform to a valid hostname.</p>
 <p><img alt="" src="../_attachments/vcd-vApp-NewvApp-NewVMName.png"></p>
 </li>
 <li>
 <p>Select a <strong>Template</strong> from the table.</p>
-<p>The <strong>CentOS-7-Template-Official</strong> is a good choice as VMs using this template boot quickly.</p>
+<p>The <strong>CentOS-7-Template-Official</strong> is a good choice as VMs that use this template boot quickly.</p>
 <p><img alt="" src="../_attachments/vcd-vApp-NewvAPp-templateOK.png"></p>
 </li>
 <li>
@@ -969,7 +969,7 @@
 <li>
 <p>Review the <strong>Compute</strong> and <strong>NICs</strong> settings and click <strong>OK</strong>.</p>
 <p><strong>a</strong>. The <strong>Compute</strong> settings are defined by the template selected.</p>
-<p><strong>b</strong>. The network interface cards (NICs) is set to the default network, which was created earlier, and DHCP is selected.</p>
+<p><strong>b</strong>. The network interface cards (NICs) are set to the default network, which was created earlier, and DHCP is selected.</p>
 <p><img alt="" src="../_attachments/vcd-vApp-NewvApp-cpunics.png"></p>
 </li>
 <li>
@@ -987,7 +987,7 @@
 <li>
 <p>Observe the VMs in the vApp and the options available.</p>
 <p><strong>a</strong>. Notice the state of the VMs. It may take a few minutes for them to show <strong>Powered on</strong>.</p>
-<p><strong>b</strong>. Try accessing the VM using the <strong>VM console</strong> link. Note, the VM web console tool does not appear to work with the Safari browser! If you want to log into the VM, retrieve the password from the VM details page. To see the auto-generated password, edit the <strong>Guest OS Customization</strong>.</p>
+<p><strong>b</strong>. Try accessing the VM by using the <strong>VM console</strong> link. Note, the VM web console tool does not appear to work with the Safari browser! If you want to log into the VM, retrieve the password from the VM details page. To see the auto-generated password, edit the <strong>Guest OS Customization</strong>.</p>
 <p><strong>c</strong>. Review the <strong>Network Diagram</strong> that VMware generates for the vAPP.</p>
 <p><img alt="" src="../_attachments/vcd-vApp-Details.png"></p>
 </li>
