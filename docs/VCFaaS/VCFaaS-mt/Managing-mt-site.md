@@ -1,8 +1,8 @@
 In VMware Cloud Foundation (VCF) as a Service, a **Cloud Director site** is where the physical resources for VCF are managed. 
 
-In VCF as a Service **single-tenant**, the client would be responsible for specifying the compute and storage infrastructure for their site. Using the IBM Cloud portal, the client could grow and shrink their site as they desire.
+In VCF as a Service **single-tenant**, the client would be responsible for specifying the compute and storage infrastructure for their site. Using the IBM Cloud portal, the client might grow and shrink their site as they want.
 
-In VCF as a Service **multitenant**, IBM manages most aspects of the **Cloud Director site**. Each site may host Virtual Data Centers (VDCs) for many different clients. The only actions clients can perform on the IBM managed site are:
+In VCF as a Service **multitenant**, IBM manages most aspects of the **Cloud Director site**. Each site will host Virtual Data Centers (VDCs) for many different clients. The only actions clients can perform on the IBM managed site are:
 
 - create new VDCs
 - add and remove **Add-on services**
@@ -19,13 +19,13 @@ In VCF as a Service **multitenant**, IBM manages most aspects of the **Cloud Dir
 
     ![](_attachments/errorMessage.png)
 
-1. Click the link below to open a browser to the IBM Cloud portal.
+1. Click the following link to open a browser to the IBM Cloud portal.
 
     <a href="https://cloud.ibm.com/vmware/resources/vdc" target="_blank">IBM Cloud portal - VCF as a Service</a>
 
-2. If not already in the {{itz.account}}, switch to the {{itz.account}} IBM Cloud account.
+2. If not already in the {{itz.account}} account, switch to the {{itz.account}} IBM Cloud account.
 
-    Depending on the size of the browser window, the switch account menu will vary as seen in these two animated images.
+    Depending on the size of the browser window, the switch account menu varies as seen in these two animated images.
 
     ![](_attachments/switchAccount3.gif)
 
@@ -51,7 +51,7 @@ In VCF as a Service **multitenant**, IBM manages most aspects of the **Cloud Dir
 
 7. Examine the VDC information displayed, and then click the **Add-on services** tab.
 
-    Note the ability to create a new VDC. Clicking this button would open the dialog seen earlier when provisioning a new VCF as a Service multitenant instance.
+    Note the ability to create a new VDC. Clicking this button would open the dialog that was seen earlier when provisioning a new VCF as a Service multitenant instance.
 
     ![](_attachments/ip-vmware-VCFaaS-instancesDirectorVDCSummary.png)
 
@@ -73,7 +73,7 @@ In VCF as a Service **multitenant**, IBM manages most aspects of the **Cloud Dir
 
     Details about the instance endpoints and connections are displayed. Learn more about this topic <a href="https://cloud.ibm.com/docs/vmware-service?topic=vmware-service-vcda-adding-deleting-private-ep" target="_blank">here</a>.
 
-    - **Instance endpoints** - Public instance endpoints are provided by IBM. Clients can request new endpoints for private connections. Additional charges apply when ordering new private endpoints.
+    - **Instance endpoints** - Public instance endpoints are provided by IBM. Clients can request new endpoints for private connections. Extra charges apply when new private endpoints are added.
     
     - **VMware Shared pairings** - Create and manage cloud-to-cloud connections between the instance and VMware Shared instances. **VMware Shared has been withdrawn and will reach end of support on January 15, 2025.**
 
@@ -81,4 +81,4 @@ In VCF as a Service **multitenant**, IBM manages most aspects of the **Cloud Dir
 
     ![](_attachments/ip-vmware-VCFaaS-instancesDirectorVCDAExpand.png)
 
-That concludes the overview of managing a VCF as a Service multitenant site using the IBM Cloud portal.
+That concludes the overview of managing a VCF as a Service multitenant site.

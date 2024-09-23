@@ -1,4 +1,4 @@
-Use the click-through demonstration below to practice provisioning a VMware Cloud Foundation (VCF) for Classic instance.
+Use the following click-through demonstration to practice provisioning a VMware Cloud Foundation (VCF) for Classic instance.
 
 !!! Important "About the IBM Technology Zone (ITZ) environment"
 
@@ -14,7 +14,7 @@ Use the click-through demonstration below to practice provisioning a VMware Clou
     
     When using the click-through demonstration, if you are not sure where to click or what to do next, simply click anywhere on the screen and the place to click next will be highlighted. Text entry fields are pre-populated in the click-through demonstration.
 
-1. Open the link below and then click the play button ![](_attachments/ClickThruPlayButton.png) to begin the demonstration.
+1. Open the following link and then click play ![](_attachments/ClickThruPlayButton.png) to begin the demonstration.
 
     **Click-through demonstration:** <a href={{clickthru.vcsProvisioning}} target ="_blank">Provision an instance of VCF for Classic</a>
 
@@ -26,11 +26,11 @@ Use the click-through demonstration below to practice provisioning a VMware Clou
 
     The message states:
     
-    *The VMware licensing model has changed. All newly provisioned resources are entitled to the VMware Cloud Foundation bundle with "Enterprise Plus" licenses for VMware components.*
+    *The VMware licensing model changed. All newly provisioned resources are entitled to the VMware Cloud Foundation bundle with "Enterprise Plus" licenses for VMware components.*
     
     After acquiring VMware, Broadcom made many changes to the licensing of the VMware portfolio. Learn more about the VCF for Classic licensing model <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_packaging-pricing#vmwaresol_packaging-pricing-impact" target="_blank">here</a>.
 
-    VCF on Classic supports four (4) **Resource type** options. For this demonstration, only the **VMware Cloud Foundation for Classic - Automated** resource type is used. Expand the **Resource types** section and learn the differences between each **Resource type**. The descriptions are from the **About** page in the IBM Cloud portal.
+    VCF on Classic supports four **Resource type** options. For this demonstration, only the **VMware Cloud Foundation for Classic - Automated** resource type is used. Expand the **Resource types** section and learn the differences between each **Resource type**. The descriptions are from the **About** page in the IBM Cloud portal.
 
     ??? Note "Resource types"
 
@@ -115,14 +115,14 @@ Use the click-through demonstration below to practice provisioning a VMware Clou
             Learn more about the **Regulated Workloads** option <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-cr_overview" target="_blank">**here**</a>.
 
 
-5. Click **General information** in left menu.
+5. Click **General information** in the left menu.
 6. Click the **VMware vSphere version** drop-down list.
 
     As of August 2024, VCF for Classic supports both VMware vSphere version 7.0u3 and 8.0u2. Use the <a href="https://www.vmware.com/docs/vmw-version-comparison" target="_blank">**VMware version comparison guide**</a> to learn about both.
 
 7. Select **vSphere 7.0u3**.
 
-    The **vSphere 7.0u3** version is selected because at this time VCF for Classic does not support VMware Virtual Storage Area Network (vSAN) on vSphere 8.0u2. If **vSphere 8.0u2** was chosen, the vSAN option would not be visible when specifying the storage type for the **Consolidated cluster**.
+    The **vSphere 7.0u3** version is selected because currently VCF for Classic does not support VMware Virtual Storage Area Network (vSAN) on vSphere 8.0u2. If **vSphere 8.0u2** is selected, the vSAN option is not be visible as a storage type for the **Consolidated cluster**.
 
 8. Click the **VMware vCenter Server version** drop-down list.
 
@@ -149,13 +149,13 @@ Use the click-through demonstration below to practice provisioning a VMware Clou
 
         VCF for Classic supports both **primary** and **secondary** instance types. A **primary** instance is either a single instance in the environment or the first instance in a multi-site topology. A **secondary** instance connects to an existing (primary) instance in the environment for high availability.
 
-13.  Click **Consolidated cluster** in left menu.
+13.  Click **Consolidated cluster** in the left menu.
 
     By default, **VCF for Classic - Automated** creates a single, **consolidated cluster** deployment. The **consolidated cluster** is used for both management components and user workloads. Optionally, separate **workload** and **gateway** clusters can be created. These will be explored later.
 
 14. Click the **Geography** drop-down list.
 
-    VCF for Classic is available in IBM Cloud data centers located around the world. For a list of the latest supported locations refer to the <a href="https://cloud.ibm.com/docs/overview?topic=overview-locations" target="_blank">**Region and data center locations for resource deployment**</a> page in the documentation. This documentation provides detailed information about IBM Cloud data centers and multizone region architectures.
+    VCF for Classic is available in IBM Cloud data centers that are located around the world. For a list of the latest supported locations, refer to the <a href="https://cloud.ibm.com/docs/overview?topic=overview-locations" target="_blank">**Region and data center locations for resource deployment**</a> page in the documentation. This documentation provides detailed information about IBM Cloud data centers and multizone region architectures.
 
 15. Select **NA East**.
 16. Select **WDC04** in the **Data center** drop-down list.
@@ -171,41 +171,41 @@ Use the click-through demonstration below to practice provisioning a VMware Clou
 20. Select the **Cascade Lake** CPU model.
 21. Select the **Dual Intel Xeon Silver 4210** CPU model name.
 
-    Selecting the best CPU model for a deployment is an important step that needs to be considered based upon the workloads that will run in the environment. In addition, the model selected will affect the options available for memory and storage.
+    Selecting the best CPU model for a deployment is an important step that needs to be considered based on the workloads that run in the environment. In addition, the model that is selected affects the options available for memory and storage.
 
 22. Click the **RAM** drop-down list.
 
-    Rightsizing the memory of the consolidated cluster is an important step, but know it is possible to add and remove memory later after the instance is provisioned, up to the maximum supported by the CPU model selected. The amount of memory may impact what additional services can be deployed during the instance provisioning process. 
+    Rightsizing the memory of the consolidated cluster is an important step, but know that it is possible to add and remove memory later after the instance is provisioned, up to the maximum supported by the CPU model selected. The amount of memory may impact what other services can be deployed during the instance provisioning process. 
 
 23. Select **384 GB**.
 
-    The **Number of bare metal servers** field specifies how many servers are created in the cluster. A minimum of 3 servers is required. All users will utilize the same configuration specified. As of August 2024, a maximum of 51 servers can be specified for a cluster. For the latest information on the supported number of bare metal servers, refer to the product documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-bare-metal-number" target="_blank">**here**</a>.
+    The **Number of bare metal servers** field specifies how many servers are created in the cluster. A minimum of 3 servers are required. All users utilize the same configuration specified. As of August 2024, a maximum of 51 servers can be specified for a cluster. For the most current information on the supported number of bare metal servers, refer to the product documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-consold-cluster#vc_orderinginstance-bare-metal-number" target="_blank">**here**</a>.
 
 24. Click the **vSAN storage** option.
 
-    VCF for Classic supports both network file system (NFS) and VMware Virtual Storage Area Network (vSAN) storage options. 
+    VCF for Classic supports both Network File System (NFS) and VMware Virtual Storage Area Network (vSAN) storage options. 
     
     The NFS option offers customized shared file-level storage for workloads with various options for size and performance. The NFS option uses IBM Cloud File Storage of the selected input and output operations per second per gigabyte (IOPS/GB) performance tier and are mounted across all hosts in the cluster, providing cluster-level shared storage.
     
-    The vSAN option offers customized configurations, with various options for disk type, size, and quantity. VMware vSAN creates resilient, hyper-converged cluster-level shared storage by using the local flash storage on the cluster hosts.
+    The vSAN option offers customized configurations, with various options for disk type, size, and quantity. VMware vSAN creates resilient, hyper-converged cluster-level shared storage by using the local Flash Storage on the cluster hosts.
     
-    For additional details on the storage options refer to the documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview#vc_vcenterserveroverview-storage" target="_blank">**here**</a>.
+    For additional details on the storage options, refer to the documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview#vc_vcenterserveroverview-storage" target="_blank">**here**</a>.
 
-25. Click the **vSAN storage requirements** pop-up dialog.
+25. Click the **vSAN storage requirements** dialog.
 
-    When selecting vSAN storage, a minimum of 4 servers are required. This is a VMware vSAN requirement to assure availability in the event of a disk failure. Notice, when the vSAN option is selected, if only 3 bare metal servers had been specified, the number is automatically changed to 4.
+    When selecting vSAN storage, a minimum of 4 servers are required. This is a VMware vSAN requirement to assure availability when a disk fails. Notice, when the vSAN option is selected, if only 3 bare metal servers are specified, the number is automatically changed to 4.
 
 26. Click the **Size for vSAN capacity disks** drop-down list.
 27. Select **1.9TB SSD**.
 28. Click the **Number of vSAN capacity disks** drop-down list.
 
-    The number of capacity disks will vary by the chassis used by the selected CPU model option.
+    The number of capacity disks vary by the chassis that is used by the selected CPU model option.
 
 29. Select **4**.
 30. Click the **NFS storage** option.
 31. Select **Configure shares individually**.
 
-    NFS file shares can have different sizes and performance characteristics. The ability to specify different configurations for each file share can be used to rightsize the environment based upon the storage performance characteristics of different workloads.
+    NFS file shares can have different sizes and performance characteristics. The ability to specify different configurations for each file share can be used to rightsize the environment based on the storage performance characteristics of different workloads.
 
 32.  Click **Add shared storage**.
 33.  Click the **Performance** drop-down list for **File share 2**.
@@ -213,10 +213,10 @@ Use the click-through demonstration below to practice provisioning a VMware Clou
     VCF for Classic supports 4 storage performance options. Each option specifies a maximum IOPS/GB. Higher performance tiers have greater costs.
 
 34. Select **4 IOPS/GB**.
-35. Click **Additional clusters (optional)** in left menu.
+35. Click **Additional clusters (optional)** in the left menu.
 36. Select **Deploy separate workload cluster**.
 
-    When specifying an additional workload cluster, new specifications for the cluster can be selected including specifying a different geography than the consolidated cluster.
+    When specifying an extra workload cluster, new specifications for the cluster can be selected including specifying a different location than the consolidated cluster.
 
     - Cluster name
     - Cluster location (geography, data center, and pod)
@@ -226,7 +226,7 @@ Use the click-through demonstration below to practice provisioning a VMware Clou
     - Storage (NFS or vSAN)
     - Networking type (public and private OR private network only)
     - Uplink speed
-    - Virtual Local Area Networks (vLANS) (new, existing, or reuse those of the consolidated cluster)
+    - Virtual local area networks (vLANS) (new, existing, or reuse those of the consolidated cluster)
 
 37. Deselect **Deploy separate workload cluster**. 
 38. Select **Deploy gateway cluster**.
@@ -240,7 +240,7 @@ Use the click-through demonstration below to practice provisioning a VMware Clou
     - Networking type (public and private OR private network only)
 
 39. Deselect **Deploy gateway cluster**.
-40. Click **Network interface** in left menu.
+40. Click **Network interface** in the left menu.
 
     Network planning for any VCS deployment is critical. Clients are expected to make informed decisions when provisioning their VCS environment and when specifying network configuration options. More planning information is available in the VCS documentation starting <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_networkingonvcenterserver" target="_blank">here</a>.
  
@@ -252,14 +252,14 @@ Use the click-through demonstration below to practice provisioning a VMware Clou
 
 42. Select **Configure host names individually**.
 
-    Each host provisioned can be uniquely named; otherwise, the names will consist of the **Hostname prefix** field and a unique sequential number.
+    Each host that is provisioned can be uniquely named; otherwise, the names consist of the **Hostname prefix** field and a unique sequential number.
 
 43. Deselect **Configure host names individually**.
 44. Select **Two highly available dedicated Windows Server VMs on the consolidated cluster**.
 
     Two options exist for the Domain Name System (DNS) configuration for the instance. 
     
-    The **Two highly available dedicated Windows Server VMs on the consolidated cluster** option deploys two (2) Microsoft Windows virtual machines (VMs), which enhances security and robustness. If this option is selected, the client must provide two (2) Microsoft Windows Server 2019 Standard edition licenses.
+    The **Two highly available dedicated Windows Server VMs on the consolidated cluster** option deploys two Microsoft Windows virtual machines (VMs), which enhances security and robustness. If this option is selected, the client must provide two Microsoft Windows Server 2019 Standard edition licenses.
 
 45. Select **Single public Windows VSI for Active Directory/DNS**
 
@@ -269,9 +269,9 @@ Use the click-through demonstration below to practice provisioning a VMware Clou
 
     VCF for Classic supports several **Add-on services**. 
 
-    For this demonstration, only 2 services will be selected. Sellers should familiarize themselves with all the additional services available in IBM Cloud for VMware portfolio. 
+    For this demonstration, only 2 services are selected. Sellers should familiarize themselves with all the additional services available in the IBM Cloud for VMware portfolio. 
 
-    ??? Note "Available add-on services as of September, 2024"
+    ??? Note "Available add-on services as of September  2024"
 
         === "Recommended services"       
             
@@ -322,7 +322,7 @@ Use the click-through demonstration below to practice provisioning a VMware Clou
 
     While recommended for VCF for Classic deployments, it is possible for clients to deselect add-on services. Caveonix assists clients in managing cyber and compliance risk.
 
-50.  Click **Add-on services** in left menu.
+50.  Click **Add-on services** in the left menu.
 
     Add-on services are logically grouped by categories like recommended services, business continuity and migration, security and compliance, transformation and modernization, and management tools; however, many of these services could be classified in more than one of these categories.
 
@@ -334,13 +334,13 @@ Use the click-through demonstration below to practice provisioning a VMware Clou
 
     The new licensing of VMware software was mentioned earlier. Not all of the VMware software products that are licensed as part of VCF for Classic are automatically installed.
 
-    Before proceeding to the agreements and final step to provision a VCF for Classic instance, notice the information and options available on the right of the IBM Cloud portal.
+    Before proceeding to the agreements and the final step to provision a VCF for Classic instance, notice the information and options available on the right of the IBM Cloud portal.
 
-    **a**. An itemized summary of the components and options selected is presented along with the estimated costs.
+    **a**. An itemized summary of the components and options that are selected is presented along with the estimated costs.
 
     **b**. A client can enter a promotion code for discounted pricing.
         
-    **c**. The configuration options specified can be saved and reused for future provisioning activity.
+    **c**. The configuration options that are specified can be saved and reused for future provisioning activity.
         
     **d**. The current estimate can be saved for later pricing activities.
 
@@ -350,12 +350,12 @@ Use the click-through demonstration below to practice provisioning a VMware Clou
 53. Select **I have read and agreed to the following third-party service agreements**.
 54. Click **Create**.
 
-At this point, the provisioning process for the VCF for Classic instance begins. If all specified infrastructure components with the requested configurations are available, this process is fully automated. In these cases, provisioning of a VCF for Classic instance can take 12 hours or less. In cases where the infrastructure as specified isn't immediately available, the process can take longer. When the instance created for this demonstration guide was provisioned, not all the infrastructure was available. In this case, the instance took over 48 hours to provision. A client's experience will vary.
+At this point, the provisioning process for the VCF for Classic instance begins. If all specified infrastructure components with the requested configurations are available, this process is fully automated. In these cases, provisioning of a VCF for Classic instance can take 12 hours or less. In cases where the infrastructure as specified isn't immediately available, the process can take longer. When the instance created for this demonstration guide was provisioned, not all the infrastructure was available. In this case, the instance took over 48 hours to provision.
 
-The VCS for Classic automation performs hundreds of operations. At a  high level, all the infrastructure (compute and storage) is allocated to the user's IBM Cloud account, the required VMware software is installed on each host, networks are defined and configured both in IBM Cloud and within the VMware cluster, and any selected **Add-on services** are deployed. 
+The VCS for Classic automation performs hundreds of operations. At a high level, all the infrastructure (compute and storage) is allocated to the user's IBM Cloud account, the required VMware software is installed on each host, networks are defined and configured both in IBM Cloud and within the VMware cluster, and any selected **Add-on services** are deployed. 
 
-During the provisioning process, the status of the instance will be updated in the IBM Cloud portal. In addition, depending on the user's notification preferences in the IBM Cloud portal, e-mails are sent as major steps in the automation are started and completed. Additionally, service tickets will be opened if there are delays in the automation.
+During the provisioning process, the status of the instance will be updated in the IBM Cloud portal. In addition, depending on the user's notification preferences in the IBM Cloud portal, emails are sent as major steps in the automation are started and completed. Service tickets are opened if delays in the automation occur.
 
-When all steps in the automation are complete and all systems are operational, the status of the instance will change to **Ready**. At this time, the VCF for Classic instance is ready for use. 
+When all steps in the automation are complete and all systems are operational, the status of the instance will change to **Ready**. Now, the VCF for Classic instance is ready for use. 
 
-In the next chapter, learn how to manage a VCF for Classic instance using the IBM Cloud portal.
+In the next chapter, learn how to manage a VCF for Classic instance by using the IBM Cloud portal.

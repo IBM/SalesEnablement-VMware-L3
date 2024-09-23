@@ -6,9 +6,9 @@ These VMware products are large, complex, and full of many, many features. The i
 
 - How the *"on IBM Cloud"* capabilities of the **VCF as a Service multitenant** are exposed through the VMware web console (VMware vCloud Director [VCD]).
   
-- How to provision basic resources including data center groups, networks, and virtual machines using VCD.
+- How to provision basic resources including data center groups, networks, and virtual machines by using VCD.
 
-- Illustrate how a **VCF as a Service multitenant** instance on IBM Cloud is just like VCF in a client's enterprise data center.
+- Illustrate how a **VCF as a Service multitenant** instance on IBM Cloud is like VCF in a client's enterprise data center.
 
 !!! Important "About the IBM Technology Zone (ITZ) environment"
 
@@ -20,13 +20,13 @@ These VMware products are large, complex, and full of many, many features. The i
 
     **If you opt to create a resource, please delete the resource before your ITZ reservation expires!** Doing so will reduce ongoing maintenance costs of the environment and help preserve the usability of the shared environment.
 
-1. Click the link below to open a browser to the IBM Cloud portal.
+1. Click the following link to open a browser to the IBM Cloud portal.
 
     <a href="https://cloud.ibm.com/vmware/resources/vdc" target="_blank">IBM Cloud portal</a>
 
-2. If not already in the {{itz.account}}, switch to the {{itz.account}} IBM Cloud account.
+2.  If not already in the {{itz.account}} account, switch to the {{itz.account}} IBM Cloud account.
 
-    Depending on the size of the browser window, the switch account menu will vary as seen in these two animated images.
+    Depending on the size of the browser window, the switch account menu varies as seen in these two animated images.
 
     ![](_attachments/switchAccount3.gif)
 
@@ -42,7 +42,7 @@ These VMware products are large, complex, and full of many, many features. The i
 
 5. Click **SIGN IN WITH OIDC**.
 
-    Single sign-on has been enabled as part of the **VCF as a Service** integration with VCD. The integration is between the VMware components and IBM Cloud Identity and Access Management (IAM). OpenID Connect (OIDC) is an identity layer built on top of the OAuth 2.0 framework. It allows third-party applications to verify the identity of the end-user and to obtain basic user profile information. Learn more about OIDC <a href="https://auth0.com/docs/authenticate/protocols/openid-connect-protocol" target="_blank">here</a>. Learn more about the IBM Cloud IAM and VMware sign in capabilities <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-iam-integration" target="_blank">here</a>.
+    Single sign-on has been enabled as part of the **VCF as a Service** integration with VCD. The integration is between the VMware components and IBM Cloud Identity and Access Management (IAM). OpenID Connect (OIDC) is an identity layer that is built on the OAuth 2.0 framework. It allows third-party applications to verify the identity of the user and to obtain basic user profile information. Learn more about OIDC <a href="https://auth0.com/docs/authenticate/protocols/openid-connect-protocol" target="_blank">here</a>. Learn more about the IBM Cloud IAM and VMware sign-in capabilities <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-iam-integration" target="_blank">here</a>.
 
     ![](_attachments/vcd-LoginScreen.png)
 
@@ -50,18 +50,18 @@ These VMware products are large, complex, and full of many, many features. The i
 
         After clicking the **SIGN IN WITH OIDC** button, you may be asked to re-authenticate to IBM Cloud. IBM employees and business partners that have multi-factor authentication (MFA) enabled in their IBM Cloud account may also have additional authentication steps to perform. These steps are not detailed here.
 
-6. Explore the information displayed on the **Data Centers** summary page and then click the {{itz.VCFaaSmt.name}} tile.
+6. Explore the information that is displayed on the **Data Centers** summary page and then click the {{itz.VCFaaSmt.name}} tile.
 
-    The screen capture shown below was taken before any resources were provisioned in the **VCF as a Service** instance. Your view will be different and reflect any currently provisioned resources.
+    The screen capture that is shown was taken before any resources were provisioned in the **VCF as a Service** instance. Your view is different and reflect any currently provisioned resources.
 
     ![](_attachments/vcd-DataCentersSummary.png)
 
 ### Networking
 The network for a **VCF as a Service** environment is a critical element that clients must plan carefully. Some information on network planning is provided in the IBM Cloud documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vcd-ops-guide#vcd-ops-guide-networking" target="_blank">here</a>. VMware also has good documentation that is accessible through the vCloud Director web console or <a href="https://docs.vmware.com/en/VMware-Cloud-Director/10.4/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-0544FE2A-B036-43E0-B549-40BACDF261B6.html" target="_blank">here</a>. The network implementation in this demonstration environment is minimal and should not be considered as a best of practice.
 
-The next steps show how to create a data center group, expand the scope of an edge gateway, and create a network that can be used by virtual machines (VMs). Data center groups allow administrators to group VDCs together to share network resources. In this ITZ environment, a group of only one VDC will be created. However, in most client environments, there will be multiple VDCs, and connectivity will need to be established between them. To allow network connectivity to VMs, a data center group and network needs to be created in the virtual data center. 
+The next steps show how to create a data center group, expand the scope of an edge gateway, and create a network that used by virtual machines (VMs). Data center groups allow administrators to group VDCs together to share network resources. In this ITZ environment, a group of only one VDC is created. However, in most client environments, there will be multiple VDCs, and connectivity will need to be established between them. To allow network connectivity to VMs, a data center group and network needs to be created in the virtual data center. 
 
-!!! Warning "In the ITZ enviroment, you can, but you don't need to"
+!!! Warning "In the ITZ environment, you can, but you don't need to"
 
     While you can create a new data center group and network in the instance, there is no need to as they have already been created in the ITZ environment. If you do create new ones, please delete yours, and only yours before your ITZ reservation expires.
 
@@ -103,7 +103,7 @@ The next steps show how to create a data center group, expand the scope of an ed
 
     ![](_attachments/vcd-dcgToEGTabpng.png)
 
-15.  Click {{itz.VCFaaSmt.name}} in the table. Note the name in the table will have a unique ID appended to it.
+15.  Click {{itz.VCFaaSmt.name}} in the table. Note that the name in the table has a unique ID appended to it.
 
     ![](_attachments/vcd-eg-Table.png)
 
@@ -141,7 +141,7 @@ The next steps show how to create a data center group, expand the scope of an ed
 
 22. Enter a **Name** and **Description** and then specify a new CIDR and click **NEXT**.
 
-    In this demonstration environment, a network is created using the non-routable private network CIDR of 192.168.1.1/24. 
+    In this demonstration environment, a network is created that uses the nonroutable private network CIDR of 192.168.1.1/24. 
 
     The *Dual-Stack Mode* enables support for both IPv4 and IPv6 addressing. The *Distributed Routing* option provides fast and efficient East-West routing. This can be disabled to connect to the service router and force all VM traffic through the service router.
 
@@ -156,27 +156,27 @@ The next steps show how to create a data center group, expand the scope of an ed
 
 25. Click **CANCEL** and then **YES** in the **Cancel Wizard** dialog.
 
-    This action has already been performed on the existing network. If you were to create a new one, you would click *FINISH*.
+    This action was performed on the existing network. If you were to create a new one, you would click *FINISH*.
 
     ![](_attachments/vcd-network-Cancel.png)
 
-    Once the network is created and the status turns to **Normal**, the next step is to activate dynamic host configuration protocol (DHCP) so VMs are automatically assigned network addresses when they are provisioned.
+    Once the network is created and the status turns to **Normal**, the next step is to activate the dynamic host configuration protocol (DHCP) so VMs are automatically assigned network addresses when they are provisioned.
 
 26. Click **vdc-mt-se-l3-defaultNetwork** in the table.
 
     ![](_attachments/vcd-network-TableCreated.png)
 
-27. Click **DHCP** in left menu.
+27. Click **DHCP** in the left menu.
 
     ![](_attachments/vcd-network-DHCPMenu.png)
 
-!!! Important "Please read about the next few steps"
+!!! Important "Read about the next few steps"
 
     The next few steps **cannot** be performed with the default network already created in the ITZ environment. You can perform them if you create a new network. The steps are provided for education purposes. The next step you can actually perform is step 33.
 
 28. Click **ACTIVATE**.
 
-    Note, this option will not be available for the network already created, rather you will see *DEACTIVATE*. **DO NOT** *deactivate* DHCP for the default network!
+    Note, this option will not be available for the network that is already created, rather you see *DEACTIVATE*. **DO NOT** *deactivate* DHCP for the default network!
 
     ![](_attachments/vcd-network-DHCPActivate.png)
 
@@ -224,13 +224,13 @@ The network is now setup and ready to be used.
 
 37. Enter a unique **Name** and **Computer Name**.
 
-    The **Computer Name** will autofill with the specified **Name** unless it does not conform to a valid hostname.
+    The **Computer Name** autofills with the specified **Name** unless it does not conform to a valid hostname.
 
     ![](_attachments/vcd-vApp-NewvApp-NewVMName.png)
 
 38. Select a **Template** from the table.
 
-    The **CentOS-7-Template-Official** is a good choice as VMs using this template boot quickly.
+    The **CentOS-7-Template-Official** is a good choice as VMs that use this template boot quickly.
 
     ![](_attachments/vcd-vApp-NewvAPp-templateOK.png)
 
@@ -245,7 +245,7 @@ The network is now setup and ready to be used.
 
     **a**. The **Compute** settings are defined by the template selected.
 
-    **b**. The network interface cards (NICs) is set to the default network, which was created earlier, and DHCP is selected.
+    **b**. The network interface cards (NICs) are set to the default network, which was created earlier, and DHCP is selected.
 
     ![](_attachments/vcd-vApp-NewvApp-cpunics.png)
 
@@ -265,7 +265,7 @@ The network is now setup and ready to be used.
 
     **a**. Notice the state of the VMs. It may take a few minutes for them to show **Powered on**.
     
-    **b**. Try accessing the VM using the **VM console** link. Note, the VM web console tool does not appear to work with the Safari browser! If you want to log into the VM, retrieve the password from the VM details page. To see the auto-generated password, edit the **Guest OS Customization**.
+    **b**. Try accessing the VM by using the **VM console** link. Note, the VM web console tool does not appear to work with the Safari browser! If you want to log into the VM, retrieve the password from the VM details page. To see the auto-generated password, edit the **Guest OS Customization**.
     
     **c**. Review the **Network Diagram** that VMware generates for the vAPP.
 

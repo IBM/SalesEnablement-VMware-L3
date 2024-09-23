@@ -1,4 +1,4 @@
-Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance. Use the click-through demonstration below to practice provisioning a VCF for Classic instance.
+Now, it is time to provision a VMware Cloud Foundation (VCF) for Classic instance. Use the following click-through demonstration to practice provisioning a VCF for Classic instance.
 
 !!! Important "About the IBM Technology Zone (ITZ) environment"
 
@@ -10,66 +10,66 @@ Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance
     
     When using the click-through demonstration, if you are not sure where to click or what to do next, simply click anywhere on the screen and the place to click next will be highlighted. Text entry fields are pre-populated in the click-through demonstration.
 
-1. Open the link below and then click the play button ![](_attachments/ClickThruPlayButton.png) to begin the demonstration.
+1. Open the following link and then click play ![](_attachments/ClickThruPlayButton.png) to begin the demonstration.
 
     **Click-through demonstration:** <a href={{clickthru.vcsManaging}} target ="_blank">Manage an instance of VCF for Classic</a>
 
 2. Click the **VMware** ![](_attachments/VMicon.png) icon in the left menu.
 
-3. Click **VCF for Classic** under **Resources** in left menu.
+3. Click **VCF for Classic** under **Resources** in the left menu.
 4. Click **{{itz.dedicated.instanceName}}** in the table of VCF for Classic instances.
 
-    The **Summary** page provides information about the VCF for Classic instance including software versions deployed, instance ID, location, and root and single sign-on domain.
+    The **Summary** page provides information about the VCF for Classic instance like software versions that are deployed, instance ID, location, and root and single sign-on domain.
 
 5. Click the **Actions** drop-down list.
 
-    There are 2 actions that be performed from the **Actions** menu. The **Refresh** option updates the information about the instance. 
+    Two (2) actions are available from the **Actions** menu. The **Refresh** option updates the information about the instance. 
     
-    The **Delete instance** option removes the VCF for Classic instance. When deleting the instance, all resources that are associated with the instance are permanently deleted, including vCenter Server, hosts, VMs, VLANs, subnets, services, and licenses. This action cannot be undone. To delete some of the resources in the instance and keep others, a support ticket must be opened. For instances that are part of a multi-site configuration, there are additional steps that must be followed. Refer to the documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletinginstance_multi" target="_blank">here</a>.
+    The **Delete instance** option removes the VCF for Classic instance. In deleting the instance, all resources that are associated with the instance are permanently deleted, including vCenter Server, hosts, VMs, VLANs, subnets, services, and licenses. This action cannot be undone. To delete some of the resources in the instance and keep others, a support ticket must be opened. For instances that are part of a multi-site configuration, extra steps must be followed. Refer to the documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_deletinginstance_multi" target="_blank">here</a>.
 
 6. Click **Refresh**.
 7. Click the **Access information** tab.
 
-    The **Access information** page provides the details required to access the core VMware components of the VCF for Classic deployment including IP addresses, fully qualified domain names (FQDN), administrative identities, and passwords.
+    The **Access information** page provides details that are required to access the core VMware components like IP addresses, fully qualified domain names (FQDN), administrative identities, and passwords.
 
 8. Click the **information** (![](_attachments/infoIcon.png)) icon next to **Access information**.
 
-    It is the client's responsibility to manage the VCF for Classic deployment. All of the administrative passwords for the VMware components should be changed and recorded in the clients own password management system. Once changed, the passwords shown on the **Access information** page will no longer be valid.
+    It is the client's responsibility to manage the VCF for Classic deployment. The administrative passwords for the VMware components should be changed and recorded in the clients own password management system. After the passwords are changed, the passwords that are shown on the **Access information** page are no longer valid.
 
-9. Click the **information dialog** to dismiss it.
+9. Click the **information dialog** to close it.
 10. Click the **Infrastructure** tab.
 
-    The **Infrastructure** page lists all clusters associated with the VCF for Classic instance. Recall, this instance was provisioned with a single **consolidated cluster**. Had a **workload** or **gateway** cluster been created, those items would be listed. Summary information about the cluster is provided. Individual clusters can be deleted from the page.
+    The **Infrastructure** page lists all clusters that are associated with the VCF for Classic instance. Recall, this instance was provisioned with a single **consolidated cluster**. If a **workload** or **gateway** cluster was created, those items are listed. Summary information about the cluster is provided. Individual clusters can be deleted from the page.
 
     The **Infrastructure** page is where new clusters can be added to the instance.
 
 11. Click **Create**.
     
-    The **Create cluster** form should look familiar. It is very similar to part of the form used when the VCF for Classic instance was created.
+    The **Create cluster** form should look familiar. It is similar to part of the form that is used when the VCF for Classic instance was created.
 
     This form can be used to create both **workload** and **gateway** clusters. First, explore adding a **workload** cluster.
 
 12. Select **Select a different location**.
 
-    If a different location is selected, the cluster will be provisioned in a data center that is different from the one of the VCF for Classic instance. Network latency might occur between the instance and the hosts, and between customer workloads that communicate from different locations.
+    If a different location is selected, the cluster is provisioned in a data center that is different from the one of the VCF for Classic instance. Network latency might occur between the instance and the hosts, and between customer workloads that communicate from different locations.
 
 13. Select **pod 04** for the data center location.
     
-    Notice the new **workload** cluster can use a different server configuration than the initial cluster created. Clients may want smaller or larger **workload** clusters that are right-sized for particular workloads.
+    Notice that the new workload cluster can use a different server configuration than the initial cluster created. Clients may want smaller or larger **workload** clusters that are right-sized for particular workloads.
 
-14. Click the **information** (![](_attachments/infoIcon.png)) icon next to **Number of bare metal servers**.
+14. Click the **information** (![](_attachments/infoIcon.png)) icon next to the **Number of bare metal servers**.
 
-    A minimum of two (2) bare metal servers are required to create a cluster.
+    A minimum of two bare metal servers are required to create a cluster.
 
-15. Click the **information dialog** to dismiss it.
+15. Click the **information dialog** to close it.
 
     New **workload** clusters can choose NFS or vSAN for the cluster storage.
 
 16. Click the **Hostname prefix** entry field.
 
-    In the **Network interface** section the same network parameters can be specified as when first creating the VCF for Classic instance. In addition, either the existing virtual local area networks (vLANS) of the instance can be used or new ones can be created.
+    In the Network interface section, the same network parameters can be specified as when first creating the VCF for Classic instance. In addition, either the existing virtual local area networks (vLANS) of the instance are used to or new ones are created.
 
-17. Read and then click the **information** dialog regarding vLANs. 
+17. Read and then close the **information** dialog about vLANs. 
 
     It is critical that the VMware management components like VMware vCenter Server are able to communicate with the new cluster. Learn more about the topic <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vmwaresol_ports-deploy-day2ops" target="_blank">here</a>.
 
@@ -80,13 +80,13 @@ Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance
 22. Select the **I understand that the following account will be charged** agreement.
 23. Select the **I have read and agreed to the following third-party service** agreement.
 
-    At this point, the user would click create and the new cluster would start to provision.
+    At this point, the user clicks create and the new cluster would start to provision.
 
     Now, explore the steps to create a new **Gateway cluster**.
 
 24. Select **Gateway cluster**.
 
-    Notice the **Data center location** is set and cannot be changed.
+    Notice that the **Data center location** cannot be changed.
 
 25. Select **Dual Intel Xeon Silver 4210** for the CPU model.
 
@@ -100,23 +100,23 @@ Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance
 28. Click the **vce-se-l3 (primary)** in the breadcrumb trail.
 29. Click **{{itz.dedicated.clusterName}}** in the cluster table.
     
-    The details page for a cluster provides information about all the components of the cluster including the servers running ESXi, storage, and network. In addition, additional servers and storage can be added to the cluster from this page.
+    The details page for a cluster provides information about all the components of the cluster. This includes the servers running ESXi, storage, and network. More servers and storage can be added to the cluster.
 
 30. Click **Add** in the **ESXi servers** table.
     
-    When adding servers to the cluster, the new servers can either use the same CPU model and configuration or a new configuration. While it is a best practice to have all servers in a cluster be heterogeneous, that is not always possible as CPU models age out and are replaced by newer models. Another scenario is if there is a desire to upgrade all the servers in a cluster to a different CPU model and configuration.
+    When servers are added to the cluster, the new servers can either use the same CPU model and configuration or a new configuration. While it is a best practice to have all servers in a cluster be heterogeneous, that is not always possible as CPU models age out and are replaced by newer models. Another scenario is a desire to upgrade all the servers in a cluster to a different CPU model and configuration.
 
 31. Click the **information** (![](_attachments/infoIcon.png)) icon next to **Maintenance mode**.
 
-    In most circumstances administrators do not want workloads to be assigned to new hosts until all customizations and updates to the host are complete. Bring the hosts up in **Maintenance mode** prevents that from occurring.
+    In most circumstances, administrators do not want workloads to be assigned to new hosts until all customizations and updates to the host are complete. Bringing up the hosts in **Maintenance mode** prevents that from occurring.
 
-32. Click the **information dialog** to dismiss it.
+32. Click the **information dialog** to close it.
 33. Click **Next**.
 34. Review the screen and click **Next**.
     
-    The new host or hosts can either use the same primary subnets or a different one. The subnets must already exist and be reachable by the VMware management components.
+    The new host or hosts can either use the same primary subnets or a different one. The subnets must exist and be reachable by the VMware management components.
 
-    The next step would be to accept the agreements and then click **Add**. For this demonstration, a new server will not be added.
+    The next step is to accept the agreements and then click **Add**. For this demonstration, a new server is not added.
 
 35. Click the **x** to close the **Add ESXi server** dialog.
 36. Select the **host-mf000.se.l3.com** server in the table.
@@ -126,9 +126,9 @@ Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance
 37. Click **Cancel** in the **ESXi servers** table.
 38. Click **Add** in the **Storage** table.
 
-    Additional NFS storage shares can be added to the cluster. The size and performance tier can be specified for each share.
+    Other NFS storage shares can be added to the cluster. The size and performance tier can be specified for each share.
 
-    Note, if the cluster used vSAN storage, the ability to add new servers and storage for the vSAN cluster would be presented.
+    Note, if the cluster used vSAN storage, the ability to add new servers and storage for the vSAN cluster is presented.
 
 39. Click the **x** to close the **Add NFS storage** dialog.
 40. Select **management-share** in the **Storage** table.
@@ -164,12 +164,12 @@ Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance
 
 50. Click **Add**.
 
-    Any available service that was not added during the initial provisioning can be added from this screen. Note, some services may require additional capacity to be added beforehand. For more information on the additional services, refer to the product documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-addon-services" target="_blank">here</a>.
+    Any available service that was not added during the initial provisioning can be added from this screen. Note, some services may require extra capacity to be added beforehand. For more information on the additional services, refer to the product documentation <a href="https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-vc_orderinginstance-addon-services" target="_blank">here</a>.
 
 51. Click the **vcs-se-l3 (primary)** link in the breadcrumb trail.
 52. Click **Veeam**.
 
-    Information needed to access the Veeam console is shown here. The **Open Veeam Console** button is part of this click-through demonstration and is not part of the IBM Cloud portal.
+    The information needed to access the Veeam console is shown here. The **Open Veeam Console** button is part of this click-through demonstration and is not part of the IBM Cloud portal.
 
 53. Click **Open Veeam Console**.
 
@@ -183,9 +183,9 @@ Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance
 56. Click the **Password** entry field.
 57. Click **Connect**.
     
-    This demonstration is not meant as a deep dive on using Veeam and its associated tools. Refer to the Veeam documentation and Veeam training available on Veeam's web site <a href="www.veeam.com" target="_blank">here</a>. However, in the next steps, create a simple Veeam backup job.
+    This demonstration is not meant as a deep dive on using Veeam and its associated tools. Refer to the Veeam documentation and Veeam training available on Veeam's website <a href="www.veeam.com" target="_blank">here</a>. However, in the next steps, create a simple Veeam backup job.
 
-58. Click **Inventory** in left menu.
+58. Click **Inventory** in the left menu.
 59. Click **vcssel3-vc-se.l3.com** in the Virtual Infrastructure directory tree.
 60. Click **VMware-Aria-Operations-for-Logs-Master**.
 
@@ -193,7 +193,7 @@ Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance
 
 61. Click the selected hosts.
 
-    The steps open the context menu is simplified as a single click. In the actual console, users would right-click on the lists of selected hosts.
+    The steps to open the menu is simplified as a single click. In the actual console, users right-click on the list of selected hosts.
 
 62.  Click **Add to backup job**.
 63.  Click **New job**.
@@ -210,7 +210,7 @@ Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance
 71. Click **Finish**.
 72. Click **Home**.
 
-    Notice the job has been started and is scheduled for future runs as specified when the job was defined.
+    Notice that the job has been started and is scheduled for future runs as specified when the job was defined.
 
 73. Click **Return to IBM Cloud Portal**.
 74. Click **x** to close the **Veeam** service page.
@@ -222,7 +222,7 @@ Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance
 
 76. Click **VMware Aria Operations Manager console**.
 
-    Note, the initial log in screen was not captured. It is identical to the one below shown for the **VMware Aria Operations for Logs console**.
+    Note, the initial log-in screen was not captured. It is identical to the one shown for the **VMware Aria Operations for Logs console**.
 
 77. Click **Next** on the **Welcome** page.
 78. Click **I accept the terms of this agreement**.
@@ -242,12 +242,12 @@ Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance
 
     View the alert messages. Note, these alerts were generated during the automated provisioning process for the VCF for Classic instance. The issues related to the alerts were rectified as the instance became fully deployed and active.
 
-86. Click **Log Analysis** in left menu.
+86. Click **Log Analysis** in the left menu.
 
     The console provides insights into the thousands of log messages that occur during the normal operation of a VMware deployment.
 
-87. Click **Visualize** in left menu.
-88. Click **Dashboards** in left menu.
+87. Click **Visualize** in the left menu.
+88. Click **Dashboards** in the left menu.
 89. Click **Assess Cost**.
 
     Since this is a new deployment, there is limited data; however, VMware Aria Operations Manager can help organizations reduce costs and improve efficiency through real-time, predictive capacity and cost analytics.
@@ -255,10 +255,10 @@ Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance
 90. Click **Home**.
 91. Click **Inventory**.
 
-    The **Inventory** dashboard shows the number of resources in the environment and help quantify the number of resources based on various perspectives and relationships within the environment.
+    The **Inventory** dashboard shows the number of resources in the environment and helps quantify the number of resources based on various perspectives and relationships within the environment.
 
 92. Click **vSphere Inventory Summary**.
-93. Click **Environment** in left menu.
+93. Click **Environment** in the left menu.
     
     More detailed information on the inventory is also available.
 
@@ -266,14 +266,14 @@ Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance
 95. Click **VMware Aria Operations for Logs console**.
 96. Click **Login**.
 
-    Vmware Aria Operations for Logs provides organizations with centralized log management, deep operational visibility, and intelligent analytics for troubleshooting and auditing across a VCF for Classic instance.
+    VMware Aria Operations for Logs provides organizations with centralized log management, deep operational visibility, and intelligent analytics for troubleshooting and auditing across a VCF for Classic instance.
 
-    Review the data shown shown on the **Overview** page.
+    Review the data shown on the **Overview** page.
 
-97. Click **Problems** in left menu and review the data presented.
-98. Click **VMware - vROPs 6.7+** in left menu and review the data presented.
-99. Click **Cluster - Threads Overview** in left menu and review the data presented.
-100. Click **VMware - vSphere** in left menu and review the data presented.
+97. Click **Problems** in the left menu and review the data.
+98. Click **VMware - vROPs 6.7+** in the left menu and review the data.
+99. Click **Cluster - Threads Overview** in the left menu and review the data.
+100. Click **VMware - vSphere** in the left menu and review the data.
 101. Click **x** to close the browser tab for the VMware Aria Operations for Logs console.
 102. Click **x** to close the service details page.
 103. Click the **Deployment history** tab.
@@ -292,7 +292,7 @@ Now it is time to provision a VMware Cloud Foundation (VCF) for Classic instance
 
     All the ESXi hosts provisioned as part of the consolidate cluster are shown along with their respective, consumption metric and high availability (HA) state.
 
-107. Click the **Datastores** tab.
+107. Click the **data stores** tab.
 
     Both the user specified datastores (the two [2] NFS 3 stores of 1,000 gigabytes [GB]) and the datastores required as part of the base infrastructure are displayed.
 

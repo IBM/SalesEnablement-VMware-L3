@@ -17,18 +17,18 @@ The following module guides Business Partners and IBM sellers through the proces
 
 ## Step-by-step Instructions
 ### Provision a multitenant Virtual Data Center (VDC)
-1. Open the click-thru demo and then click play ![](_attachments/ClickThruPlayButton.png) to begin the demonstration.
+1. Open the click-through demo and click play ![](_attachments/ClickThruPlayButton.png) to begin the demonstration.
 
-    **Click-thru demo:** <a href={{clickthru.vcsaasmtProvisioning}} target ="_blank">Provision an instance of VCF as a Service - Multitenant</a>
+    **Click-through demo:** <a href={{clickthru.vcsaasmtProvisioning}} target ="_blank">Provision an instance of VCF as a Service - Multitenant</a>
      <!-- **Click-thru demo:** <a href="https://ibm.github.io/SalesEnablement-VMware-L3/includes/VMwaaS-mt-provisioning/index.html" target ="_blank">Provision a multitenant instance of VMwaaS</a> -->
 
 2. Click the VMware (![](_attachments/VMicon.png)) icon in the left menu.
 3. Click the **VMware Cloud Foundation (VCF) as a Service** tile.
 
-    Notice the three (3) tiles under **What would you like to create?"**. For this demonstration, a **Multitenant Virtual data center** will be created. The other two tiles are related to the **Single-tenant** option, one tile to create a VMware Cloud Director (VCD) site, and one tile to create a Virtual data center in the VCD site. 
+    Notice the three tiles under **What would you like to create?"**. For this demonstration, a **Multitenant Virtual data center** is created. The other two tiles are related to the **Single-tenant** option, one tile to create a VMware Cloud Director (VCD) site, and one tile to create a Virtual data center in the VCD site. 
 
 
-4. Click **VDC details** in left menu.
+4. Click **VDC details** in the left menu.
 5. Click in the **Name** field.
 
     A descriptive name for the VDC should be used. Once created, the name cannot be changed.
@@ -70,7 +70,7 @@ The connection is made available through the network edge. There are four option
 For this demonstration, the default Network settings are used.
 
 ### Pricing plan
-11. Click **Pricing plan** in left menu.
+11. Click **Pricing plan** in the left menu.
 
     Notice the 2 pricing plan tiles. Clients can choose either an on-demand or reserved pricing model. Learn more about the available pricing plans <a href="https://cloud.ibm.com/vmware/vmware_as_a_service/provision/vdc_mt#about" target="_blank">here</a> (scroll down to **Details and pricing**). It is important to understand that with the on-demand model, resources are not preallocated. Delays might occur when requesting extra resources. With the reserved model, resources are preallocated and availability is guaranteed. However, clients are charged for the resources even if they are not used.
 
@@ -85,7 +85,7 @@ vCPU and RAM charges for on-demand virtual data centers are based on the amount 
 
     Note the range of RAM is between 1 and 40960 gigabytes (GB).
 
-14. Click the **I have read and agreed to the following license agreements** checkbox in **Summary** panel.
+14. Click the **I have read and agreed to the following license agreements** checkbox in the **Summary** page.
 15. Click the **Create** button.
 
 The provisioning process is automated. Provisioning time varies based on the configuration and network edge option selected. When the ITZ environment used for this learning plan was originally created, the provisioning of the VDC took approximately 15 minutes.
