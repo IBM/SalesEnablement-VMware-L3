@@ -202,7 +202,7 @@ The network is now setup and ready to be used.
 
 !!! Important "About the IBM Technology Zone (ITZ) environment"
 
-    You have permissions to create vApps and virtual machines (VMs) in the ITZ environment. The steps below create a vApp with two VMs. If you create your own vApps or VMs in the environment, be sure to remove them before your ITZ reservation expires.
+    You have permissions to create up to 4 vApps or virtual machines (VMs) in the ITZ environment. The steps below create a vApp with two VMs. If you create your own vApps or VMs in the environment, be sure to remove them before your ITZ reservation expires.
 
 
 33. Click **Applications**.
