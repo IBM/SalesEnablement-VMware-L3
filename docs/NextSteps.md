@@ -1,6 +1,6 @@
 !!! Important "About the IBM Technology Zone (ITZ) environment"
 
-    Before your ITZ reservation, please be sure to remove any resources you provisioned in the ITZ environment!
+    Before your ITZ reservation expires, be sure to remove any resources you provisioned in the ITZ environment!
 
 
 This {{learningplan.name}} demonstrated several of the {{offering.name}} offerings available. However, there is still more to learn about {{offering.name}}. Be sure to check out the <a href="https://cloud.ibm.com/vmware/compare_offerings" target="_blank">offering comparison page</a>.
